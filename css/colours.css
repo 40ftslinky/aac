@@ -1,0 +1,77 @@
+/* colours */
+
+
+/* AAC/Mono/Gradient */
+:root {
+
+    --white: #fff;
+    --white-rgb: 255, 255, 255;
+    --not-white: #F2F2F2;
+    
+    --black: #000;
+    --not-black: #121212;
+    --black-rgb: 0, 0, 0;
+    --not-black-rgb: 18, 18, 18;    
+
+    /* AAC/Primary/Gradient */
+    --primary-gradient: linear-gradient(45deg, #09AD35 -0.04%, #00C857 19.79%, #68D425 76.23%, #CDFF45 132.67%);
+    --primary-dark: #09AD35;
+    --primary: #00C857;
+    --primary-light: #68D425;
+    --primary-lighter: #CDFF45;
+    --primary-rgb: 0, 200, 87;
+
+    /* AAC/Secondary/Gradient */
+    --secondary-gradient:  linear-gradient(45deg, #FF3511 -0.04%, #FF7230 19.79%, #FFA200 76.23%, #FFCC00 132.67%);
+    --secondary-dark: #FF3511;
+    --secondary: #FF7230;
+    --secondary-light: #FFA200;
+    --secondary-lighter: #FFCC00;
+    --secondary-rgb: 255, 114, 48;
+
+    /* AAC/Tertiary/Gradient */
+    --tertiary-gradient: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(45deg, #5F0066 -0.04%, #7700C7 19.79%, #577EFF 76.23%, #57D2FF 132.67%);
+    --tertiary-dark: #5F0066;
+    --tertiary: #7700C7;
+    --tertiary-light: #577EFF;
+    --tertiary-lighter: #57D2FF;
+
+    /* mono */
+    --mono-gradient: linear-gradient(45deg, #121212 -0.04%, #2C2C2C 19.79%, #616161 76.23%, #A8A8A8 132.67%);
+    --mono-dark: #121212;
+    --mono-light: #2C2C2C;
+    --mono-lighter: #616161;
+    --mono-lightest: #A8A8A8;
+    
+    --mono-100: #F2F2F2;
+    --mono-200: #E0E0E0;
+    --mono-300: #CFCFCF;
+    --mono-400: #BFBFBF;
+    --mono-500: #A8A8A8;
+    --mono-600: #8F8F8F;
+    --mono-700: #7F7F7F;
+    --mono-800: #6F6F6F;
+    --mono-900: #5F5F5F;
+    --mono-1000: #4F4F4F;
+    
+    /* grey */
+    --grey-light: #616161;
+    --grey-lighter: #A8A8A8;
+
+    --grey-100: #F2F2F2;
+    --grey-200: #E0E0E0;
+    --grey-300: #CFCFCF;
+    --grey-400: #BFBFBF;
+    --grey-500: #A8A8A8;
+    --grey-600: #8F8F8F;
+    --grey-700: #7F7F7F;
+    --grey-800: #6F6F6F;
+    --grey-900: #5F5F5F;
+    --grey-1000: #4f4f4f;
+    --grey-rgb: 49, 49, 49;
+    
+}
+
+.primary {
+
+}
