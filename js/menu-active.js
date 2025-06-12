@@ -26,6 +26,7 @@ document.getElementById('menu-button').onclick = function() {
 const menuItems = document.querySelectorAll('.menu-item');
 const submenuItems = document.querySelectorAll('.submenu-item');
 const hasSubmenu = document.querySelectorAll('.menu-item .has-submenu');
+const hasSubmenuLink = document.querySelectorAll('.menu-link.has-submenu')
 const megaMenu = document.querySelector('header .mega-menu');
 
 // Add hover event listener to each menu item
@@ -87,6 +88,43 @@ const logoWrapper = document.querySelector('.logo-wrapper');
 logoWrapper.addEventListener('mouseenter', function() {
     megaMenu.classList.remove('is-active');
     document.body.classList.remove('no_scroll'); // remove 'no_scroll' class to body
+});
+
+// if menu-item has .is-active add 'has-focus' class to the relevant mega-menu-column determined by the text content of the .menu-link.submenu and data-submenu attribute of the column
+hasSubmenuLink.forEach(item => {
+    item.addEventListener('mouseenter', function() {
+        const submenuKey = this.getAttribute('data-submenu');
+        const column = document.querySelector(`.mega-menu-column[data-submenu="${submenuKey}"]`);
+        if (column) {
+            column.classList.add('has-focus');
+        }
+    });
+    item.addEventListener('mouseleave', function() {
+        const submenuKey = this.getAttribute('data-submenu');
+        const column = document.querySelector(`.mega-menu-column[data-submenu="${submenuKey}"]`);
+        if (column) {
+            column.classList.remove('has-focus');
+        }
+    });
+});
+
+// now do the opposite, on mouseenter on the mega-menu-column, add 'has-focus' class to the relevant menu-item
+const megaMenuColumns = document.querySelectorAll('.mega-menu-column');
+megaMenuColumns.forEach(column => {
+    column.addEventListener('mouseenter', function() {
+        const submenuKey = this.getAttribute('data-submenu');
+        const menuItem = document.querySelector(`.menu-item .has-submenu[data-submenu="${submenuKey}"]`);
+        if (menuItem) {
+            menuItem.classList.add('has-focus');
+        }
+    });
+    column.addEventListener('mouseleave', function() {
+        const submenuKey = this.getAttribute('data-submenu');
+        const menuItem = document.querySelector(`.menu-item .has-submenu[data-submenu="${submenuKey}"]`);
+        if (menuItem) {
+            menuItem.classList.remove('has-focus');
+        }
+    });
 });
 
 

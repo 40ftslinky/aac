@@ -19,12 +19,13 @@ header.startHeader {
     z-index: 2222;
     transition: var(--transition);
     font-family: var(--menu-font-family);
-    background-color: rgba(var(--white-rgb), 0.9);
+    /* backdrop-filter: var(--backdrop-blur-strong); */
+    /* background-color: rgba(var(--white-rgb), 0.9); */
     /* border-bottom: 1px solid #e7e7e7; */
 }
 .is-scrolled {
     box-shadow: 0 0 10px var(--grey);
-    background-color: rgba(var(--white-rgb), 0.9);
+    /* background-color: rgba(var(--white-rgb), 0.9); */
     transition: var(--transition);
 }
 
@@ -76,10 +77,15 @@ header .top_nav-container {
     left: 0;
     z-index: 1000;
     background-color: rgba(var(--white-rgb), 0.8);
+    transition: var(--transition);
+    backdrop-filter: var(--backdrop-blur);
+
 }  
 .is-scrolled .nav-group,
 .nav-group.is-scrolled { 
-    background-color: rgba(var(--white-rgb), 1);
+    background-color: rgba(var(--white-rgb), .95);
+    transition: var(--transition);
+
 }  
 
 
@@ -207,7 +213,7 @@ nav {
 }
 
 .active .site-title h1 {
-    color: var(--not-black);
+    color: var(--notblack);
     position: absolute;
     transform: translateY(-50%);
     z-index: 1111;
@@ -273,7 +279,7 @@ nav {
         display: block;
         width: 50px;
         height: 50px;
-        background-color: rgba(var(--not-black-rgb), 0);
+        background-color: rgba(var(-black-rgb), 0);
         border-radius: 50px;
         position: absolute;
         right: 0;
@@ -293,7 +299,7 @@ nav {
         width: 30px;
         height: 3px;
         border-radius: 3px;
-        background-color: var(--not-black);
+        background-color: var(--notblack);
         transform: rotate(0);
         position: absolute;
         left: 10px;
@@ -314,7 +320,7 @@ nav {
         /* &.active, */
         &.active:before, 
         &.active:after {
-            background-color: var(--not-black);
+            background-color: var(--notblack);
         }
         &.active:hover {
             background-color: var(--black);
@@ -403,7 +409,6 @@ nav {
         gap: 8px;
     }
 
-    
 /* end mobile */
 }
 
@@ -522,15 +527,16 @@ nav.desktop ul li a{
 
 
 .desktop .menu-link.active {
-    color: var(--not-black);
+    color: var(--notblack);
     /* text-decoration: underline; */
     text-underline-offset: 0.325rem;
     text-decoration-thickness: 1px;
 }
 
 
-.desktop .menu-link:hover {
-    color: rgba(var(--not-black-rgb), 0.8);
+.desktop .menu-link:hover,
+.desktop .menu-link.has-focus {
+    color: rgba(var(--notblack-rgb), 0.8);
     /* text-decoration: underline; */
     text-decoration: underline;
     text-underline-offset: 0.325rem;
@@ -556,7 +562,8 @@ nav.desktop ul li a{
 }
 
 
-.has-submenu:hover:before {
+.has-submenu:hover:before,
+.has-submenu.has-focus:before {
     transform: translateY(-50%) rotate(180deg);
 }
 
@@ -739,13 +746,15 @@ nav.desktop ul li a{
 
 
 
-/* submenu */
-
 .menu-item.has-child,
 .menu-item.has-dropdown,
 .menu-item.has-submenu {
     position: relative;
 }
+
+
+/* mega-menu - submenu */
+
 
 .header__navigation, 
 .mega-menu, 
@@ -756,11 +765,12 @@ nav.desktop ul li a{
     left: 0;
     transform: translateY(-100%);
     width: 100%;
-    min-height: 400px;
-    background-color: #fff;
+    /* min-height: 400px; */
+    background-color: rgba(var(--white-rgb), 0.8);
     transition: var(--transition);
+    backdrop-filter: var(--backdrop-blur);
     transition-delay: .1s;
-    padding: var(--header-height) 128px 0;
+    padding: var(--header-height) 128px 0 32px;
     box-sizing: border-box;
 }
 
@@ -771,11 +781,14 @@ nav.desktop ul li a{
     transform: translate(0);
 }
 
+.mega-menu-wrapper {}
+
 .mega-menu-content {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
+    margin: 2rem 0;
 }
 .mega-menu-content .mega-menu-column {
     /* flex: 1; */
@@ -788,7 +801,8 @@ nav.desktop ul li a{
     opacity: 0.7;
 }
 
-.mega-menu-column:hover {
+.mega-menu-column:hover, 
+.mega-menu-column.has-focus {
     opacity: 1;
     box-shadow: var(--shadow-regular);
     transition: var(--transition);

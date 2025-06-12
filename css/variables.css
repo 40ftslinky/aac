@@ -48,6 +48,9 @@
     /* shadow */
     --shadow-regular: 0 0 1.5rem rgba(0, 0, 0, 0.1);
 
+    /* blur */
+    --backdrop-blur: blur(10px);
+    --backdrop-blur-strong: blur(20px);
     
     /* image */
     --mix-blend: hard-light;

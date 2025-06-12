@@ -14,7 +14,7 @@ html, html > * {
 }
 
 body {
-    background-color: var(--not-white);
+    background-color: var(--notwhite);
     margin: 0;
     padding: 0;
 }
@@ -190,7 +190,7 @@ video.square {
 .card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: var(--gap);
     width: 100%;
@@ -221,7 +221,7 @@ video.square {
     aspect-ratio: 1 / 1;
     object-fit: cover;
     max-width: var(--max-col-width);
-    background-color: var(--mono-500);
+    /* background-color: var(--default); */
 }
 
 .card .card-content {

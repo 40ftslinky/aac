@@ -106,11 +106,11 @@
                             
                                     <ul class="menu">
                                         
-                                        <li class="menu-item"><a class="menu-link has-submenu " href="/about">About</a></li>
+                                        <li class="menu-item"><a class="menu-link has-submenu " data-submenu="About" href="/about">About</a></li>
                                         <li class="menu-item"><a class="menu-link " href="/training">Training</a></li>
-                                        <li class="menu-item"><a class="menu-link has-submenu" href="/excursions">Excursions</a></li>
-                                        <li class="menu-item"><a class="menu-link has-submenu" href="/calendar">Calendar</a></li>                                
-                                        <li class="menu-item"><a class="menu-link has-submenu" href="/resources">Resources</a></li>
+                                        <li class="menu-item"><a class="menu-link has-submenu" data-submenu="Excursions" href="/excursions">Excursions</a></li>
+                                        <li class="menu-item"><a class="menu-link has-submenu" data-submenu="Calendar" href="/calendar">Calendar</a></li>                                
+                                        <li class="menu-item"><a class="menu-link has-submenu" data-submenu="Resources" href="/resources">Resources</a></li>
                                         <li class="menu-item"><a class="menu-link " href="/contact">Contact</a></li>
                                                                         
                                     </ul>
@@ -206,7 +206,7 @@
             <div class="mega-menu submenu">
                 <div class="mega-menu-wrapper">
                     <div class="mega-menu-content">
-                        <div class="mega-menu-column" data-submenu="about">
+                        <div class="mega-menu-column" data-submenu="About">
                             <h3 class="submenu-title">About</h3>
                             <ul class="mega-menu-submenu">
                                 <li class="submenu-item"><a class="submenu-link" href="/about/story">Our Story</a></li>
@@ -216,7 +216,7 @@
                                 <li class="submenu-item"><a class="submenu-link" href="/about/agritourism">Agritourism</a></li>
                             </ul>
                         </div>
-                        <div class="mega-menu-column" data-submenu="excursions">
+                        <div class="mega-menu-column" data-submenu="Excursions">
                             <h3 class="submenu-title">Excursions</h3>
                             <ul class="mega-menu-submenu">
                                 <li class="submenu-item"><a class="submenu-link" href="/excursions/primary-schools">For Primary Schools</a></li>
@@ -225,14 +225,14 @@
                                 <li class="submenu-item"><a class="submenu-link" href="/excursions/booking-forms">Booking Forms</a></li>
                             </ul>
                         </div>
-                        <div class="mega-menu-column" data-submenu="calendar">
+                        <div class="mega-menu-column" data-submenu="Calendar">
                             <h3 class="submenu-title">Calendar</h3>
                             <ul class="mega-menu-submenu">
                                 <li class="submenu-item"><a class="submenu-link" href="/calendar">Calendar</a></li>
                                 <li class="submenu-item"><a class="submenu-link" href="/glamping">Glamping</a></li>
                             </ul>
                         </div>
-                        <div class="mega-menu-column" data-submenu="resources">
+                        <div class="mega-menu-column" data-submenu="Resources">
                             <h3 class="submenu-title">Resources</h3>
                             <ul class="mega-menu-submenu">
                                 <li class="submenu-item"><a class="submenu-link" href="/resources/media">Media</a></li>
@@ -292,89 +292,155 @@
                             <div class="colour-palette-row" >
                                 <div class="card card-sm">
                                     <div style="text-align: center;">
-                                        <div class="image"></div>
+                                        <div class="image primary-bg"></div>
                                         <div class="card-content">
                                             <div class="">#00C857</div>
                                             <div class="card-title">Primary</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div style="text-align: center;">
-                                    <div style="width: 96px; height: 96px; background: var(--secondary); border-radius: 6px; border: 1px solid #ccc;"></div>
-                                    <small>#FF7230</small><br>
-                                    <small>Secondary</small>
+                                <div class="card card-sm">
+                                    <div style="text-align: center;">
+                                        <div class="image secondary-bg"></div>
+                                        <div class="card-content">
+                                            <div class="">#FF7230</div>
+                                            <div class="card-title">Secondary</div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div style="text-align: center;">
-                                    <div style="width: 96px; height: 96px; background: var(--tertiary); border-radius: 6px; border: 1px solid #ccc;"></div>
-                                    <small>#7700C7</small><br>
-                                    <small>Tertiary</small>
+                                <div class="card card-sm">
+                                    <div style="text-align: center;">
+                                        <div class="image tertiary-bg"></div>
+                                        <div class="card-content">
+                                            <div class="">#7700C7</div>
+                                            <div class="card-title">Tertiary</div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div style="text-align: center;">
-                                    <div style="width: 96px; height: 96px; background: var(--not-black); border-radius: 6px; border: 1px solid #ccc;"></div>
-                                    <small>#121212</small><br>
-                                    <small>Not Black</small>
-                                </div>
-                            </div>
-                            <div class="colour-palette-row" >
-                                <div style="text-align: center;">
-                                    <div style="width: 96px; height: 96px; background: var(--primary-dark); border-radius: 6px; border: 1px solid #ccc;"></div>
-                                    <small>#09AD35</small><br>
-                                    <small>Primary Dark</small>
-                                </div>
-                                <div style="text-align: center;">
-                                    <div style="width: 96px; height: 96px; background: var(--secondary-dark); border-radius: 6px; border: 1px solid #ccc;"></div>
-                                    <small>#FF3511</small><br>
-                                    <small>Secondary Dark</small>
-                                </div>
-                                <div style="text-align: center;">
-                                    <div style="width: 96px; height: 96px; background: var(--tertiary-dark); border-radius: 6px; border: 1px solid #ccc;"></div>
-                                    <small>#5F0066</small><br>
-                                    <small>Tertiary Dark</small>
-                                </div>
-                                <div style="text-align: center;">
-                                    <div style="width: 96px; height: 96px; background: var(--black); border-radius: 6px; border: 1px solid #ccc;"></div>
-                                    <small>#000000</small><br>
-                                    <small>Black</small>
+                                <div class="card card-sm">
+                                    <div style="text-align: center;">
+                                        <div class="image notblack-bg"></div>
+                                        <div class="card-content">
+                                            <div class="">#121212</div>
+                                            <div class="card-title">Not Black</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="colour-palette-row" >
-                                <div style="text-align: center;">
-                                    <div style="width: 96px; height: 96px; background: var(--primary-light); border-radius: 6px; border: 1px solid #ccc;"></div>
-                                    <small>#68D425</small><br>
-                                    <small>Primary Light</small>
+                                <div class="card card-sm">
+                                    <div style="text-align: center;">
+                                        <div class="image primary_dark-bg"></div>
+                                        <div class="card-content">
+                                            <div class="">#09AD35</div>
+                                            <div class="card-title">Primary Dark</div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div style="text-align: center;">
-                                    <div style="width: 96px; height: 96px; background: var(--secondary-light); border-radius: 6px; border: 1px solid #ccc;"></div>
-                                    <small>#FFA200</small><br>
-                                    <small>Secondary Light</small>
+                                <div class="card card-sm">
+                                    <div style="text-align: center;">
+                                        <div class="image secondary_dark-bg"></div>
+                                        <div class="card-content">
+                                            <div class="">#FF3511</div>
+                                            <div class="card-title">Secondary Dark</div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div style="text-align: center;">
-                                    <div style="width: 96px; height: 96px; background: var(--tertiary-light); border-radius: 6px; border: 1px solid #ccc;"></div>
-                                    <small>#577EFF</small><br>
-                                    <small>Tertiary Light</small>
+                                <div class="card card-sm">
+                                    <div style="text-align: center;">
+                                        <div class="image tertiary_dark-bg"></div>
+                                        <div class="card-content">
+                                            <div class="">#5F0066</div>
+                                            <div class="card-title">Tertiary Dark</div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div style="text-align: center;">
-                                    <div style="width: 96px; height: 96px; background: var(--mono-light); border-radius: 6px; border: 1px solid #ccc;"></div>
-                                    <small>#2C2C2C</small><br>
-                                    <small>Mono Light</small>
+                                <div class="card card-sm">
+                                    <div style="text-align: center;">
+                                        <div class="image black-bg"></div>
+                                        <div class="card-content">
+                                            <div class="">#000000</div>
+                                            <div class="card-title">Black</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                                
                             <div class="colour-palette-row" >
-                                <div style="text-align: center;">
-                                    <div style="width: 96px; height: 96px; background: var(--primary-gradient); border-radius: 6px; border: 1px solid #ccc;"></div>
-                                    <small>Primary Gradient</small>
+                                <div class="card card-sm">
+                                    <div style="text-align: center;">
+                                        <div class="image primary_light-bg"></div>
+                                        <div class="card-content">
+                                            <div class="">#68D425</div>
+                                            <div class="card-title">Primary Light</div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div style="text-align: center;">
-                                    <div style="width: 96px; height: 96px; background: var(--secondary-gradient); border-radius: 6px; border: 1px solid #ccc;"></div>
-                                    <small>Secondary Gradient</small>
+                                <div class="card card-sm">
+                                    <div style="text-align: center;">
+                                        <div class="image secondary_light-bg"></div>
+                                        <div class="card-content">
+                                            <div class="">#FFA200</div>
+                                            <div class="card-title">Secondary Light</div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div style="text-align: center;">
-                                    <div style="width: 96px; height: 96px; background: var(--tertiary-gradient); border-radius: 6px; border: 1px solid #ccc;"></div>
-                                    <small>Tertiary Gradient</small>
+                                <div class="card card-sm">
+                                    <div style="text-align: center;">
+                                        <div class="image tertiary_light-bg"></div>
+                                        <div class="card-content">
+                                            <div class="">#577EFF</div>
+                                            <div class="card-title">Tertiary Light</div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div style="text-align: center;">
-                                    <div style="width: 96px; height: 96px; background: var(--mono-gradient); border-radius: 6px; border: 1px solid #ccc;"></div>
-                                    <small>Mono Gradient</small>
+                                <div class="card card-sm">
+                                    <div style="text-align: center;">
+                                        <div class="image mono_light-bg"></div>
+                                        <div class="card-content">
+                                            <div class="">#2C2C2C</div>
+                                            <div class="card-title">Mono Light</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                               
+                            <div class="colour-palette-row" >
+                                <div class="card card-sm">
+                                    <div style="text-align: center;">
+                                        <div class="image primary_gradient-bg"></div>
+                                        <div class="card-content">
+                                            <div class=""></div>
+                                            <div class="card-title">Primary Gradient</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-sm">
+                                    <div style="text-align: center;">
+                                        <div class="image secondary_gradient-bg"></div>
+                                        <div class="card-content">
+                                            <div class=""></div>
+                                            <div class="card-title">Secondary Gradient</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-sm">
+                                    <div style="text-align: center;">
+                                        <div class="image tertiary_gradient-bg"></div>
+                                        <div class="card-content">
+                                            <div class=""></div>
+                                            <div class="card-title">Tertiary Gradient</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-sm">
+                                    <div style="text-align: center;">
+                                        <div class="image mono_gradient-bg"></div>
+                                        <div class="card-content">
+                                            <div class=""></div>
+                                            <div class="card-title">Mono Gradient</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -386,8 +452,86 @@
 
 
         <!-- Footer -->
-        <footer>
-            <p>&copy; 2025 AAC. All rights reserved.</p>
+        <footer class="footer">
+            <div class="container">
+                    <div class="row">
+                        <div class="column">
+                            <a class="footer_logo" href="/">
+                                <div class="logo">
+                                    <svg width="133" height="50" viewBox="0 0 133 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.69708 12.9999L8.92954 10.9032H4.39915L3.55673 12.9999H0.130859L4.92333 0.51323H8.46152L13.1604 12.9999H9.69708ZM5.29774 8.43204H8.06839L6.66434 4.38839L5.29774 8.43204Z" fill="white"/>
+                                        <path d="M14.6011 0.51323H17.8398V7.90786C17.8398 8.43204 17.8585 9.23703 18.4763 9.83608C18.8507 10.1918 19.4498 10.4351 20.0114 10.4351C20.573 10.4351 21.1533 10.2105 21.509 9.89225C22.2579 9.23703 22.2391 8.31972 22.2391 7.62706V0.51323H25.4778V7.68322C25.4778 8.99366 25.4216 10.3603 24.0738 11.7269C23.0254 12.7939 21.715 13.2807 19.9552 13.2807C17.9896 13.2807 16.5855 12.6067 15.818 11.783C14.7322 10.6036 14.6011 9.01238 14.6011 7.68322V0.51323Z" fill="white"/>
+                                        <path d="M27.5315 11.8766L28.9168 9.25575C29.6095 9.91097 30.6579 10.5287 31.7811 10.5287C32.4363 10.5287 32.8294 10.3228 33.0354 10.0982C33.2226 9.91097 33.3536 9.63016 33.3536 9.31191C33.3536 9.06854 33.26 8.78773 32.9979 8.56308C32.6797 8.28228 32.1929 8.15123 31.388 7.90786L30.5455 7.64578C30.0214 7.47729 29.2538 7.19648 28.7484 6.63486C28.1119 5.9422 28.037 5.06233 28.037 4.42583C28.037 2.89075 28.636 1.95472 29.1789 1.41182C29.8154 0.775319 30.8638 0.232422 32.3801 0.232422C33.6157 0.232422 35.0572 0.625555 36.2366 1.24333L34.9449 3.77061C33.9714 3.00307 33.2413 2.92819 32.8107 2.92819C32.4925 2.92819 32.0619 3.00307 31.7436 3.3026C31.5564 3.4898 31.4254 3.69573 31.4254 3.97654C31.4254 4.20119 31.4628 4.36967 31.5939 4.53816C31.6875 4.65048 31.9121 4.87513 32.6797 5.09978L33.6719 5.3993C34.4581 5.64267 35.2818 5.92348 35.9371 6.63486C36.5736 7.3088 36.742 8.00147 36.742 8.86261C36.742 10.0046 36.4612 11.1091 35.5626 12.0077C34.4956 13.0747 33.2039 13.2807 31.8747 13.2807C31.0884 13.2807 30.3396 13.2058 29.4223 12.8688C29.2164 12.7939 28.4301 12.4944 27.5315 11.8766Z" fill="white"/>
+                                        <path d="M46.1639 3.26516H43.5056V12.9999H40.2669V3.26516H37.6086V0.51323H46.1639V3.26516Z" fill="white"/>
+                                        <path d="M47.5998 0.51323H52.6544C53.5904 0.51323 54.7885 0.662995 55.7059 1.61775C56.4172 2.34785 56.7729 3.43364 56.7729 4.42583C56.7729 5.49291 56.3985 6.42894 55.7807 7.028C55.294 7.49601 54.6388 7.77682 54.0584 7.88914L57.971 12.9999H53.9461L50.8385 8.20739V12.9999H47.5998V0.51323ZM50.8385 3.02179V6.11069H51.4563C51.943 6.11069 52.6357 5.97964 53.0288 5.60523C53.2722 5.36186 53.4407 4.95001 53.4407 4.55688C53.4407 4.18247 53.2909 3.77061 53.0101 3.50853C52.7106 3.209 52.1677 3.02179 51.4563 3.02179H50.8385Z" fill="white"/>
+                                        <path d="M67.7236 12.9999L66.956 10.9032H62.4257L61.5832 12.9999H58.1574L62.9498 0.51323H66.488L71.1869 12.9999H67.7236ZM63.3243 8.43204H66.0949L64.6909 4.38839L63.3243 8.43204Z" fill="white"/>
+                                        <path d="M72.6277 0.51323H75.8663V10.2479H79.7602V12.9999H72.6277V0.51323Z" fill="white"/>
+                                        <path d="M81.4212 0.51323H84.6599V12.9999H81.4212V0.51323Z" fill="white"/>
+                                        <path d="M95.6765 12.9999L94.909 10.9032H90.3786L89.5361 12.9999H86.1103L90.9028 0.51323H94.4409L99.1398 12.9999H95.6765ZM91.2772 8.43204H94.0478L92.6438 4.38839L91.2772 8.43204Z" fill="white"/>
+                                        <path d="M103.819 12.9999H100.581V0.51323H103.819L109.791 8.15123V0.51323H113.03V12.9999H109.791L103.819 5.36186V12.9999Z" fill="white"/>
+                                        <path d="M9.69708 30.9999L8.92954 28.9032H4.39915L3.55673 30.9999H0.130859L4.92333 18.5132H8.46152L13.1604 30.9999H9.69708ZM5.29774 26.432H8.06839L6.66434 22.3884L5.29774 26.432Z" fill="white"/>
+                                        <path d="M20.2261 26.4508V23.9235H26.666C26.666 26.3946 26.1605 28.1543 24.6629 29.5397C23.3524 30.7565 21.8548 31.1122 20.2635 31.1122C18.0171 31.1122 16.482 30.2885 15.4711 29.2589C14.535 28.3228 13.6739 26.8065 13.6739 24.7472C13.6739 22.7628 14.4602 21.1341 15.5459 20.067C16.5756 19.0374 18.1856 18.2324 20.3946 18.2324C21.5553 18.2324 22.8095 18.4945 23.7643 19.0748C24.7378 19.6739 25.5427 20.6661 25.992 21.6396L22.9031 22.9126C22.6785 22.3322 22.3228 21.9204 22.0046 21.6583C21.4617 21.209 20.8813 21.0405 20.2635 21.0405C19.496 21.0405 18.7097 21.3213 18.1294 21.9017C17.3993 22.6318 17.0436 23.7924 17.0436 24.7659C17.0436 25.9079 17.4554 26.8439 18.0358 27.4617C18.6348 28.0982 19.3649 28.4164 20.3197 28.4164C20.8813 28.4164 21.5365 28.3228 22.1169 27.8361C22.4164 27.5927 22.7721 27.1434 22.8844 26.4508H20.2261Z" fill="white"/>
+                                        <path d="M28.733 18.5132H33.7876C34.7236 18.5132 35.9217 18.663 36.839 19.6177C37.5504 20.3478 37.9061 21.4336 37.9061 22.4258C37.9061 23.4929 37.5317 24.4289 36.9139 25.028C36.4272 25.496 35.7719 25.7768 35.1916 25.8891L39.1042 30.9999H35.0793L31.9717 26.2074V30.9999H28.733V18.5132ZM31.9717 21.0218V24.1107H32.5894C33.0762 24.1107 33.7688 23.9796 34.162 23.6052C34.4053 23.3619 34.5738 22.95 34.5738 22.5569C34.5738 22.1825 34.4241 21.7706 34.1432 21.5085C33.8437 21.209 33.3008 21.0218 32.5894 21.0218H31.9717Z" fill="white"/>
+                                        <path d="M40.4699 18.5132H43.7086V30.9999H40.4699V18.5132Z" fill="white"/>
+                                        <path d="M55.3056 26.8252V30.6629C54.0138 31.1309 53.3024 31.2807 52.4975 31.2807C50.3259 31.2807 48.6972 30.4195 47.6676 29.4086C46.4507 28.1918 45.7768 26.4882 45.7768 24.8595C45.7768 23.0811 46.5443 21.3962 47.6676 20.2542C48.7721 19.131 50.4382 18.3073 52.3851 18.3073C52.9842 18.3073 53.9577 18.4009 55.3056 18.9438V22.819C54.2572 21.5272 53.0216 21.4524 52.4787 21.4524C51.5427 21.4524 50.8313 21.7332 50.2323 22.2761C49.4647 22.9875 49.1465 23.9609 49.1465 24.8408C49.1465 25.7019 49.5022 26.6567 50.1574 27.2745C50.7003 27.7799 51.5614 28.1356 52.4787 28.1356C52.9655 28.1356 54.1636 28.0795 55.3056 26.8252Z" fill="white"/>
+                                        <path d="M57.3623 18.5132H60.601V25.9079C60.601 26.432 60.6197 27.237 61.2375 27.8361C61.6119 28.1918 62.211 28.4351 62.7726 28.4351C63.3342 28.4351 63.9145 28.2105 64.2702 27.8922C65.019 27.237 65.0003 26.3197 65.0003 25.6271V18.5132H68.239V25.6832C68.239 26.9937 68.1828 28.3603 66.8349 29.7269C65.7866 30.7939 64.4762 31.2807 62.7164 31.2807C60.7508 31.2807 59.3467 30.6067 58.5792 29.783C57.4934 28.6036 57.3623 27.0124 57.3623 25.6832V18.5132Z" fill="white"/>
+                                        <path d="M70.8543 18.5132H74.093V28.2479H77.9869V30.9999H70.8543V18.5132Z" fill="white"/>
+                                        <path d="M85.872 21.2652H83.2137V30.9999H79.9751V21.2652H77.3167V18.5132H85.872V21.2652Z" fill="white"/>
+                                        <path d="M87.308 18.5132H90.5466V25.9079C90.5466 26.432 90.5653 27.237 91.1831 27.8361C91.5575 28.1918 92.1566 28.4351 92.7182 28.4351C93.2798 28.4351 93.8602 28.2105 94.2159 27.8922C94.9647 27.237 94.946 26.3197 94.946 25.6271V18.5132H98.1846V25.6832C98.1846 26.9937 98.1285 28.3603 96.7806 29.7269C95.7322 30.7939 94.4218 31.2807 92.662 31.2807C90.6964 31.2807 89.2923 30.6067 88.5248 29.783C87.439 28.6036 87.308 27.0124 87.308 25.6832V18.5132Z" fill="white"/>
+                                        <path d="M100.8 18.5132H105.855C106.791 18.5132 107.989 18.663 108.906 19.6177C109.617 20.3478 109.973 21.4336 109.973 22.4258C109.973 23.4929 109.599 24.4289 108.981 25.028C108.494 25.496 107.839 25.7768 107.259 25.8891L111.171 30.9999H107.146L104.039 26.2074V30.9999H100.8V18.5132ZM104.039 21.0218V24.1107H104.656C105.143 24.1107 105.836 23.9796 106.229 23.6052C106.472 23.3619 106.641 22.95 106.641 22.5569C106.641 22.1825 106.491 21.7706 106.21 21.5085C105.911 21.209 105.368 21.0218 104.656 21.0218H104.039Z" fill="white"/>
+                                        <path d="M120.924 30.9999L120.156 28.9032H115.626L114.783 30.9999H111.357L116.15 18.5132H119.688L124.387 30.9999H120.924ZM116.524 26.432H119.295L117.891 22.3884L116.524 26.432Z" fill="white"/>
+                                        <path d="M125.828 18.5132H129.066V28.2479H132.96V30.9999H125.828V18.5132Z" fill="white"/>
+                                        <path d="M10.2774 44.8252V48.6629C8.9857 49.1309 8.27432 49.2807 7.46933 49.2807C5.29774 49.2807 3.66905 48.4195 2.63942 47.4086C1.42258 46.1918 0.748639 44.4882 0.748639 42.8595C0.748639 41.0811 1.51618 39.3962 2.63942 38.2542C3.74393 37.131 5.41007 36.3073 7.35701 36.3073C7.95607 36.3073 8.92954 36.4009 10.2774 36.9438V40.819C9.22907 39.5272 7.99351 39.4524 7.45061 39.4524C6.51458 39.4524 5.8032 39.7332 5.20414 40.2761C4.43659 40.9875 4.11835 41.9609 4.11835 42.8408C4.11835 43.7019 4.47404 44.6567 5.12926 45.2745C5.67215 45.7799 6.5333 46.1356 7.45061 46.1356C7.93735 46.1356 9.13546 46.0795 10.2774 44.8252Z" fill="white"/>
+                                        <path d="M19.4293 36.5132V39.2652H15.5729V41.3431H19.2234V44.0951H15.5729V46.2479H19.4293V48.9999H12.3342V36.5132H19.4293Z" fill="white"/>
+                                        <path d="M24.7321 48.9999H21.4934V36.5132H24.7321L30.7039 44.1512V36.5132H33.9426V48.9999H30.7039L24.7321 41.3619V48.9999Z" fill="white"/>
+                                        <path d="M43.9335 39.2652H41.2752V48.9999H38.0365V39.2652H35.3782V36.5132H43.9335V39.2652Z" fill="white"/>
+                                        <path d="M45.3695 36.5132H50.424C51.36 36.5132 52.5582 36.663 53.4755 37.6177C54.1868 38.3478 54.5425 39.4336 54.5425 40.4258C54.5425 41.4929 54.1681 42.4289 53.5504 43.028C53.0636 43.496 52.4084 43.7768 51.8281 43.8891L55.7407 48.9999H51.7157L48.6081 44.2074V48.9999H45.3695V36.5132ZM48.6081 39.0218V42.1107H49.2259C49.7126 42.1107 50.4053 41.9796 50.7984 41.6052C51.0418 41.3619 51.2103 40.95 51.2103 40.5569C51.2103 40.1825 51.0605 39.7706 50.7797 39.5085C50.4802 39.209 49.9373 39.0218 49.2259 39.0218H48.6081Z" fill="white"/>
+                                        <path d="M64.2015 36.5132V39.2652H60.345V41.3431H63.9956V44.0951H60.345V46.2479H64.2015V48.9999H57.1064V36.5132H64.2015Z" fill="white"/>
+                                    </svg>
+
+                                    <span class="logo-text">AAC</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="column">
+                            <p class="footer_description">The Australian Agricultural College (AAC) is dedicated to providing quality education and training in agriculture, agribusiness, and rural industries.</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="container footer-links">
+                <div class="row">
+                    <div class="column">
+                        <ul class="footer_menu">
+                            <li class="footer_menu_item"><a class="footer_menu_link" href="/about">About</a></li>
+                            <li class="footer_menu_item"><a class="footer_menu_link" href="/training">Training</a></li>
+                            <li class="footer_menu_item"><a class="footer_menu_link" href="/excursions">Excursions</a></li>
+                            <li class="footer_menu_item"><a class="footer_menu_link" href="/calendar">Calendar</a></li>
+                            <li class="footer_menu_item"><a class="footer_menu_link" href="/resources">Resources</a></li>
+                            <li class="footer_menu_item"><a class="footer_menu_link" href="/contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        <div class="container footer-bottom">
+            <div class="row">
+                <div class="column">
+                    <p class="footer_address">123 Agricultural Way, Brisbane, QLD 4000</p>
+                    <p class="footer_phone">Phone: (07) 1234 5678</p>
+                    <p class="footer_email">Email: <a href="mailto:
+
+            <p class="footer_credit">&copy; 2025 AAC. All rights reserved.</p>
+            <p class="footer_disclaimer">&copy; disclaimer.</p>
+            <p class="footer_links">
+                <a class="footer_link" href="/privacy-policy">Privacy Policy</a> | 
+                <a class="footer_link" href="/terms-of-service">Terms of Service</a> | 
+                <a class="footer_link" href="/sitemap">Sitemap</a>
+            </p>
+            <p class="footer_social">
+                <a class="footer_link" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a> | 
+                <a class="footer_link" href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a> | 
+                <a class="footer_link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </p>
+            
         </footer>
 
     <!-- JS -->
