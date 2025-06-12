@@ -54,6 +54,7 @@
     --letter-spacing-menu: var(--letter-spacing-loose);
     --letter-spacing-submenu: var(--letter-spacing-tight);
     --letter-spacing-submenu-title: var(--letter-spacing-loose);
+    --letter-spacing-button: var(--letter-spacing-loose);
 
     /* Font weights */
     --font-weight-regular: 400; /* Normal weight */

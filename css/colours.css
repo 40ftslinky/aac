@@ -35,6 +35,7 @@
     --tertiary: #7700C7;
     --tertiary_light: #577EFF;
     --tertiary_lighter: #57D2FF;
+    --tertiary_rgb: 119, 0, 199;
 
     /* mono */
     --mono_gradient: linear-gradient(45deg, #121212 0%, #2C2C2C 20%, #616161 75%, #A8A8A8 133%);
@@ -43,6 +44,7 @@
     --mono_light: #2C2C2C;
     --mono_lighter: #616161;
     --mono_lightest: #A8A8A8;
+    --mono_rgb: 44, 44, 44;
     
     --mono_100: #F2F2F2;
     --mono_200: #E0E0E0;
@@ -81,6 +83,7 @@
     --default_dark: var(--primary_dark);
     --default_lighter: var(--primary_lighter);
     --default_rgb: var(--primary_rgb);
+    --default_gradient: var(--primary_gradient);
 }
 .primary-bg {
     background-color: var(--primary);
@@ -104,6 +107,7 @@
     --default_dark: var(--secondary_dark);
     --default_lighter: var(--secondary_lighter);
     --default_rgb: var(--secondary_rgb);
+    --default_gradient: var(--secondary_gradient);
 }
 .secondary-bg {
     background-color: var(--secondary);
@@ -126,6 +130,8 @@
     --default_light: var(--tertiary_light);
     --default_dark: var(--tertiary_dark);
     --default_lighter: var(--tertiary_lighter);
+    --default_rgb: var(--tertiary_rgb);
+    --default_gradient: var(--tertiary_gradient);
 }
 .tertiary-bg {
     background-color: var(--tertiary);
@@ -174,6 +180,8 @@
     --default_light: var(--mono_light);
     --default_dark: var(--mono_dark);
     --default_lighter: var(--mono_lighter);
+    --default_rgb: var(--mono_rgb);
+    --default_gradient: var(--mono_gradient);
 }
 .mono-bg {
     background-color: var(--mono);
