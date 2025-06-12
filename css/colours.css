@@ -14,7 +14,7 @@
     --notblack-rgb: 18, 18, 18;    
 
     /* AAC/Primary/Gradient */
-    --primary_gradient: linear-gradient(45deg, #09AD35 -0.04%, #00C857 19.79%, #68D425 76.23%, #CDFF45 132.67%);
+    --primary_gradient: linear-gradient(45deg, #09AD35 0, #00C857 20%, #68D425 75%, #CDFF45 133%);
     --primary_dark: #09AD35;
     --primary: #00C857;
     --primary_light: #68D425;
@@ -22,7 +22,7 @@
     --primary_rgb: 0, 200, 87;
 
     /* AAC/Secondary/Gradient */
-    --secondary_gradient:  linear-gradient(45deg, #FF3511 -0.04%, #FF7230 19.79%, #FFA200 76.23%, #FFCC00 132.67%);
+    --secondary_gradient:  linear-gradient(45deg, #FF3511 0%, #FF7230 20%, #FFA200 75%, #FFCC00 133%);
     --secondary_dark: #FF3511;
     --secondary: #FF7230;
     --secondary_light: #FFA200;
@@ -30,14 +30,14 @@
     --secondary_rgb: 255, 114, 48;
 
     /* AAC/Tertiary/Gradient */
-    --tertiary_gradient: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(45deg, #5F0066 -0.04%, #7700C7 19.79%, #577EFF 76.23%, #57D2FF 132.67%);
+    --tertiary_gradient: linear-gradient(45deg, #5F0066 0%, #7700C7 20%, #577EFF 75%, #57D2FF 133%);
     --tertiary_dark: #5F0066;
     --tertiary: #7700C7;
     --tertiary_light: #577EFF;
     --tertiary_lighter: #57D2FF;
 
     /* mono */
-    --mono_gradient: linear-gradient(45deg, #121212 -0.04%, #2C2C2C 19.79%, #616161 76.23%, #A8A8A8 132.67%);
+    --mono_gradient: linear-gradient(45deg, #121212 0%, #2C2C2C 20%, #616161 75%, #A8A8A8 133%);
     --mono_dark: #121212;
     --mono: #2C2C2C;
     --mono_light: #2C2C2C;

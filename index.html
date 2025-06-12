@@ -7,7 +7,7 @@
         <title>AAC Home</title>
         <link rel="stylesheet" href="css/style.css">
 
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -24,11 +24,12 @@
         <meta property="og:image" content="">
         <meta property="og:image:alt" content="">
 
-        <link rel="icon" href="/favicon.ico" sizes="any">
-        <link rel="icon" href="/icon.svg" type="image/svg+xml">
-        <link rel="apple-touch-icon" href="icon.png">
+        
+        <link rel="icon" href="favicon/favicon.ico" sizes="any">
+        <link rel="apple-touch-icon" href="favicon/favicon.png">
+        <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
 
-        <!-- <link rel="manifest" href="site.webmanifest"> -->
+        <link rel="manifest" href="favicon/site.webmanifest">
         <meta name="theme-color" content="#fafafa">
     </head>
 
@@ -252,9 +253,14 @@
         <main>
 
             
-            <section class="">
-                
+            <section class="typography-section">
                 <div class="container">
+                    <div class="row">
+                        <div class="column">
+                            <h2 class="template-heading">Typography</h2>
+                        </div>
+                    </div>
+                
                     <div class="row">
                         <div class="column">
                             <h1>Heading 1</h1>
@@ -279,13 +285,23 @@
                             </blockquote>
 
                             <p>Hello world!</p>
+
+                            <p>Lorem ipsum dolor sit amet consectetur. Amet aliquet elit morbi pellentesque. Habitasse hendrerit egestas aliquam cras id. Aliquet mauris tellus diam magna ullamcorper duis. Eleifend in in nisi ultricies pellentesque gravida at faucibus massa. Sem nulla aliquam volutpat sit est. Id vitae volutpat mi ultrices id tincidunt ante suscipit interdum. Odio justo urna quam vitae venenatis enim purus laoreet.</p>
+
+
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section>
+            <section class="colour-palette-section">
                 <div class="container">
+                    <div class="row">
+                        <div class="column">
+                            <h2 class="template-heading">Colour Palette</h2>
+                        </div>
+                    </div>
+                
                     <div class="row">
                         <div class="column">
                             <h6>Colour Palette</h6>
@@ -448,6 +464,144 @@
                 </div>
             </section>
 
+            <section class="icons-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="column">
+                            <h2 class="template-heading">Icons</h2>
+                        </div>
+                    </div>
+                
+                    <div class="row">
+                        <div class="column">
+                            <h6>Icon Set</h6>
+                            <p>All icons are available in the SVG format and can be used in your projects.</p>
+                            <ul class="icon-list">
+                                <li><a href="/icons/arrow-right"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 18L15 12L9 6" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Arrow Right</a></li>
+                                <li><a href="/icons/arrow-left"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 18L9 12L15 6" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Arrow Left</a></li>
+                                <li><a href="/icons/checkmark"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12L10 17L19 7" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Checkmark</a></li>
+                                <li><a href="/icons/cross"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 18L18 6M6 6L18 18" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Cross</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="buttons-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="column">
+                            <h2 class="template-heading">Buttons</h2>
+                        </div>
+                    </div>
+                
+                    <div class="row">
+                        <div class="column">
+                            <h6>Button Styles</h6>
+                            <p>Use these buttons in your projects.</p>
+                            <button class="btn primary-btn">Primary Button</button>
+                            <button class="btn secondary-btn">Secondary Button</button>
+                            <button class="btn tertiary-btn">Tertiary Button</button>
+                            <button class="btn mono-btn">Mono Button</button>
+
+                            <a class="button btn primary-btn">Primary Button</a>
+                            <a class="button btn secondary-btn">Secondary Button</a>
+                            <a class="button btn tertiary-btn">Tertiary Button</a>
+                            <a class="button btn mono-btn">Mono Button</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="forms-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="column">
+                            <h2 class="template-heading">Forms</h2>
+                        </div>
+                    </div>
+                
+                    <div class="row">
+                        <div class="column">
+                            <h6>Form Styles</h6>
+                            <p>Use these form styles in your projects.</p>
+                            <form>
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                                
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                                <button type="submit" class="btn primary-btn">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="images-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="column">
+                            <h2 class="template-heading">Images</h2>
+                        </div>
+                    </div>
+                
+                    <div class="row">
+                        <div class="column">
+                            <h6>Image Styles</h6>
+                            <p>Use these image styles in your projects.</p>
+                            
+                            <p>Sample image with a placeholder. Replace with your own images as needed.</p>
+                            
+                            <div class="group">
+                                <div class="img_wrapper aspect-ratio-16-9">
+                                    <img src="assets/images/placeholder.png" alt="Sample Image" class="sample-image">
+                                </div> 
+
+                                <div class="img_wrapper aspect-ratio-16-9">
+                                    <img src="assets/images/placeholder.png" alt="Sample Image" class="sample-image">
+                                </div>
+                            </div>
+
+                            <div class="group">
+                                <div class="img_wrapper aspect-ratio-1-1">
+                                    <img src="assets/images/placeholder.png" alt="Sample Image" class="sample-image">
+                                </div> 
+
+                                <div class="img_wrapper aspect-ratio-1-1">
+                                    <img src="assets/images/placeholder.png" alt="Sample Image" class="sample-image">
+                                </div>
+
+                                <div class="img_wrapper aspect-ratio-1-1">
+                                    <img src="assets/images/placeholder.png" alt="Sample Image" class="sample-image">
+                                </div>
+                            </div>
+
+                            <div class="group">
+                                <div class="img_wrapper aspect-ratio-3-2">
+                                    <img src="assets/images/placeholder.png" alt="Sample Image" class="sample-image">
+                                </div> 
+
+                                <div class="img_wrapper aspect-ratio-3-2">
+                                    <img src="assets/images/placeholder.png" alt="Sample Image" class="sample-image">
+                                </div>
+
+                                <div class="img_wrapper aspect-ratio-3-2">
+                                    <img src="assets/images/placeholder.png" alt="Sample Image" class="sample-image">
+                                </div>
+
+                                <div class="img_wrapper aspect-ratio-3-2">
+                                    <img src="assets/images/placeholder.png" alt="Sample Image" class="sample-image">
+                                </div>
+                            </div>
+
+                            <img src="assets/images/placeholder.png" alt="Sample Image" class="sample-image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </main>
 
 
@@ -489,7 +643,7 @@
                                         <path d="M64.2015 36.5132V39.2652H60.345V41.3431H63.9956V44.0951H60.345V46.2479H64.2015V48.9999H57.1064V36.5132H64.2015Z" fill="white"/>
                                     </svg>
 
-                                    <span class="logo-text">AAC</span>
+                                    <span class="logo-text visually-hidden">AAC</span>
                                 </div>
                             </a>
                         </div>
@@ -500,6 +654,14 @@
             </div>
             <div class="container footer-links">
                 <div class="row">
+                    <div class="column">
+                        <div class="footer_address">
+                            <p class="footer_address">123 Agricultural Way, Brisbane, QLD 4000</p>
+                            <p class="footer_phone">Phone: (07) 1234 5678</p>
+                            <p class="footer_email">Email: <a href="mailto:info@austrlainagriculturalcentre.com.au" class="footer_email_link">info@austrlainagriculturalcentre.com.au</a>
+                                </p>
+                        </div>
+                    </div>
                     <div class="column">
                         <ul class="footer_menu">
                             <li class="footer_menu_item"><a class="footer_menu_link" href="/about">About</a></li>
@@ -512,25 +674,32 @@
                     </div>
                 </div>
             </div>
-        <div class="container footer-bottom">
-            <div class="row">
-                <div class="column">
-                    <p class="footer_address">123 Agricultural Way, Brisbane, QLD 4000</p>
-                    <p class="footer_phone">Phone: (07) 1234 5678</p>
-                    <p class="footer_email">Email: <a href="mailto:
 
-            <p class="footer_credit">&copy; 2025 AAC. All rights reserved.</p>
-            <p class="footer_disclaimer">&copy; disclaimer.</p>
-            <p class="footer_links">
-                <a class="footer_link" href="/privacy-policy">Privacy Policy</a> | 
-                <a class="footer_link" href="/terms-of-service">Terms of Service</a> | 
-                <a class="footer_link" href="/sitemap">Sitemap</a>
-            </p>
-            <p class="footer_social">
-                <a class="footer_link" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a> | 
-                <a class="footer_link" href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a> | 
-                <a class="footer_link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-            </p>
+            <div class="container footer-bottom">
+                <div class="row">
+                    <div class="column">
+                        <div class="footer_bottom_content">
+                            <div class="footer_bottom_left">
+                        
+                                <p class="footer_credit">&copy; 2025 AAC. All rights reserved.</p>
+                                <p class="footer_disclaimer">* disclaimer.</p>
+                                <p class="footer_links">
+                                    <a class="footer_link" href="/privacy-policy">Privacy Policy</a> | 
+                                    <a class="footer_link" href="/terms-of-service">Terms of Service</a> | 
+                                    <a class="footer_link" href="/sitemap">Sitemap</a>
+                                </p>
+                            </div>
+                            <div class="footer_bottom_right">
+                                <p class="footer_social">
+                                    <a class="footer_link" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a> | 
+                                    <a class="footer_link" href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a> | 
+                                    <a class="footer_link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             
         </footer>
 

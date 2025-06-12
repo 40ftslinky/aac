@@ -1,0 +1,37 @@
+/* buttons */
+
+/* Button */
+
+.button {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 36px;
+    background: var(--primary);
+    background: var(--primary_gradient);
+    border: 2px solid var(--primary);
+    border-radius: 50px;
+
+    color: var(--black);
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    font-family: var(--font-family-brand);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-button);
+    letter-spacing: var(--letterspacing-button);
+    text-transform: uppercase;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.button:hover {
+    background: var(--primary_dark);
+    color: var(--notblack);
+    text-decoration: none;
+}
