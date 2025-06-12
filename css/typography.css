@@ -191,13 +191,13 @@ ul, ol {
 li {
     margin-bottom: 0.5rem;
 }
-small {
+small, .small {
     font-family: var(--font-body);
     font-size: var(--font-size-small);
     line-height: var(--line-height-regular);
     color: var(--text-color-muted);
 }
-strong, b {
+strong, b, .bold, .strong {
     font-family: var(--font-body);
     font-weight: var(--font-weight-bold);
 }
@@ -206,6 +206,15 @@ em, i {
     font-style: var(--font-style-italic);
 }
 
+.uppercase {
+    text-transform: var(--text-transform-uppercase);
+}
+.lowercase {
+    text-transform: var(--text-transform-lowercase);
+}
+.capitalize {
+    text-transform: var(--text-transform-capitalize);
+}
 
 /*  */
 

@@ -46,7 +46,9 @@
     --transition-slow-part:500ms cubic-bezier(0.5, 0, 0.75, 0) 500ms;
 
     /* shadow */
+    --shadow-transparent: 0 0 0px transparent;
     --shadow-regular: 0 0 1.5rem rgba(0, 0, 0, 0.1);
+    --shadow-strong: 0 0 2rem rgba(0, 0, 0, 0.5);
 
     /* blur */
     --backdrop-blur: blur(10px);
