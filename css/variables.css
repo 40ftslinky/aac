@@ -70,6 +70,15 @@
     --aspect-ratio-1-2: 1 / 2;
     --aspect-ratio-9-21: 9 / 21;
 
+    /* radius */
+    --radius: 0.5rem; /* 8px */
+    --radius-large: 1rem; /* 16px */
+    --radius-xlarge: 2rem; /* 32px */
+    --radius-pill: 50px; /* 50px */
+    --radius-circle: 50%; /* 50% */
+    --radius-square: 0; /* 0px */
+    --radius-button: 50px; /* 50px */
+
    /* z-index */
     --z-index-grad: 11;
     --z-index-logo: 1001;
