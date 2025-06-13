@@ -45,6 +45,7 @@
     --nav-width: 615px;
     --nav-seconday-width: 100px;
     --hero-height: calc(100vh - var(--header-height));
+    --hamburger-height: 50px;
 
     /*  */
     --button-padding-h:1rem;

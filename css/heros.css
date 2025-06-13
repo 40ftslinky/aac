@@ -1,32 +1,6 @@
 /* heros */
 
-/* .hero {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background: url('../images/hero.jpg') no-repeat center center/cover;
-}
-.hero .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: var(--gap-large);
-  width: 100%;
-  max-width: 1440px;
-  padding: var(--gutter);
-  box-sizing: border-box;
-}
-.hero h1 {
-  font-size: 3rem;
-  color: var(--white);
-  text-align: center;
-}
-.hero p {
-  font-size: 1.25rem;
-  color: var(--white);
-  text-align: center;
-} */
+
 
 .section {
     padding-block: 32px;
@@ -53,80 +27,115 @@
     height: inherit;
     border-radius: 32px;
 }
+
+
+@media (min-width: 1040px) {
+    .generic-hero {
+        border-radius: 48px;
+    }
+}
+
 .generic-hero.full-width {
-    margin: auto 12px;
+    margin: auto 0;
+    width: 100%;
+}
+.generic-hero.square-width {
+    width: 100%;
 }
 
 @media (min-width: 1040px) {
     .generic-hero.full-width {
-        margin: auto 16px;
+        margin: auto 0;
     }
 }
-.has-image .generic-hero__content.has-gradient.generic-hero__content--align-left {
-    background: var(--overlay-left, linear-gradient(270deg, rgba(39 41 38 / 0%) 0%, rgba(39 41 38 / 50%) 85%));
-}
-.generic-hero.full-width.has-image .generic-hero__content {
-    min-height: 70vh;
+
+
+/* generic-hero-image */
+
+.generic-hero__image, 
+.generic-hero-image  {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
 }
 
 
-.generic-hero__content {
+/* .generic-hero-content */
+
+.generic-hero__content,
+.generic-hero-content {
     pointer-events: none;
     display: flex;
     width: 100%;
-}
+    flex-direction: column;
+    justify-content: center;
 
-
-.generic-hero__content--align-left {
-    justify-content: left;
     padding-right: 0%;
     padding-left: 0%;
+    padding: 3rem;
 }
 
+
+.generic-hero-content {
+    min-height: 70vh;
+}
 @media (min-width: 1040px) {
-    .generic-hero__content--align-left {
+    .generic-hero__content--align-left,
+    .generic-hero-content-item {
         padding-right: 48px;
     }
 }
 
-
-.generic-hero.full-width.has-image .generic-hero__content {
-    min-height: 70vh;
-}
-
-
-
-.has-image .generic-hero__content.has-gradient.generic-hero__content--align-left,
-.has-gradient {
+.has-image .generic-hero__content.has-gradient.generic-hero__content,
+.generic-hero-content.has-gradient {
     background: var(--overlay-left, linear-gradient(270deg, rgba(39 41 38 / 0%) 0%, rgba(39 41 38 / 50%) 85%));
 }
 
-.generic-hero__content-item {
-    transform: translateY(24px);
+.generic-hero__content-item,
+.generic-hero-content-item {
     width: 100%;
     padding: 32px;
-    opacity: 0;
     transition: transform .6s ease-out, opacity .6s ease-out;
 }
+.animate_text {
+    transform: translateY(24px);
+    opacity: 0;
+}
 
+@media (min-width: 768px) {
+    .generic-hero__content-item,
+    .generic-hero-content-item {
+        max-width: 768px;
+        padding: 64px;
+    }
+}
 @media (min-width: 1040px) {
-    .generic-hero__content-item {
+    .generic-hero__content-item,
+    .generic-hero-content-item {
         max-width: 768px;
         padding: 64px;
     }
 }
 
-.generic-hero__content-item--title {
-    font-size: 2.5rem;
-    line-height: 1.2;
+.generic-hero__content-item--title,
+.generic-hero-content-item--title,
+.generic-hero-title {
+    font-size: var(--font-size-hero-title);
+    line-height: var(--line-height-hero-title);
+    font-weight: var(--font-weight-regular);
     color: var(--white);
 }
-.generic-hero__content-item--subtitle {
-    font-size: 1.25rem;
-    line-height: 1.5;
+.generic-hero__content-item--subtitle,
+.generic-hero-subtitle {
+    font-size: var(--font-size-hero-subtitle);
+    line-height: var(--line-height-small);
+    font-weight: var(--font-weight-light);
     color: var(--notwhite);
 }
-.generic-hero__content-item--text {
+.generic-hero__content-item--text,
+.generic-hero-text {
     font-size: 1rem;
     line-height: 1.5;
     color: var(--notwhite);

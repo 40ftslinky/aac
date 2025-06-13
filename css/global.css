@@ -46,13 +46,18 @@ hr.redbar {
 }
 
 /* ----------------------- */
-/* images */
+/* media */
 
 img {
     width: 100%;
     max-width: unset;
     height: auto;
     display: block;
+}
+
+img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    vertical-align: middle;
 }
 
 .img_wrapper, .img_wrap, .card-image {
@@ -70,6 +75,7 @@ img {
     background-color: var(--grey_100);
     /* border-radius: var(--radius-large); */
 }
+
 
 /* ----------------------- */
 /* aspect-ratio */

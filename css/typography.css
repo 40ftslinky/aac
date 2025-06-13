@@ -32,16 +32,20 @@
     --font-size-submenu: 13px;
     --font-size-submenu-title: 13px;
     --font-size-button: 14px;
+    --font-size-hero-title: var(--font-size-heading-1);
+    --font-size-hero-subtitle: 48px;
 
     /* --font-size-heading-3: clamp(1.125rem,1.5vw + 1rem,1.75rem); */
 
     /* Line heights */
-    --line-height-small: 1.1; /* 1.1em */
+    --line-height-tight: 0.85; /* 1.1em */
+    --line-height-small: 1; /* 1.1em */
     --line-height-regular: 1.2; /* 1.2em */
     --line-height-body: 1.55; /* 1.55em */
     --line-height-large: 1.75; /* 1.75em */
     --line-height-blockquote: 38px;
     --line-height-button: 1.5725; /* total 48px */
+    --line-height-hero-title: var(--line-height-tight); /* 1.1em */
 
     /* Letter spacings */
     --letter-spacing-small: 0.05rem; /* 0.05em */
@@ -59,6 +63,7 @@
     --letter-spacing-button: var(--letter-spacing-loose);
 
     /* Font weights */
+    --font-weight-light: 300; /* Light weight */
     --font-weight-regular: 400; /* Normal weight */
     --font-weight-medium: 500; /* Medium weight */
     --font-weight-semibold: 600; /* Semibold weight */
@@ -113,6 +118,12 @@ body {
     padding: 0;
 }
 
+p, h1, h2, h3, h4, h5, h6 {
+    -webkit-hyphens: none;
+    hyphens: none;
+    overflow-wrap: break-word;
+    font-style:normal
+}
 
 
 h1, h2, h3, h4, h5, h6 {
@@ -228,7 +239,7 @@ h1, .h1, .display-1 {
     letter-spacing: -0.5rem;
 }
 
-.subhead, .display-2 {
+.subtitle, .subhead, .display-2 {
 
     line-height: 1.1;
     letter-spacing: -3px;

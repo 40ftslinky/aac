@@ -99,6 +99,14 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+*, :before, :after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: currentColor;
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
