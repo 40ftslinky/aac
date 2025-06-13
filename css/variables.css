@@ -7,8 +7,21 @@
     
     /* spacing */
     --gutter: 5vw /*6rem*/;
+
+    /* padding */
+    --padding-sm: 0.5rem;
+    --padding-small: 0.5rem;
+    --padding: 1rem;
+    --padding-medium: 1.5rem;
+    --padding-regular: 2rem;
+    --padding-large: 4rem;
+    --padding-xlarge: 6rem;
+    --padding-xs: 0.75rem;
+
+    /* gap */
     --gap-sm: 1rem;
     --gap-small: 1rem;
+    --gap-medium: 1.5rem;
     --gap: 2rem;
     --gap-large: 4rem;
     --gap-large: calc(70/1920 *100vw);
@@ -71,7 +84,7 @@
     --aspect-ratio-9-21: 9 / 21;
 
     /* radius */
-    --radius: 0.5rem; /* 8px */
+    --radius-small: 0.5rem; /* 8px */
     --radius-large: 1rem; /* 16px */
     --radius-xlarge: 2rem; /* 32px */
     --radius-pill: 50px; /* 50px */
