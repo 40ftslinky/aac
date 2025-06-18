@@ -20,7 +20,20 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 
 /* Add your own CSS reset styles below this line */
 
-
+body {
+    /* -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility; */
+}
+body {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    overflow-wrap: break-word;
+}
 
 /* ==========================================================================
    Base styles: opinionated defaults

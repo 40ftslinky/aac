@@ -85,10 +85,10 @@
     --aspect-ratio-9-21: 9 / 21;
 
     /* radius */
-    --radius-small: 0.5rem; /* 8px */
-    --radius-large: 1rem; /* 16px */
-    --radius-xlarge: 2rem; /* 32px */
-    --radius-pill: 50px; /* 50px */
+    --radius-small: 0.5rem; /* 5px */
+    --radius-large: 2.4rem; /* 24px */
+    --radius-xlarge: 4.8rem; /* 48px */
+    --radius-pill: 5rem; /* 50px */
     --radius-circle: 50%; /* 50% */
     --radius-square: 0; /* 0px */
     --radius-button: 50px; /* 50px */

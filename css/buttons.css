@@ -30,8 +30,9 @@ button,
     padding: 11px 24px;
     outline: none;
     /* border: none; */
-    border: 2px solid rgba(var(--default-rgb),0);
-    outline-offset: 2px;
+    border: 2px solid rgba(var(--default_rgb),0);
+    /* border: 2px solid transparent; */
+    /* outline-offset: 2px; */
     border-radius: var(--radius-button);
     color: var(--notwhite);
     /*  */
@@ -60,8 +61,8 @@ button,
         background-position: right center;
     }
     &:focus {
-        outline: 4px solid var(--default);
-        outline-offset: 0;
+        /* outline: 4px solid var(--default);
+        outline-offset: 0; */
         text-decoration: none;
     }
     &:active {
@@ -81,7 +82,7 @@ button,
 
 
 .outline {
-    background: transparent;
+    background: var(--white);
     border: 2px solid var(--default);
     color: var(--default);
     &:hover {
@@ -93,7 +94,7 @@ button,
 }
 
 .ghost {
-    background: var(--white);
+    background: transparent;
     border: 1px solid var(--notblack);
     color: var(--default);
     &:hover {

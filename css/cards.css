@@ -2,6 +2,24 @@
 /* ----------------------- */
 /* CARDS */
 
+/* ----------------------- */
+/* template */
+
+.colour-palette-row {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+@media (min-width: 576px) {
+    .colour-palette-row {
+        flex-wrap: unset;
+    }
+}
+/*   */
+
 .card {
     display: flex;
     flex-direction: column;
@@ -16,16 +34,25 @@
     overflow: hidden;
     box-shadow: 0 0 0px transparent;
     transition: transform 0.6s ease-in-out;
+    position: relative;
 }
 .card:hover {
     /* transform: translateY(-0.5rem); */
     box-shadow: var(--shadow-regular);
 }
 
-
-.card-sm {
+.card-sm, .card-1-6 {
     width: 100%;
-    max-width: 20rem;
+}
+@media (min-width: 576px) {
+    .card-sm, .card-1-6 {
+        max-width: calc(var(--max-col-width)/2 - (var(--gap)*2/1));
+    }
+}
+@media (min-width: 768px) {
+    .card-sm, .card-1-6 {
+        max-width: calc(var(--max-col-width)/6 - (var(--gap)*6/5));
+    }
 }
 
 .card .image {
