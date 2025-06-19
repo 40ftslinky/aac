@@ -17,7 +17,8 @@ a>*, button>*, .button>* {
 
 /* Button */
 button,
-.button {
+.button,
+input[type="submit"] {
     box-sizing: content-box;
     display: flex;
     flex-direction: row;
@@ -50,6 +51,7 @@ button,
     box-shadow: var(--shadow-transparent);
     transition: var(--transition);
     cursor: pointer;
+    white-space: nowrap;
     
     &:hover {
         color: var(--white);
@@ -73,10 +75,19 @@ button,
 }
 
 
+.button-medium {
+    /* padding: 11px 24px; */
+    padding: 10px 20px;
+    font-size: var(--font-size-regular);
+    letter-spacing: var(--letter-spacing-button);
+    line-height: 1.325; /* to match field height */
+}
+
 .button-small {
+    /* padding: 11px 24px; */
     padding: 8px 16px;
     font-size: var(--font-size-small);
-    letter-spacing: var(--letter-spacing-tight);
+    letter-spacing: var(--letter-spacing-button);
 }
 
 
@@ -88,7 +99,7 @@ button,
     &:hover {
         /*  */
         background: var(--default);
-        color: var(--notwhite);
+        color: var(--notwhite) ;
         box-shadow: var(--shadow-regular);
     }
 }
@@ -99,8 +110,8 @@ button,
     color: var(--default);
     &:hover {
         background: var(--white);
-        border: 1px solid var(--notblack);
-        color: var(--notblack);
+        border: 1px solid var(--default) !important;
+        color: var(--notblack) !important;
         box-shadow: var(--shadow-regular);
     }
 }

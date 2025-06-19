@@ -29,7 +29,8 @@
     display: block;
     width: auto;
     height: inherit;
-    border-radius: 32px;
+    border-radius: var(--radius);
+    /* border-radius: 32px; */
 }
 .split-hero  {}
 
@@ -37,7 +38,7 @@
 @media (min-width: 1080px) {
     .generic-hero,
     .split-hero {
-        border-radius: 48px;
+        /* border-radius: 48px; */
     }
 }
 
@@ -64,13 +65,13 @@
 .split-hero-image.image-wrapper,
 .split-hero-image.image-wrap  {
     overflow: hidden;
-    border-radius: 32px;
+    border-radius: var(--radius);
 }
 @media (min-width: 1080px) {
     .hero-split__img-wrapper,
     .split-hero-image.image-wrapper,
     .split-hero-image.image-wrap {
-        border-radius: 48px;
+        /* border-radius: 48px; */
     }
 }
 

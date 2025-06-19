@@ -61,7 +61,8 @@ img, svg, video, canvas, audio, iframe, embed, object {
 }
 
 .img_wrapper, .img_wrap, .image-wrap,
-.card-image, 
+.card-image,
+.grid-item-image,
 .section-image-wrap, 
 .standard-image-wrap {
     width: 100%;
@@ -76,7 +77,7 @@ img, svg, video, canvas, audio, iframe, embed, object {
     height: auto;
     overflow: hidden;
     background-color: var(--grey_100);
-    border-radius: var(--radius-xlarge);
+    /* border-radius: var(--radius); */
 }
 
 .has-overlay:before {
@@ -92,15 +93,16 @@ img, svg, video, canvas, audio, iframe, embed, object {
 
 /*  */
 
+.grid-item-image,
 .image-wrap,
 .standard-image-wrap img  {
     overflow: hidden;
-    border-radius: 32px;
+    border-radius: var(--radius);
 }
 @media (min-width: 1080px) {
     .image-wrap,
     .standard-image-wrap img {
-        border-radius: 48px;
+        /* border-radius: 48px; */
     }
 }
 
@@ -108,14 +110,13 @@ img, svg, video, canvas, audio, iframe, embed, object {
 .section-image-wrap,
 .standard-image-wrap {
     padding: 32px;
-    
+    border-radius: var(--radius);
 }
 
 @media (min-width: 768px) {
     .section-image-wrap,
     .standard-image-wrap {
         padding: 48px;
-        
     }
 }
 
@@ -224,6 +225,20 @@ section.hero .container {
     align-items: stretch;
 }
 
+.inline {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: var(--gap);
+}
+@media screen and (max-width: 880px) {
+    .inline {
+        flex-wrap: wrap;
+        /* gap: var(--gap) */
+    }
+}
+
 
 @media screen and (max-width: 880px) {
     .row {
@@ -245,6 +260,7 @@ section.hero .container {
     gap: var(--gap-large); 
 }
 
+
 .col, .column, .left-column, .right-column {
     display: flex;
     justify-content: flex-start;
@@ -259,7 +275,12 @@ section.hero .container {
     max-width: var(--max-col-width);
     box-sizing: border-box;
 }
-
+@media screen and (max-width: 880px) {
+    .column, .col {
+        flex-wrap: wrap;
+        /* gap: var(--gap) */
+    }
+}
 
 /* ----------------------- */
 /* VIDEO */

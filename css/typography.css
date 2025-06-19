@@ -18,6 +18,7 @@
     --font-size-small: 1rem; /* 12px */
     --font-size-body: 1.8rem; /* 18px */
     --font-size-label: 1.2rem; /* 12px */
+    --font-size-regular: 1.2rem; /* 12px */
     --font-size-medium: 1.6rem; /* 16px */
     --font-size-large: 2.0rem; /* 20px */
     --font-size-footer: 1.2rem; /* 12px */
@@ -41,7 +42,7 @@
     --font-size-menu: 13px;
     --font-size-submenu: 13px;
     --font-size-submenu-title: 13px;
-    --font-size-button: 14px;
+    --font-size-button: 1.4rem; /* 14px */
     --font-size-hero-title: var(--font-size-heading-1);
     /* --font-size-hero-subtitle: 48px; */
     --font-size-hero-subtitle: clamp(3.6rem, 1.3929rem + 1.7857vw, 4.8rem);
@@ -112,7 +113,7 @@
     --text-color-primary: #222; /* Primary text color */
     --text-color-secondary: #555; /* Secondary text color */
     --text-color-muted: #888; /* Muted text color */
-    --text-color-accent: #007bff; /* Accent text color */
+    --text-color-accent: var(--primary); /* Accent text color */
 }
 
 /* Typography styles */

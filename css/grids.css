@@ -114,11 +114,11 @@
 
 .card-image {
     position: relative;
-    margin-block-end: 16px;
+    /* margin-block-end: 16px; */
 }
 @media (min-width: 1080px) {
     .card-image {
-        margin-block-end: 24px;
+        /* margin-block-end: 24px; */
     }
 }
 

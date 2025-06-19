@@ -86,12 +86,15 @@
 
     /* radius */
     --radius-small: 0.5rem; /* 5px */
-    --radius-large: 2.4rem; /* 24px */
+    --radius-medium: 2.4rem; /* 24px */
+    --radius-large: 3.2rem; /* 32px */
     --radius-xlarge: 4.8rem; /* 48px */
     --radius-pill: 5rem; /* 50px */
     --radius-circle: 50%; /* 50% */
     --radius-square: 0; /* 0px */
     --radius-button: 50px; /* 50px */
+    --border-radius: var(--radius);
+
 
    /* z-index */
     --z-index-grad: 11;
@@ -107,6 +110,22 @@
     --text-white: var(--white)
 }
 
+@media screen and (min-width: 768px) {
+    :root {
+        --radius: var(--radius-medium);
+    }
+}
+@media screen and (min-width: 1080px) {
+    :root {
+        --radius: var(--radius-large);
+    }
+}
+@media screen and (min-width: 1440px) {
+    :root {
+        --radius: var(--radius-xlarge);
+    }
+}
+
 .is-scrolled {
     --header-height: 70px;
     --logo-width: 120px;
@@ -118,14 +137,14 @@
     --default: var(--color-primary);
     --default-light: var(--color-primary-light);
     --default-dark: var(--color-primary-dark);
-    --default-rgb: var(--color-primary-rgb);
+    --default_rgb: var(--color-primary_rgb);
 }
 
 .secondary {
     --default: var(--color-secondary);
     --default-light: var(--color-secondary-light);
     --default-dark: var(--color-secondary-dark);
-    --default-rgb: var(--color-secondary-rgb);
+    --default_rgb: var(--color-secondary_rgb);
 }
 
 .tertiary {
@@ -133,7 +152,7 @@
     --default-light: var(--color-tertiary-light);
     --default-dark: var(--color-tertiary-dark);
     --default-overlay: var(--color-tertiary-overlay);
-    --default-rgb: var(--color-tertiary-rgb);
+    --default_rgb: var(--color-tertiary_rgb);
 }
 
 .alternate {
@@ -141,14 +160,14 @@
     --default-light: var(--color-alternate-light);
     --default-dark: var(--color-alternate-dark);
     --default-overlay: var(--color-alternate-overlay);
-    --default-rgb: var(--color-alternate-rgb);
+    --default_rgb: var(--color-alternate_rgb);
 }
 
 .dark {
     --default: var(--color-dark);
     --default-light: var(--color-dark-light);
     --default-dark: var(--color-dark-dark);
-    --default-rgb: var(--color-dark-rgb);
+    --default_rgb: var(--color-dark_rgb);
     --opposite: var(--color-light);
 }
 
@@ -156,7 +175,7 @@
     --default: var(--color-light);
     --default-light: var(--color-light-light);
     --default-dark: var(--color-light-dark);
-    --default-rgb: var(--color-light-rgb);
+    --default_rgb: var(--color-light_rgb);
     --opposite: var(--color-dark);
 }
 

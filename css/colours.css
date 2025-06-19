@@ -5,13 +5,13 @@
 :root {
 
     --white: #fff;
-    --white-rgb: 255, 255, 255;
+    --white_rgb: 255, 255, 255;
     --notwhite: #F2F2F2;
     
     --black: #000;
     --notblack: #121212;
-    --black-rgb: 0, 0, 0;
-    --notblack-rgb: 18, 18, 18;    
+    --black_rgb: 0, 0, 0;
+    --notblack_rgb: 18, 18, 18;    
 
     /* AAC/Primary/Gradient */
     --primary_gradient: linear-gradient(45deg, #09AD35 0, #00C857 20%, #68D425 75%, #CDFF45 133%);
@@ -71,11 +71,27 @@
     --grey_800: #6F6F6F;
     --grey_900: #5F5F5F;
     --grey_1000: #4f4f4f;
-    --grey-rgb: 49, 49, 49;
+    --grey_rgb: 49, 49, 49;
+
+    --error: #FF0000; /* Red */
+    --error_rgb: 255, 0, 0;
+
+    --success: #00FF00; /* Green */
+    --success_rgb: 0, 255, 0;
     
 }
 
+/* SPECIFIC CLASSES */
 /* Primary, Secondary, Tertiary, Mono, Grey Colours */
+
+:root {
+    --default: #212121;
+    --default_light: #e0e0e0;
+    --default_dark: #101010;
+    --default_lighter: #f0f0f0;
+    --default_rgb: 33, 33, 33 ;
+    --default_gradient: var(--mono_gradient);
+}
 
 .primary {
     --default: var(--primary);
