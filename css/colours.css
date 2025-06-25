@@ -73,11 +73,16 @@
     --grey_1000: #4f4f4f;
     --grey_rgb: 49, 49, 49;
 
+    --overlay-left: linear-gradient(270deg, rgba(var(--notblack_rgb),0.0) 0%,rgba(var(--notblack_rgb),0.4) 100%);
+
+
     --error: #FF0000; /* Red */
     --error_rgb: 255, 0, 0;
 
     --success: #00FF00; /* Green */
     --success_rgb: 0, 255, 0;
+
+    --warning: #FFA500; /* Orange */
     
 }
 
@@ -100,6 +105,9 @@
     --default_lighter: var(--primary_lighter);
     --default_rgb: var(--primary_rgb);
     --default_gradient: var(--primary_gradient);
+}
+.primary-text {
+    color: var(--primary);
 }
 .primary-bg {
     background-color: var(--primary);

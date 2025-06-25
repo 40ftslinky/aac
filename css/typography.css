@@ -17,12 +17,18 @@
     /* Font sizes */
     --font-size-small: 1rem; /* 12px */
     --font-size-body: 1.8rem; /* 18px */
+    --font-size-body-1: 2.4rem; /* 18px */
+    --font-size-body-2: 2.0rem; /* 20px */
+    --font-size-body-3: 1.8rem; /* 18px */
+    --font-size-body-4: 1.6rem; /* 16px */
+    --font-size-body-5: 1.4rem; /* 14px */
     --font-size-label: 1.2rem; /* 12px */
     --font-size-regular: 1.2rem; /* 12px */
     --font-size-medium: 1.6rem; /* 16px */
     --font-size-large: 2.0rem; /* 20px */
     --font-size-footer: 1.2rem; /* 12px */
     /* --font-size-heading-1: 9rem;  */
+    --font-size-scale: clamp(1.25rem, 1.162rem + .3756vw, 1.5rem);
     /* 90px */
     /*
     slope = (maxFontSize - minFontSize) / (maxWidth - minWidth)
@@ -31,7 +37,7 @@
     --font-size-heading-1: clamp(4.8rem, 2.2768rem + 3.7202vw, 9rem);
     /* --font-size-heading-2: 6.5rem;  */
     /* 65px */
-    --font-size-heading-2: clamp(3.6rem, 1.7857rem + 2.5298vw, 6.5rem);
+    --font-size-heading-2: clamp(3.6rem, 1.7857rem + 2.5298vw, 6.0rem);
     /* --font-size-heading-3: 4rem;  */
     /* 40px */
     --font-size-heading-3: clamp(2.4rem, 1.1607rem + 1.4881vw, 4.0rem);
@@ -52,8 +58,8 @@
     /* Line heights */
     --line-height-tight: 0.85; /* 0.85em */
     --line-height-heading: 0.85; /* 0.85em */
-    --line-height-small: 1; /* 1.1em */
-    --line-height-regular: 1.2; /* 1.2em */
+    --line-height-small: 1.1; /* 1.1em */
+    --line-height-regular: 1.35; /* 1.2em */
     --line-height-body: 1.55; /* 1.55em */
     --line-height-large: 1.75; /* 1.75em */
     --line-height-blockquote: 1.266; /* 30/38 */
@@ -64,8 +70,10 @@
     --letter-spacing-small: 0.05rem; /* 0.05em */
     --letter-spacing-regular: 0.025rem; /* 0.025em */
     --letter-spacing-large: 0.1rem; /* 0.01em */
-    --letter-spacing-tighter: -0.05rem; /* -0.01em */
-    --letter-spacing-tight: -0.025rem; /* -0.005em */
+    --letter-spacing-tighter: -0.5rem; /* -0.05em */
+    --letter-spacing-tight-25: -0.25rem; /* -0.025em */
+    --letter-spacing-tight: -0.1rem; /* -0.01em */
+    /* --letter-spacing-regular: 0; */
     --letter-spacing-loose: 0.1rem; /* 0.01em */
     --letter-spacing-looser: 0.2rem; /* 0.02em */
     --letter-spacing-loosest: 0.3rem; /* 0.03em */
@@ -83,7 +91,7 @@
     --font-weight-bold: 700; /* Bold weight */
 
     --font-weight-body: var(--font-weight-regular);
-    --font-weight-heading: var(--font-weight-medium);
+    --font-weight-heading: var(--font-weight-regular);
     --font-weight-huge: var(--font-weight-regular);
     --font-weight-menu: var(--font-weight-regular);
     --font-weight-menu: var(--font-weight-regular);
@@ -142,11 +150,16 @@ p, h1, h2, h3, h4, h5, h6 {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-brand);
-    font-weight: var(--font-weight-heading);
     line-height: var(--line-height-heading);
     letter-spacing: var(--letter-spacing-tight);
     font-weight: true;
     margin: 0 0 1rem;
+}
+h1, h2, h3 {
+    font-weight: var(--font-weight-heading);
+}
+h4, h5, h6 {
+    font-weight: var(--font-weight-medium);
 }
 
 h1, .display-1 {
@@ -271,33 +284,37 @@ em, i {
 /* Title  */
 
 h1, .h1, .display-1 {
-
+/* 
     line-height: 0.85;
-    letter-spacing: -0.5rem;
+    letter-spacing: -0.5rem; */
 }
 
 .subtitle, .subhead, .display-2 {
-
-    line-height: 1.1;
-    letter-spacing: -3px;
+    line-height: var(--line-height-small);
+    letter-spacing: var(--letter-spacing-loose);
 }
 
 h2, .h2 {
+    line-height: var(--line-height-small);
+    letter-spacing: var(--letter-spacing-tight);
 
+    /* 
     line-height: 1.2;
-    letter-spacing: -3px;
+    letter-spacing: -3px; */
 }
 
 h3, .h3 {
-
-    line-height: 1.3;
-    letter-spacing: -1px;
+    line-height: var(--line-height-small);
+    letter-spacing: var(--letter-spacing-tight);
+    /* line-height: 1.3;
+    letter-spacing: -1px; */
 }
 
 h4, .h4, .category-title {
-
-    line-height: 110%;
-    letter-spacing: -0.1rem;
+    line-height: var(--line-height-small);
+    letter-spacing: var(--letter-spacing-tight);
+    /* line-height: 110%;
+    letter-spacing: -0.1rem; */
 }
 .category-title, .template-heading {
     color: var(--primary);
@@ -328,43 +345,45 @@ p {
     max-width: 75ch;
 }
 .body-1 {
-    font-size: 24px;
-    line-height: 155%;
+    font-size: var(--font-size-body-1); /* 24px */
+    line-height: var(--line-height-body); /* 155%; */
     letter-spacing: 0.01em;
 }
 
 .body-2 {
-    font-size: 20px;
-    line-height: 155%;
-    letter-spacing: -0.01em;
+    font-size: var(--font-size-body-2); /* 20px */
+    /* 20px; */
+    line-height: var(--line-height-body); /* 155%; */
+    letter-spacing: var(--letter-spacing-tight); /* -0.01em; */
 }
 
 .body-3 {
-    font-size: 18px;
-    line-height: 155%;
-    letter-spacing: -0.01em;
+    font-size: var(--font-size-body-3); /* 18px */
+    line-height: var(--line-height-body); /* 155%; */
+    letter-spacing: var(--letter-spacing-regular); /* -0.01em; */
 }
 
 .body-4 {
-    font-size: 18px;
-    line-height: 150%;
-    letter-spacing: -0.3px;
+    font-size: var(--font-size-body-4); /* 16px */
+    line-height: var(--line-height-body); /* 155%; */
+    letter-spacing: var(--letter-spacing-regular); /* -0.025em; */
 }
 
 .body-5 {
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: -0.03em;
+    font-size: var(--font-size-body-5); /* 14px */
+    line-height: var(--line-height-body); /* 155%; */
+    letter-spacing: var(--letter-spacing-regular); /* -0.025em; */
 }
 
 .body-6 {
-    font-size: 16px;
-    line-height: 135%;
-    letter-spacing: -0.3px;
+    font-size: 12px;
+    line-height: var(--line-height-regular); /* 135%; */
+    letter-spacing: var(--letter-spacing-regular); /* -0.025em; */
 }
 
 
 .body-bold, .bold {
-    font-weight: 600;
+    font-weight: var(--font-weight-bold);
+    /* font-weight: 600; */
 }
 

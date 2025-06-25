@@ -30,9 +30,9 @@ body {
 body {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-    -webkit-hyphens: auto;
+    /* -webkit-hyphens: auto;
     hyphens: auto;
-    overflow-wrap: break-word;
+    overflow-wrap: break-word; */
 }
 
 /* ==========================================================================
