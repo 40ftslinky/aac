@@ -4,7 +4,7 @@
     /* max-width: 600px; */
     /* margin: 0 auto; */
     padding: 3.2rem;
-    background-color: var(--notwhite);
+    background-color: rgba(var(--white_rgb), 0.3);
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -13,7 +13,7 @@
 form {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
     /* margin: 0 auto; */
     max-width: 400px;
     /* padding: 1rem; */
@@ -24,7 +24,7 @@ input, textarea, select {
     padding: 1.15rem 1rem; 
     /* height:4rem; */
     /* border: unset; */
-    border: 1px solid var(--default-dark);
+    border: 1px solid var(--default_light);
     border-radius: 4px;
     font-size: 1.4rem;
     box-sizing: border-box;
@@ -40,9 +40,26 @@ input, textarea, select {
 input, textarea, select {
     min-width: 280px;
 }
+
+@media screen and (min-width: 880px) and (max-width: 1000px) {
+    footer form {
+        max-width: unset;
+    }
+    footer form.inline {
+        gap: var(--gap-sm)
+    }
+    footer form input {
+        min-width: unset;
+    }    
+}
+
+footer input, textarea, select {
+    min-width: 280px;
+}
+
 .dark-form input, .dark-form textarea {
     background-color: rgba(var(--mono_rgb), 0.9) !important;
-    border-color: var(--default-light);
+    border-color: var(--default_dark);
     color: var(--text-color-secondary);
 }
 .dark-form input:focus, .dark-form textarea:focus {    
@@ -119,7 +136,7 @@ button:hover {
 input:invalid,
 textarea:invalid,
 select:invalid {
-    border-color: var(--error);
+    /* border-color: var(--error); */
 }
 input:valid,
 textarea:valid,

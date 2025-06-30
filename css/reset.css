@@ -35,6 +35,14 @@ body {
     overflow-wrap: break-word; */
 }
 
+p {
+  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility
+}
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -43,6 +51,7 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  text-wrap: balance;
 }
 
 /*
@@ -58,7 +67,8 @@ html {
 }
 
 ::selection {
-  background: #b3d4fc;
+  background: rgba(var(--primary_rgb), 0.2);
+  /* color: var(--white); */
   text-shadow: none;
 }
 

@@ -40,7 +40,7 @@
     --tertiary_rgb: 119, 0, 199;
 
     /* mono */
-    --mono_gradient: linear-gradient(45deg, #121212 0%, #2C2C2C 20%, #616161 75%, #A8A8A8 133%);
+    --mono_gradient: linear-gradient(45deg, #000 0%, #2C2C2C 20%, #616161 75%, #A8A8A8 133%);
     --mono_dark: #121212;
     --mono: #2C2C2C;
     --mono_light: #2C2C2C;

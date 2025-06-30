@@ -201,7 +201,7 @@
 
 @media screen and (max-width: 1440px){
     :root {
-        --gap-large: 3rem;
+        --gap-large: 4.8rem;
         /* --max-col-width: calc(100vw - (var(--gutter) * 2)); */
     }
 }
@@ -230,23 +230,19 @@
 
 
 :root {
-    --column-width-xs: calc(var(--max-width) - var(--gap) * 2);
-    --column-width: calc(var(--max-width) - var(--gutter) * 2);
-    --fourth-width: calc((var(--column-width) / 4) - (var(--gap) * 3/4));
+    --column-width: calc(var(--max-width) / 1 );
+    --hlf-width: calc(var(--max-width) / 2);
     --third-width: calc(var(--max-width) / 3);
     --qtr-width: var(--fourth-width);
-    --hlf-width: calc((var(--column-width) / 2) - (var(--gap) / 3));
+    --fourth-width: calc(var(--column-width) / 4);
+    --one-sixth: calc(var(--max-width) / 6);
     --qtr-ratio-height: calc(var(--fourth-width) * 0.5625);
     --hlf-ratio-height: calc(var(--hlf-width) * 0.5625);
     --hlf-width-nogap: calc(var(--max-col-width) / 2);
-    --one-half-max-width: calc(var(--max-col-width) / 2 - (var(--gap-large) * 1/2));
-    --one-half-max-width-smgap: calc(var(--column-width-xs) / 2 - (var(--gap-xs) * 1/2));
-    --one-third-max-width: calc(var(--max-col-width) / 3 - (var(--gap-large) * 2/3));
-    --one-third-max-width-gap: calc(var(--max-col-width) / 3 - (var(--gap) * 2/3));
-    --one-third-max-width-smgap: calc(var(--column-width-xs) / 3 - (var(--gap-xs) * 2/3));
-    --two-thirds-max-width: calc((var(--max-col-width) * 2 / 3) - (var(--gap-large) * 1/2));
-    --one-qtr-max-width: calc(var(--max-col-width) / 4 - (var(--gap-large) * 3/4));
-    --one-sixth-max-width: calc((var(--max-col-width)  / 6) - (var(--gap) * 5/6));
-    --one-sixth: var(--max-width);
+    --one-half-max-width: calc((var(--max-col-width) / 2) - (var(--gap-large) * (1/2)) );
+    --one-third-max-width: calc((var(--max-col-width) / 3) - (var(--gap-large) * (2/3)) );
+    --two-thirds-max-width: calc((var(--max-col-width) * (2/3) ) - (var(--gap-large) * 2) );
+    --one-qtr-max-width: calc((var(--max-col-width) / 4) - (var(--gap-large) * (3/4)) );
+    --one-sixth-max-width: calc((var(--max-col-width) / 6) - (var(--gap) * (5/6)) );
 }
 

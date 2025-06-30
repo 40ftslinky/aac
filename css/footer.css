@@ -14,6 +14,7 @@ footer {
     width: 100%;
     box-sizing: border-box;
     gap: 2rem;
+    /*  */
 }
 
 footer .container {
@@ -21,12 +22,49 @@ footer .container {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 1440px;
+    max-width: var(--max-col-width);
     margin: 0 auto;
+    /*  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--gap-large);
+    width: 90vw;
+    max-width: var(--max-col-width);
+    box-sizing: border-box;
+    /* padding: 6rem 0; */
+    z-index: 1;
 }
 
+
 footer .column:first-of-type {
-    /* min-width: 60vw; */
+    width: 100%;
+    max-width: unset;
+}
+
+:root {
+    --right-col-max-width: 520px;
+}
+
+@media screen and (min-width: 1080px) {
+    footer .column:first-of-type {        
+        max-width: calc(var(--max-col-width) - (var(--right-col-max-width) + var(--gap-large)));
+    }
+    footer .column:last-of-type {
+        max-width: var(--right-col-max-width);
+    }
+    
+}
+
+
+@media screen and (min-width: 768px) {
+    footer .footer-bottom .row {
+        flex-direction: row;
+    }
+    footer .footer-bottom .row .column {
+        width: auto;
+    }
 }
 
 [class*="footer"] {
@@ -93,12 +131,22 @@ footer .footer_social a:hover svg path {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     width: 100%;
     max-width: 1440px;
     padding: 0;
     gap: 1rem;
 }
+.footer-bottom .column:last-of-type {
+    align-items: flex-end;
+}
+.footer-bottom .column:last-of-type .footer_bottom_content {
+    justify-content: flex-end;
+}
+.footer-bottom .column:last-of-type .footer_bottom_right {
+    justify-content: flex-end;
+}
+
 
 .footer_bottom_left {
     display: flex;
@@ -110,6 +158,7 @@ footer .footer_social a:hover svg path {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+    /* justify-content: flex-end; */
     gap: 1rem;
 }
 
