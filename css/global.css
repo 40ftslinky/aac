@@ -118,6 +118,14 @@ img, svg, video, canvas, audio, iframe, embed, object {
     padding: var(--padding) 0;
 }
 
+.column:first-of-type:has(.section-image-wrap,
+.standard-image-wrap),
+.column:last-of-type:has(.section-image-wrap,
+.standard-image-wrap) {
+    padding: var(--padding) 0;
+}
+
+
 @media screen and (max-width: 880px) {
     
     .column:first-of-type:has(.section-image-wrap,
@@ -145,6 +153,13 @@ img, svg, video, canvas, audio, iframe, embed, object {
         /* margin: 64px 0; */
     }
 }
+
+/*  */
+
+.section-heading-wrap {
+    gap:var
+}
+
 
 /* ----------------------- */
 /* aspect-ratio */
@@ -230,6 +245,9 @@ section.hero .container {
 .product-section {}
 .belief-section {}
 
+.blockquote-section {
+    min-height: 40vh;
+}
 
 /* ----------------------- */
 /* structure */

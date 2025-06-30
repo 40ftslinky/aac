@@ -213,3 +213,21 @@ input[type="submit"] {
     border-radius: 12px;
     transition: all var(--spring-duration) var(--spring-easing);
 }
+
+/*  */
+
+.social_link svg path {
+    fill: var(--default);
+    transition: var(--transition);
+}
+.social_link:hover svg path {
+    fill: rgba(var(--default_rgb), 0.6);
+} 
+
+.social_link img {
+    opacity: 1;
+    transition: var(--transition);
+}
+.social_link:hover img {
+    opacity: 0.6;
+} 

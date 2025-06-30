@@ -7,6 +7,8 @@
     --white: #fff;
     --white_rgb: 255, 255, 255;
     --notwhite: #F2F2F2;
+    --white_gradient: linear-gradient(45deg, rgba(var(--white_rgb),0.2) 0%, rgba(var(--white_rgb),0.5) 133%);
+
     
     --black: #000;
     --notblack: #121212;
@@ -72,6 +74,8 @@
     --grey_900: #5F5F5F;
     --grey_1000: #4f4f4f;
     --grey_rgb: 49, 49, 49;
+
+    --text-color-muted: #888;
 
     --overlay-left: linear-gradient(270deg, rgba(var(--notblack_rgb),0.0) 0%,rgba(var(--notblack_rgb),0.4) 100%);
 
@@ -175,6 +179,9 @@
 
 .white-bg {
     background-color: var(--white);
+}
+.white_gradient-bg {
+    background: var(--white_gradient);
 }
 .black-bg {
     background-color: var(--black);
