@@ -106,6 +106,17 @@
     }
 }
 
+.generic-hero-image img {
+    min-height: 55vh;
+    object-fit: cover;
+}
+@media (min-width: 1080px) {
+    .generic-hero-image img {
+        min-height: 45vh;
+        object-fit: cover;
+    }
+}
+
 
 /* .generic-hero-content */
 
@@ -209,7 +220,7 @@
     line-height: var(--line-height-hero-title);
     font-weight: var(--font-weight-regular);
     letter-spacing: var(--letter-spacing-hero-title);
-    text-transform: var(--text-transform-uppercase);
+    /* text-transform: var(--text-transform-uppercase); */
     text-wrap: balance;
     text-decoration: var(--text-decoration-none);
 }

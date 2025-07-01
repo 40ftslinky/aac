@@ -509,11 +509,11 @@ video.square {
 }
 
 .standard-title {
-    font-size: var(--font-size-heading-3);
-    line-height: var(--line-height-tight);
+    font-size: var(--font-size-heading-2);
+    line-height: var(--line-height-small);
     font-weight: var(--font-weight-regular);
-    letter-spacing: var(--letter-spacing-hero-title);
-    text-transform: var(--text-transform-uppercase);
+    letter-spacing: var(--letter-spacing-tight);
+    /* text-transform: var(--text-transform-uppercase); */
     text-wrap: balance;
     text-decoration: var(--text-decoration-none);
 }

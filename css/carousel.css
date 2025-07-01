@@ -1,0 +1,188 @@
+
+/* flickity carousel */
+
+
+/* ----------------------- */
+/* CAROUSEL */
+
+[class*="program-section"] {
+    gap:var(--gap-sm);
+}
+
+.carousel {
+    width: 100%;
+}
+
+
+
+.flickity.slider {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+/* ----------------------- */
+/* CELL */
+
+
+[class*="current-program"] .program_carousel .carousel-cell,
+[class*="upcoming-program"] .program_carousel .carousel-cell {
+    width: calc(var(--max-col-width));
+}
+
+
+@media screen and (max-width: 1440px){
+    
+    [class*="upcoming-program"] .program_carousel .carousel-cell  {
+        width: calc(var(--one-qtr-max-width));
+    }
+    [class*="current-program"] .program_carousel .carousel-cell  {
+        width: calc(var(--one-third-max-width));
+    }
+   
+}
+@media screen and (max-width: 1200px){
+    [class*="upcoming-program"] .program_carousel .carousel-cell  {
+        width: calc(var(--one-third-max-width));
+    }
+    [class*="current-program"] .program_carousel .carousel-cell  {
+        width: calc(var(--one-half-max-width));
+    }
+}
+@media screen and (max-width: 880px){
+    [class*="current-program"] .program_carousel .carousel-cell,
+    [class*="upcoming-program"] .program_carousel .carousel-cell {
+        width: calc(var(--max-col-width));
+    }     
+}
+
+.program_carousel .carousel-cell,
+.program_carousel .carousel-cell:not(:last-of-type) {
+    margin-right: var(--gap-large);
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .program_carousel .row,
+    .program_carousel .column,
+    .program_carousel .carousel,
+    .program_carousel .carousel-cell {
+        width: 100%;
+        /* max-width: 500px; */
+    }
+}
+
+.program_carousel .card img {
+    transition: var(--transition-button);
+    transform: scale(1);
+}
+.program_carousel .card:hover img {
+    transform: scale(1.05);
+}
+
+
+/* ----------------------- */
+/* BUTTONS */
+
+
+[class*="program-section"] button  {
+    box-sizing: content-box;
+    background: rgba(var(--white_rgb), 0.3);     
+    transition: var(--transition);
+    transition: var(--transition-button);
+    cursor: pointer;
+    outline: none;
+    /*  */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    color: var(--primary);
+    border: none;
+    border-radius: var(--radius-circle);
+    /* max-width: unset; */
+    min-width: unset;
+    width: 1.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    
+    &:hover {
+        color: var(--white);
+        background: rgba(var(--primary_rgb), 0.3);     
+        text-decoration: none;
+        /* animation: gradient 0.5s ease; */
+        border: none;
+        box-shadow: var(--shadow-regular);
+        outline: none;
+
+    }
+    &:focus {
+        /* outline: 4px solid var(--default);
+        outline-offset: 0; */
+        outline: none;
+        text-decoration: none;
+    }
+    &:active {
+        background-color: var(--default_dark);
+        color: var(--notwhite);
+        outline: none;
+        text-decoration: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    [class*="program-section"] button  {
+        /* width: 2.5rem; */
+        min-width: 2.5rem;
+        /* height: 3rem; */
+        font-size: 2rem;
+        top: unset
+    }
+}
+
+
+
+[class*="program-section"] .flickity-prev-next-button .flickity-button-icon {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+[class*="program-section"] .flickity-prev-next-button.next {
+    right: -50px;
+}
+[class*="program-section"] .flickity-prev-next-button.previous {
+    left: -50px;
+}
+@media screen and (max-width: 600px) {
+    [class*="program-section"] .flickity-prev-next-button.next {
+        right: -1.5rem;
+    }
+    [class*="program-section"] .flickity-prev-next-button.previous {
+        left: -1.5rem;
+    }
+    
+}
+
+
+
+/* ----------------------- */
+/* DOTS */
+
+[class*="program-section"] .flickity-page-dots {
+    /* bottom: -8px; */
+}
+
+[class*="program-section"] .flickity-page-dots .dot {
+    background-color: var(--primary);
+}
+
+
+/* ----------------------- */
+
+
+[class*="program-section"] .flickity-viewport {
+    margin-bottom: 2rem;
+}

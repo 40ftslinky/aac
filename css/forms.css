@@ -37,8 +37,10 @@ input, textarea, select {
     transition: var(--transition);
     width: 100%;
 }
-input, textarea, select {
-    min-width: 280px;
+@media (min-width: 500px) {
+    input, textarea, select {
+        min-width: 280px;
+    }
 }
 
 @media screen and (min-width: 880px) and (max-width: 1000px) {
@@ -53,7 +55,7 @@ input, textarea, select {
     }    
 }
 
-footer input, textarea, select {
+footer input, footer textarea, footer select {
     min-width: 280px;
 }
 

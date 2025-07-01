@@ -7,7 +7,9 @@
     --white: #fff;
     --white_rgb: 255, 255, 255;
     --notwhite: #F2F2F2;
+    --notwhite_rgb: 242, 242, 242;
     --white_gradient: linear-gradient(45deg, rgba(var(--white_rgb),0.2) 0%, rgba(var(--white_rgb),0.5) 133%);
+    --notwhite_gradient: linear-gradient(45deg, rgba(var(--notwhite_rgb),0.2) 0%, rgba(var(--notwhite_rgb),0.5) 133%);
 
     
     --black: #000;
@@ -195,6 +197,9 @@
 
 .notwhite-bg {
     background-color: var(--notwhite);
+}
+.notwhite_gradient-bg {
+    background: var(--notwhite_gradient);
 }
 .notblack-bg {
     background-color: var(--notblack);
