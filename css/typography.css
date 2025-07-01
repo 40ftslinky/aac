@@ -225,15 +225,21 @@ a:hover, a:focus {
     text-decoration: var(--text-decoration-underline);
 }
 
+.blockquote-section .column,
+.blockquote-section .column > * {
+    margin: auto;
+}
+
 blockquote, blockquote p, .blockquote {
     font-family: var(--font-blockquote);
     font-weight: var(--font-weight-regular);
     font-size: var(--font-size-blockquote);
     letter-spacing: var(--letter-spacing-regular);
     line-height: var(--line-height-blockquote);
-    margin: 0 ;
+    margin: 0 auto;
     padding: 0;
     color: var(--default);
+    max-width: 45ch;
 }
 
 blockquote::before {

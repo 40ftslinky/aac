@@ -104,6 +104,8 @@ img, svg, video, canvas, audio, iframe, embed, object {
 .standard-image-wrap img  {
     overflow: hidden;
     border-radius: var(--radius);
+    object-fit: cover;
+    height: 100%;
 }
 .product-card-image  {
     overflow: hidden;
@@ -157,7 +159,7 @@ img, svg, video, canvas, audio, iframe, embed, object {
 /*  */
 
 .section-heading-wrap {
-    gap:var
+    /* gap:var(--gap-large); */
 }
 
 
@@ -184,6 +186,26 @@ img, svg, video, canvas, audio, iframe, embed, object {
 
 /* ----------------------- */
 /* sections */
+
+
+
+.section {
+    padding: var(--padding);
+    padding-block: var(--padding-large);
+}
+
+@media (min-width: 768px) {
+    .section {
+        padding-block: var(--padding-xlarge);
+    }
+}
+
+@media (min-width: 1440px) {
+    .section {
+        padding-block: var(--padding-xxlarge);
+    }
+}
+
 
 section {
     padding: var(--gutter) 0;

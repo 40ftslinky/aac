@@ -15,6 +15,7 @@
     --padding-medium: 3.2rem;
     --padding-large: 4.8rem;
     --padding-xlarge: 6.4rem;
+    --padding-xxlarge: 9.6rem;
     --padding-xs: 0.75rem;
     --padding-inner: var(--padding-small);
 
@@ -37,6 +38,7 @@
     --max-width: 100vw;
     /* --max-col-width: calc(100vw - (var(--gutter) * 2)); */
     --max-col-width: 90vw;
+    --min-row-height: 70vh;
     --header-height: 90px;
     --top_nav-height: 87px;
     --bottom_nav-height: 42px;
