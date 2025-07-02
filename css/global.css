@@ -369,7 +369,7 @@ section.hero .container {
 @media screen and (min-width: 1080px) {
     .column_inner {
         /* flex-wrap: wrap; */
-        justify-content: center;
+        justify-content: flex-start;
     }
 }
 
@@ -404,6 +404,16 @@ video.square {
     justify-content: center;
 }
 
+/* ------------------------------------ */
+/* icons  */
+
+svg.linkedin_icon {
+    width: 24px;
+    height: 24px;
+}
+
+
+/* ------------------------------------ */
 /* flex */
 
 
