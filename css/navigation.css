@@ -556,11 +556,17 @@ nav.desktop ul li a{
 }
 
 
-.desktop .menu-link.active {
+.desktop .menu-link.active,
+.menu-link.active {
     color: var(--notblack);
-    /* text-decoration: underline; */
+    text-decoration: underline;
     text-underline-offset: 0.325rem;
     text-decoration-thickness: 1px;
+    &:hover {
+        
+        text-underline-offset: 0.5rem;
+        text-decoration-thickness: 1.5px;
+    }
 }
 
 
@@ -678,6 +684,19 @@ nav.desktop ul li a{
         padding-right: 1rem;
     }
 
+    .fullscreen .menu-link.active,
+    .menu-link.active {
+        color: var(--primary);
+        text-decoration: underline;
+        text-underline-offset: 0.325rem;
+        text-decoration-thickness: 1px;
+        &:hover {
+            
+            text-underline-offset: 0.5rem;
+            text-decoration-thickness: 1.5px;
+        }
+    }
+
     nav .fullscreen li.has-child a:hover,
     nav .fullscreen ul li a span:hover,
     .fullscreen .menu-link:hover {
@@ -756,6 +775,20 @@ nav.desktop ul li a{
         padding: 1.125rem 1.5rem;
 
     }
+
+    .fullscreen .submenu-link.active,
+    .submenu-link.active {
+        color: var(--default);
+        text-decoration: underline;
+        text-underline-offset: 0.325rem;
+        text-decoration-thickness: 1px;
+        &:hover {
+            
+            text-underline-offset: 0.5rem;
+            text-decoration-thickness: 1.5px;
+        }
+    }
+
     .submenu-item a:hover {
         /* color: var(--primary); */
         text-decoration: none;

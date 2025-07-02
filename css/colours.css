@@ -10,7 +10,7 @@
     --notwhite_rgb: 242, 242, 242;
     --white_gradient: linear-gradient(45deg, rgba(var(--white_rgb),0.2) 0%, rgba(var(--white_rgb),0.5) 133%);
     --notwhite_gradient: linear-gradient(45deg, rgba(var(--notwhite_rgb),0.2) 0%, rgba(var(--notwhite_rgb),0.5) 133%);
-
+    --transparent-white: rgba(var(--white_rgb), 0.6);
     
     --black: #000;
     --notblack: #121212;
