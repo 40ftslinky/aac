@@ -101,11 +101,13 @@ img, svg, video, canvas, audio, iframe, embed, object {
 
 .grid-item-image,
 .image-wrap,
-.standard-image-wrap img  {
+.standard-image-wrap img,
+.image-wrap img  {
     overflow: hidden;
     border-radius: var(--radius);
     object-fit: cover;
     height: 100%;
+    min-height: 100%;
 }
 .product-card-image  {
     overflow: hidden;
@@ -269,6 +271,9 @@ section.hero .container {
 
 .blockquote-section {
     min-height: 40vh;
+}
+.blockquote-section .column {
+    width: auto;
 }
 
 /* ----------------------- */
