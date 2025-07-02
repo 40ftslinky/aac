@@ -551,7 +551,7 @@ video.square {
     letter-spacing: var(--letter-spacing-regular);
 }
 .standard-subtitle {
-    color: var(--notblack);
+    color: var(--default);
 }
 
 .standard-text {
@@ -559,7 +559,7 @@ video.square {
     line-height: var(--line-height-regular);
     font-weight: var(--font-weight-regular);
     letter-spacing: var(--letter-spacing-regular);
-    text-wrap: balance;
+    /* text-wrap: balance; */
     text-decoration: var(--text-decoration-none);
 }
 .standard-text {
