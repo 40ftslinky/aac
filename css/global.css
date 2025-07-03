@@ -272,8 +272,18 @@ section.hero .container {
 .blockquote-section {
     min-height: 40vh;
 }
+
+.blockquote-section .row {
+    justify-content: center;
+}
+
 .blockquote-section .column {
     width: auto;
+}
+
+.blockquote-section .column,
+.blockquote-section .column >  {
+    margin: 0 auto;
 }
 
 /* ----------------------- */
@@ -422,52 +432,70 @@ svg.linkedin_icon {
 /* flex */
 
 
-.--justify-bottom {
+.__justify-bottom {
     align-items: end;
 }
 
-.--justify-center {
+.__justify-center {
     align-items: center;
 }
-.--justify-top {
+.__justify-top {
     align-items: start;
 }
-.--justify-between {
+.__justify-between {
     justify-content: space-between;
 }
-.--justify-around {
+.__justify-around {
     justify-content: space-around;
 }
-.--justify-evenly {
+.__justify-evenly {
     justify-content: space-evenly;
 }
-.--justify-start {
+.__justify-start {
     justify-content: flex-start;
 }
-.--justify-end {
+.__justify-end {
     justify-content: flex-end;
 }
-.--align-top {
+.__align-top {
     align-items: flex-start;
 }
-.--align-center {
+.__align-center {
     align-items: center;
 }
-.--align-bottom {
+.__align-bottom {
     align-items: flex-end;
 }
-.--align-stretch {
+.__align-stretch {
     align-items: stretch;
 }   
-.--flex-row {
+.__flex-row {
     flex-direction: row;
 }
-.--flex-column {
+.__flex-column {
     flex-direction: column;
 }
 
 /*  */
+/* stretch */
 
+.stretch-width {
+    width: 100% !important;
+}
+.stretch-width-30 {
+    width: 30% !important;
+}
+.stretch-width-20 {
+    width: 20% !important;
+}
+@media screen and (max-width: 880px) {
+    .stretch-width,
+    .stretch-width-30,
+    .stretch-width-20 {
+        width: 100% !important;
+    }
+    
+}
 
 /* ----------------------- */
 /* .standard-content */
