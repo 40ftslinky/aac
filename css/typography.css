@@ -328,6 +328,10 @@ h4, .h4, .category-title {
     line-height: var(--line-height-small);
     /* line-height: 110%;
     letter-spacing: -0.1rem; */
+    font-size: var(--font-size-heading-4);
+    line-height: var(--line-height-small);
+    font-weight: var(--font-weight-regular);
+    letter-spacing: var(--letter-spacing-regular);
 }
 .category-title, .template-heading {
     color: var(--primary);

@@ -75,6 +75,7 @@
 
     /* aspect-ratio */
     --aspect-ratio-1_1: 1 / 1;
+    --aspect-ratio-10_9: 10 / 9;
     --aspect-ratio-16_9: 16 / 9;
     --aspect-ratio-4_3: 4 / 3;
     --aspect-ratio-3_2: 3 / 2;

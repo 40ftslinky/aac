@@ -129,7 +129,7 @@
 .generic-hero__content,
 .generic-hero-content,
 .split-hero-content {
-    pointer-events: none;
+    /* pointer-events: none; */
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -137,6 +137,8 @@
     padding-right: 0%;
     padding-left: 0%;
     /* padding: 3rem; */
+    /* z-index: 1;
+    position: relative; */
 }
 
 .generic-hero-content,

@@ -149,12 +149,13 @@ img, svg, video, canvas, audio, iframe, embed, object {
 .standard-image-wrap {
     /* margin: 48px; */
     border-radius: var(--radius);
+    aspect-ratio: var(--aspect-ratio-3_2);
 }
 
 @media (min-width: 768px) {
     .section-image-wrap,
     .standard-image-wrap {
-        /* margin: 64px 0; */
+       aspect-ratio: var(--aspect-ratio-10_9);
     }
 }
 
@@ -573,6 +574,16 @@ svg.linkedin_icon {
     }
 }
 
+[class*="content-inner"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    gap: 2rem;
+}
+
 .standard-title {
     font-size: var(--font-size-heading-2);
     line-height: var(--line-height-small);
@@ -590,7 +601,7 @@ svg.linkedin_icon {
 .standard-subtitle {
     font-size: var(--font-size-heading-4);
     line-height: var(--line-height-small);
-    font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-regular);
     letter-spacing: var(--letter-spacing-regular);
 }
 .standard-subtitle {
