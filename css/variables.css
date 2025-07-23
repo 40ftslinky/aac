@@ -9,15 +9,16 @@
     --gutter: 5vw /*6rem*/;
 
     /* padding */
-    --padding-sm: 0.8rem;
+    --padding-xsmall: 0.8rem;
     --padding-small: 1.6rem;
     --padding-regular: 2.4rem;
     --padding-medium: 3.2rem;
     --padding-large: 4.8rem;
     --padding-xlarge: 6.4rem;
     --padding-xxlarge: 9.6rem;
-    --padding-xs: 0.75rem;
+    --padding-xxs: 0.25rem;
     --padding-inner: var(--padding-small);
+    --padding-inner-sm: var(--padding-xxs);
 
     /* gap */
     --gap-sm: 1rem;

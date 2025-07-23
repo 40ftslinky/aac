@@ -231,3 +231,40 @@ input[type="submit"] {
 .social_link:hover img {
     opacity: 0.6;
 } 
+
+/*  */
+
+
+[class*="program-section"] button.filter {
+    position: relative;
+    width: unset;
+    max-width: unset;
+    /* margin-bottom: var(--gap); */
+    padding: var(--padding-inner-sm) var(--padding-inner);
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-regular);
+    color: var(--text-color-muted);
+    background-color: transparent;
+    border: 1px solid var(--mono_200);
+    border-radius: var(--radius-pill);
+    cursor: pointer;
+    &:hover {
+        color: var(--notblack);
+        text-decoration: none;
+        box-shadow: none;
+        background-color: rgba(var(--primary_rgb), 1);
+        border: 1px solid var(--primary);
+    }
+    &.selected {
+        color: var(--white);
+        background-color: rgba(var(--primary_rgb), 1);
+        border: 1px solid var(--primary);
+        box-shadow: var(--shadow-regular);
+    }
+    &.selected:hover {
+        color: var(--notblack);
+        background-color: rgba(var(--primary_rgb), 0.0);
+        border: 1px solid var(--default_dark);
+        box-shadow: var(--shadow-regular);
+    }
+}
