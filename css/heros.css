@@ -68,8 +68,10 @@
     .split-hero-image.image-wrapper,
     .split-hero-image.image-wrap {
         /* border-radius: 48px; */
+        aspect-ratio: 1 / 1;
     }
 }
+
 
 .hero-split__copy {
     transform: translateY(24px);
@@ -106,9 +108,12 @@
 
 /* image */
 
-.generic-hero .row,
-.generic-hero .column {
+[class*="generic-hero"] .row,
+[class*="generic-hero"] .column {
     max-width: 90vw;
+}
+[class*="generic-hero"] .image-wrap {
+    max-width: unset;
 }
 
 .generic-hero-image img {
