@@ -680,7 +680,7 @@ nav.desktop ul li a{
         transition: var(--transition);
         text-transform:none;
     }
-    .fullscreen a.menu-link {
+    .fullscreen .menu-link {
         padding-right: 1rem;
     }
 
@@ -751,7 +751,14 @@ nav.desktop ul li a{
     ul.mega-menu-submenu {
         list-style: none;
         margin-left: 0;
+        margin-top: 1rem;
         list-style-type: none;
+    }
+    @media screen and (min-width: 1080px) {
+        ul.mega-menu-submenu {
+            margin-top: 0.5rem;
+        }
+        
     }
     .mega-menu-submenu li,
     .mega-menu-submenu .submenu-item {
