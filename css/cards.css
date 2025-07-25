@@ -346,6 +346,41 @@
 
 /* grid-product */
 
+/* grid-product-card & calendar-card card image */
+
+.grid-product-card:hover .product-card-image,
+.calendar-card:hover .product-card-content {
+    box-shadow: var(--shadow-regular);
+}
+.grid-product-card .product-card-image img,
+.calendar-card .product-card-image img {
+    transition: var(--transition);
+    transform: scale(1);
+}
+.grid-card:hover .product-card-image img,
+.calendar-card:hover .product-card-image img {
+    transform: scale(1.02);
+}
+
+.grid-product-card:hover .product-card-image, 
+.grid-product-card:hover .product-card-content,
+.calendar-card:hover .product-card-image,
+.calendar-card:hover .product-card-content {
+    transform: translateY(-8px);
+}
+
+.grid-product-card .product-card-image,
+.calendar-card .product-card-image {
+    aspect-ratio: var(--aspect-ratio-3_2);
+}
+
+@media screen and (min-width: 1080px) {
+    .grid-product-card .product-card-image,
+    .calendar-card .product-card-image {     
+        aspect-ratio: var(--aspect-ratio-1_1);
+    }
+}
+
 
 
 /* ------------------ */
