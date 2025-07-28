@@ -88,7 +88,7 @@
 /* BUTTONS */
 
 
-[class*="program-section"] button  {
+[class*="program-section"] button.flickity-button  {
     box-sizing: content-box;
     background: rgba(var(--white_rgb), 0.3);     
     transition: var(--transition);
@@ -133,7 +133,7 @@
     }
 }
 @media screen and (max-width: 880px) {
-    [class*="program-section"] button  {
+    [class*="program-section"] button.flickity-button  {
         /* width: 2.5rem; */
         /* min-width: 2.5rem; */
         /* height: 3rem; */

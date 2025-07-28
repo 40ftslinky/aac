@@ -72,6 +72,7 @@
     --line-height-blockquote: 1.266; /* 30/38 */
     --line-height-button: 1.5725; /* total 48px */
     --line-height-hero-title: var(--line-height-tight); /* 0.85em */
+    --line-height-title: var(--line-height-small); /* 1.1em */
 
     /* Letter spacings */
     --letter-spacing-small: 0.05rem; /* 0.05em */
@@ -226,6 +227,11 @@ a:hover, a:focus {
     text-decoration: var(--text-decoration-underline);
 }
 
+
+sup {
+  vertical-align: super;
+  font-size: calc(var(--font-size-default) * 0.6);
+}
 
 blockquote, blockquote p, .blockquote {
     font-family: var(--font-blockquote);

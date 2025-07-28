@@ -13,10 +13,11 @@
 form {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 0.5rem;
     /* margin: 0 auto; */
     max-width: 400px;
     /* padding: 1rem; */
+    transition: var(--transition);
 }
 /* form elements */
 input, textarea, select {
@@ -143,7 +144,7 @@ select:invalid {
 input:valid,
 textarea:valid,
 select:valid {
-    border-color: var(--success);
+    /* border-color: var(--success); */
 }
 /* focus styles */
 input:focus,
@@ -235,6 +236,7 @@ legend {
     transform: translateY(0);
     position: absolute;
     bottom: -2rem;
+    right: 0;
     opacity: 0;
     transition: var(--transition);
 }
@@ -263,6 +265,12 @@ legend {
     color: var(--white);
     background-color: var(--error);
     padding: 0.25rem;
+}
+
+/* form validation styles */
+
+.form-group:has(.error-msg.visible) {
+    margin-bottom: 1.5rem;
 }
 
 /* checkbox */
@@ -311,4 +319,71 @@ input[type="checkbox"]:focus {
     .contact-section .column:nth-of-type(2) {
         align-items: center;
     } 
+}
+
+
+/* search field */
+
+.search-field {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    /* max-width: 400px; */
+    margin: 0 auto;
+    /* border: 1px solid var(--primary); */
+    border: 1px solid var(--default_light);
+    border-radius: var(--radius-small);
+    box-sizing: content-box;
+}
+
+@media screen and (min-width: 576px) {
+    .search-field {     
+        max-width: var(--one-third-max-width);
+    }
+}
+@media screen and (min-width: 1080px) {
+    .search-field {     
+        max-width: var(--one-qtr-max-width);
+    }
+}
+
+.search-field:focus {
+    border-color: var(--primary-dark);
+    box-shadow: 0 0 5px rgba(var(--primary_rgb), 0.5);
+}
+.search-field input[type="text"] {
+    border: none;
+    border-radius: 4px 0 0 4px;
+    width:100%;
+    min-width: unset;
+    max-width: unset;
+}
+
+.search-field input[type="text"]:focus {
+    border: none;
+    /* box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); */
+}
+.search-field button.search-button {
+    position: relative;
+    top: unset;
+    transform: unset;
+    padding: 0 1.25rem;
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: 0 4px 4px 0;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: var(--transition);
+    height: auto;
+}
+.search-field button.search-button:hover {
+    background-color: var(--primary-dark);
+}
+
+.search-field button.search-button svg path {
+    fill: var(--white);
+}
+.search-field button.search-button:hover svg path {
+    fill: var(--notblack);
 }

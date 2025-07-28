@@ -628,4 +628,38 @@ svg.linkedin_icon {
     color: var(--notblack);
 }
 
+.standard-text img {
+    /* margin: 3rem auto; */
+}
+
+.standard-text img:where(figcaption) {
+    margin-bottom: 0;
+}
+
+.standard-text img + figcaption {
+    font-size: var(--font-size-small);
+    line-height: var(--line-height-regular);
+    font-weight: var(--font-weight-regular);
+    letter-spacing: var(--letter-spacing-regular);
+    color: var(--mono-600);
+    text-align: left;
+}
+
+figure {
+    display: block;
+    margin-block-start: 3rem;
+    margin-block-end: 3rem;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    unicode-bidi: isolate;
+}
+
+figcaption {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    font-style: italic;
+    color: var(--mono-600);
+    text-align: left;
+}
+
 /*  */
