@@ -523,7 +523,7 @@
     font-size: var(--font-size-small);
     line-height: var(--line-height-regular);
     color: var(--text-color-muted);
-    paddin-top: 0.5rem;
+    padding-top: 0.5rem;
 }
 .product-accordion-item-text > * {
     margin-bottom: 0.5rem;
