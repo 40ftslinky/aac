@@ -469,6 +469,9 @@ svg.linkedin_icon {
 .__align-top {
     align-items: flex-start;
 }
+.__align-end {
+    align-items: flex-end;
+}
 .__align-center {
     align-items: center;
 }
@@ -477,7 +480,11 @@ svg.linkedin_icon {
 }
 .__align-stretch {
     align-items: stretch;
-}   
+} 
+.__align-space {
+    align-items: space-between;
+} 
+
 .__flex-row {
     flex-direction: row;
 }

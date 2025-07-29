@@ -44,6 +44,7 @@
     /* 65px */
     --font-size-heading-2: clamp(3.6rem, 1.7857rem + 2.5298vw, 6.0rem);
     --font-size-heading-3: clamp(2.4rem, 1.6vw + 1.6rem, 4rem); /* 40px */
+    --font-size-heading-3-bold: clamp(2.4rem, 1.6vw + 1.6rem, 3.6rem); /* 36px */
     --font-size-heading-4: clamp(1.8rem, 1.25vw + 1.15rem, 3rem); /* 3rem , 30px */
     --font-size-heading-5: clamp(1.4rem, 1.125vw + 0.75rem, 2.4rem);  /* 2.4rem, 24px */
     --font-size-heading-6: clamp(1.2rem, 0.5vw + 1.25rem, 2rem); /* 2.0rem, 20px */
