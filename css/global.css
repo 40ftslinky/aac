@@ -201,7 +201,7 @@ img, svg, video, canvas, audio, iframe, embed, object {
 
 
 .section {
-    padding: var(--padding);
+    padding: var(--padding) 5vw;
     padding-block: var(--padding-large);
 }
 

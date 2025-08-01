@@ -1,1 +1,30 @@
+/* overpower @woocommerce styles */
+
 /*  */
+
+.storefront-breadcrumb {
+    margin: var(--header-height) auto 0;
+    padding: 0;
+}
+
+#content.site-content {
+    margin: var(--header-height) auto 0; 
+}
+
+[class*="woocommerce"] main.site-main {
+    /* margin: var(--header-height) auto 0;  */
+    margin: 0 auto;
+}
+
+@media (min-width: 1440px) {
+    .section {
+        padding-block: var(--padding-xxlarge);
+    }
+}
+
+/* single product */
+
+.single-product div.product {
+    padding: 0 var(--padding);
+    max-width: var(--max-col-width);
+}
