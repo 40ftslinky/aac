@@ -2,14 +2,19 @@
 
 /*  */
 
-.storefront-breadcrumb {
-    margin: var(--header-height) auto 0;
-    padding: 0;
+body.product-template-default.single-product div.product {
+    padding-top: var(--header-height);
 }
 
 #content.site-content {
-    margin: var(--header-height) auto 0; 
+    /* margin: var(--header-height) auto 0;  */
 }
+
+.storefront-breadcrumb {
+    /* margin: var(--header-height) auto 0; */
+    padding: 0;
+}
+
 
 [class*="woocommerce"] main.site-main {
     /* margin: var(--header-height) auto 0;  */
