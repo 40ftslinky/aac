@@ -169,6 +169,7 @@ img, svg, video, canvas, audio, iframe, embed, object {
 
 /*  */
 
+.section-heading,
 .section-heading-wrap {
     /* gap:var(--gap-large); */
 }

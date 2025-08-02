@@ -232,7 +232,8 @@
     
 }
 
-.generic-hero-content-inner {
+.generic-hero-content-inner,
+.generic-hero-content-inner .standard-heading {
     display: flex;
     flex-direction: column;
     justify-content: center;
