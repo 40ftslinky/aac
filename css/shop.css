@@ -78,7 +78,7 @@ ul.products li.product .woocommerce-LoopProduct-link {
 /* single product */
 
 .single-product div.product {
-    padding: 0 ;
+    padding: 0 var(--padding);
     max-width: var(--max-col-width);
 }
 
@@ -87,12 +87,14 @@ ul.products li.product .woocommerce-LoopProduct-link {
 .storefront-full-width-content.single-product div.product .woocommerce-product-gallery,
 .storefront-full-width-content .woocommerce-tabs ul.tabs {
     padding: 0 ;
+    padding-left: var(--padding);
     width: 100%;
     margin-right: 0;
     margin-bottom: 0;
 } 
 .storefront-full-width-content.single-product div.product .woocommerce-product-gallery {
-    margin-right: var(--gap);
+    margin-right: var(--padding);
+    padding-left: var(--padding);
 }
 
 @media (min-width: 768px) {
@@ -122,6 +124,7 @@ ul.products li.product .woocommerce-LoopProduct-link {
         align-items: flex-start;
         gap: var(--gap);
         width: 60%;
+        padding-right: var(--padding);
     }
 }
 
