@@ -133,7 +133,7 @@ ul.products li.product .woocommerce-LoopProduct-link {
         padding: 0 ;
         width: 100%;
         max-width: var(--two-thirds-max-width);
-        float: unset;
+        /* float: unset; */
         margin-right: 0;
         margin-bottom: 0;
     }
