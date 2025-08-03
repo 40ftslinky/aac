@@ -37,13 +37,31 @@ body[class*="woocommerce"] {
 .products.columns-4 {
     /* --one-third-max-width: calc((100% - (var(--gutter) * 3)) / 4); */
     max-width: var(--max-col-width);
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap-large);
+    width: 100%;
+    max-width: var(--max-col-width);
+    box-sizing: border-box;
 }
 
+.storefront-full-width-content .site-main ul.products.columns-4 li.product,
 .products .product.type-product {
     width: 100%;
     max-width: var(--max-col-width);
-    width: calc(var(--one-qtr-max-width));
+    
+    float: unset;
+    margin-right: unset; 
 }
+
+@media (min-width: 768px) {
+    .products.columns-4 li.product {
+        width: calc(var(--one-qtr-max-width));
+    }
+}
+
 
 /* product */
 .product.type-product a,
