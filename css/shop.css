@@ -84,13 +84,14 @@ ul.products li.product .woocommerce-LoopProduct-link {
 
 /*  */
 
-
+.storefront-full-width-content.single-product div.product .woocommerce-product-gallery,
 .storefront-full-width-content .woocommerce-tabs ul.tabs {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: var(--gap);
+    padding: 0 var(--padding);
+    width: 100%;
+    max-width: var(--one-third-max-width);
+    float: unset;
+    margin-right: 0;
+    margin-bottom: 0;
 } 
 
 @media (min-width: 768px) {
