@@ -128,7 +128,7 @@ ul.products li.product .woocommerce-LoopProduct-link {
 
 @media (min-width: 768px) {
     .storefront-full-width-content .woocommerce-tabs .panel {
-        padding: 0 var(--padding);
+        padding: 0 ;
         width: 100%;
         max-width: var(--two-thirds-max-width);
         float: unset;
