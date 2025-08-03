@@ -57,7 +57,8 @@ body[class*="woocommerce"] {
 }
 
 @media (min-width: 768px) {
-    .products.columns-4 li.product {
+    .storefront-full-width-content .site-main ul.products.columns-4 li.product,
+    .products .product.type-product {
         width: calc(var(--one-qtr-max-width));
     }
 }
