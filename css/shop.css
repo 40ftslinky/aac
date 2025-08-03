@@ -96,7 +96,7 @@ ul.products li.product .woocommerce-LoopProduct-link {
 
 @media (min-width: 768px) {
     .storefront-full-width-content .woocommerce-tabs .panel,
-    .storefront-full-width-content.single-product div.product .summary
+    .storefront-full-width-content.single-product div.product .summary,
     .product .summary {
         padding: 0 ;
         width: 100%;
