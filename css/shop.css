@@ -78,7 +78,7 @@ ul.products li.product .woocommerce-LoopProduct-link {
 /* single product */
 
 .single-product div.product {
-    padding: 0 var(--padding);
+    padding: 0 ;
     max-width: var(--max-col-width);
 }
 
