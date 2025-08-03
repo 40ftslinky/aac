@@ -1,7 +1,8 @@
 /* navigation.css */
 
 header,
-header.startHeader {
+header.startHeader,
+header:not(.woocommerce-products-header) {
     /* height: var(--header-height); */
     /* margin-bottom: 20px; */
     /* padding: 1rem 2rem; */
