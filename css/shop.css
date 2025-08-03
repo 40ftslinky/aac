@@ -86,7 +86,7 @@ ul.products li.product .woocommerce-LoopProduct-link {
 
 .storefront-full-width-content.single-product div.product .woocommerce-product-gallery,
 .storefront-full-width-content .woocommerce-tabs ul.tabs {
-    padding: 0 var(--padding);
+    padding: 0 ;
     width: 100%;
     max-width: var(--one-third-max-width);
     float: unset;
@@ -98,7 +98,7 @@ ul.products li.product .woocommerce-LoopProduct-link {
     .storefront-full-width-content .woocommerce-tabs .panel,
     .storefront-full-width-content.single-product div.product .summary
     .product .summary {
-        padding: 0 var(--padding);
+        padding: 0 ;
         width: 100%;
         max-width: var(--two-thirds-max-width);
         float: unset;
