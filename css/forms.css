@@ -190,6 +190,13 @@ label {
     line-height: 1.2;
 }
 
+/* overpower woocomm class */
+
+.required {
+    /* border-bottom: 0 !important; */
+    /* color:#e2401c; */
+    color: unset;
+}
 
 /* required field */
 .required::after {
