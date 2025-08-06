@@ -29,6 +29,16 @@
     /* --gap-large: calc(70/1920 *100vw); */
     --gap-xlarge: 6rem;
     --gap-xs: 0.75rem;
+
+    /* spacing */
+    --spacing_05: 0.5rem;
+    --spacing_10: 1rem;
+    --spacing_15: 1.5rem;
+    --spacing_20: 2rem;
+    --spacing_30: 3rem;
+    --spacing_40: 4rem;
+    --spacing_50: 5rem;
+    --spacing_100: 10rem;
     
     /* sizes */
     /* (to allow for browswers with scroll bars) */
