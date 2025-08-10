@@ -4,7 +4,7 @@
 	<head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>AAC | About Our Story</title>
+        <title>AAC | Employment Services</title>
         <link rel="stylesheet" href="css/style.css">
 
         
@@ -35,7 +35,7 @@
         <meta name="theme-color" content="#fafafa">
     </head>
 
-    <body class="our-story">
+    <body class="jobs">
 
         <!-- header -->             
         <header id="header">
@@ -188,8 +188,8 @@
                         <div class="mega-menu-column" data-submenu="About">
                             <h3 class="submenu-title active">About</h3>
                             <ul class="mega-menu-submenu">
-                                <li class="submenu-item"><a class="submenu-link active" href="./about-our-story.html">Our Story</a></li>
-                                <li class="submenu-item"><a class="submenu-link" href="./about-our-team.html">Our Team</a></li>
+                                <li class="submenu-item"><a class="submenu-link " href="./about-our-story.html">Our Story</a></li>
+                                <li class="submenu-item"><a class="submenu-link " href="./about-our-team.html">Our Team</a></li>
                                 <li class="submenu-item"><a class="submenu-link" href="./about-sustainability.html">Sustainability Principles</a></li>
                                 <li class="submenu-item"><a class="submenu-link" href="./about-partners.html">Partners & Supporters</a></li>
                                 <li class="submenu-item"><a class="submenu-link" href="./about-agritourism.html">Agritourism</a></li>
@@ -214,7 +214,7 @@
                         <div class="mega-menu-column" data-submenu="Resources">
                             <h3 class="submenu-title">Resources</h3>
                             <ul class="mega-menu-submenu">
-                                <li class="submenu-item"><a class="submenu-link" href="./employment-services.html">Employment Services</a></li>
+                                <li class="submenu-item"><a class="submenu-link active" href="./employment-services.html">Employment Services</a></li>
                                 <li class="submenu-item"><a class="submenu-link" href="/resources/media">Media</a></li>
                                 <li class="submenu-item"><a class="submenu-link" href="./single-post.html">Blog</a></li>
                                 <li class="submenu-item"><a class="submenu-link" href="/resources/virtual-campus">Virtual Campus</a></li>
@@ -244,20 +244,20 @@
                                     <div class="split-hero-content">
                                         <div class="split-hero-content-item">
                                             <div class="split-hero-content-inner">
-                                                <h2 class="split-hero-title">Our Story</h2>
-                                                <h2 class="split-hero-subtitle">A place for those who are called to the land.</h2>
-                                                <!-- <p class="split-hero-text">This is a split text section. Use it to highlight important content or announcements.</p> -->
+                                                <h1 class="split-hero-title">Employment Services</h1>
+                                                <h2 class="split-hero-subtitle">Opportunities for Employers and Employees through the AAC network</h2>
+
                                             </div>
-                                            <a href="#" class="button mono">Learn More</a>
+                                            <!-- <a href="#" class="button mono">Learn More</a> -->
                                         </div>
                                     </div>
                                 </div>
                                 <!--  -->
-                                <div class="content-grid-item content-grid-item--2-col">
+                                <!-- <div class="content-grid-item content-grid-item--2-col">
                                     <div class="split-hero-image image-wrap">
-                                        <img src="assets/images/Heros/About_OurStory_hero.jpg" alt="Our_Story_Hero" class="sample-image">
+                                        <img src="assets/images/placeholder.png" alt="product placeholder" class="sample-image">
                                     </div>
-                                </div>
+                                </div> -->
                                 <!--  -->
                             </div>
                         </div>
@@ -269,118 +269,158 @@
             </section>
 
 
-            <!-- intro / standard section (img left )-->
-            <section class="section standard-section ">
+           
+
+            <!-- jobs horiz -->
+            <section class="section biog-horiz-section ">
                 <div class="container">
                     <div class="row">
                         <div class="column">
                             
-                            <div class="section-image-wrap image-wrap standard-image-wrap">
-                                <img src="assets/images/content/About/Our_Story_born_02.jpg" alt="Our_Story_hand" class="sample-image">
+                            <div class="section-heading-wrap">
+                                <h4 class="primary-text">Job Search</h4>                            
+                                <h2>Job Offers</h2>
                             </div>
                                 
                         </div>
-
                         <div class="column">
 
-                           <div class="content-grid-item content-grid-item--2-col">
-                                <div class="column-content">
-                                    <div class="column-content-item">
-                                        <div class="column-content-inner">
-                                            <div class="standard-heading">
-                                                <h2 class="standard-title primary">Born in the city, but drawn to the country</h2>
-                                                <h4 class="standard-subtitle">Jo Marshall simply felt at home out here.</h4>
-                                            </div>
-                                            <div class="standard-text">
-                                                <!-- <p class="standard-text">Born in the city, but drawn to the country, Jo Marshall simply felt at home out here.</p> -->
-                                                <p class="">Where the sky stretches forever, and fresh air fills your soul. Where there’s room to breathe, and room for a family to grow.</p>
-                                                <p class="">And where, surrounded by farmers who cared for the land, she became aware of the issue that many were facing.</p>
-                                                <p class="">Young people leaving the regions, and leaving a shortage of labour and skills in the agricultural industry, all over Australia.</p>
-                                            </div>
-                                        </div>
-                                        <a href="#" class="button ghost">Learn More</a>
+                            <div class="section-filter">
+                                <select id="filter-select" class="custom-select " >
+                                    <option value="" >Filter</option>
+                                    <option value="category-01">for Employer</option>
+                                    <option value="category-02">for Employees</option>
+                                    <option value="category-03">Either</option>
+                                    <option value="category-04">Other</option>
+                                </select>
+                                <form>
+                                    <!-- search -->
+                                    <div class="search-field">
+                                        <input type="text" id="search" placeholder="Search..." class="search-input">
+                                        <button type="submit" class="search-button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
+                                                <path fill="#121212" d="m14.96 13.54-3.09-3.09c.71-1.09 1.14-2.42 1.14-3.95 0-3.73-2.77-6.5-6.5-6.5S0 2.77 0 6.5 2.77 13 6.5 13c1.53 0 2.86-.42 3.95-1.14l3.09 3.09c.2.2.45.29.71.29.26 0 .51-.1.71-.29a.996.996 0 0 0 0-1.41ZM6.5 10.75c-2.43 0-4.25-1.82-4.25-4.25 0-2.43 1.82-4.25 4.25-4.25 2.43 0 4.25 1.82 4.25 4.25 0 2.43-1.82 4.25-4.25 4.25Z"/>
+                                            </svg>
+                                        </button>
                                     </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>                                    
-                </div>
-            </section>
-
-            <!-- work / standard section (img right) -->
-            <section class="section standard-section primary_gradient-bg ">
-                <div class="container">
-                    <div class="row">                        
-
-                        <div class="column">
-
-                           <div class="content-grid-item content-grid-item--2-col">
-                                <div class="column-content">
-                                    <div class="column-content-item">
-                                        <div class="column-content-inner">
-                                            <div class="standard-heading">
-                                                <h2 class="standard-title ">So she got to work. </h2>
-                                                <!-- <h4 class="standard-subtitle"></h4> -->
-                                            </div>
-                                            <div class="standard-text">
-                                                <p class="">Along with friend David Montgomery, Jo developed the idea of a place for those who are called to the land. A place where farmers could learn new skills, and young people could sink their hands into the soil, perhaps for the very first time.</p>
-                                                <p class="">The idea took shape, a local businessman offered the use of his farm, and they were off and running.</p>
-                                            </div>
-
-                                        </div>
-                                        <!-- <a href="#" class="button primary">Learn More</a> -->
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="column">
-                            
-                            <div class="section-image-wrap image-wrap standard-image-wrap">
-                                <img src="assets/images/content/About/Our_Story_work.jpg" alt=" Our_Story_work" class="sample-image">
+                                </form>
+                            <!--  -->
+                                <!-- 
+                                    <button class="filter" >Category</button>
+                                    <button class="filter selected" >Category 02</button>
+                                    <button class="filter" >Category 03</button>
+                                    <button class="filter" >Category 04</button> 
+                                -->
                             </div>
                                 
                         </div>
-
-                    </div>                                    
-                </div>
-            </section>
-
-
-            <!-- born / standard section (img left )-->
-            <section class="section standard-section ">
-                <div class="container">
+                    </div>
                     <div class="row">
-                        <div class="column">
-                            
-                            <div class="section-image-wrap image-wrap standard-image-wrap">
-                                <img src="assets/images/content/About/Our_Story_born.jpg" alt="Our_Story_born" class="sample-image">
-                            </div>
-                                
-                        </div>
 
                         <div class="column">
 
-                           <div class="content-grid-item content-grid-item--2-col">
-                                <div class="column-content">
-                                    <div class="column-content-item">
-                                        <div class="column-content-inner">
-                                            <div class="standard-heading">
-                                                <h4 class="standard-subtitle">Foundation</h4>
-                                                <h2 class="standard-title primary">The AAC was born</h2>
-                                            </div>
-                                            <div class="standard-text">
-                                                <!-- <p class="">Born in the city, but drawn to the country, Jo Marshall simply felt at home out here.</p> -->
-                                                <p class="">Now the Australian Agriculture Centre welcomes people from all over the country, with school excursions delivering exceptional experiences, for more and more children.</p>
-                                                <p class="">Women in Ag is a focus too, empowering women with skills in agricultural science, animal husbandry, wool science, tractors, quads, chainsaws you name it.</p>
-                                                <p class="">Our impact is growing, our mission the same, to deliver the skills and training our farmers require, and give young people the chance to experience life on a farm.</p>
-                                                <p class="">So if you want to get involved, take a course or partner with us in some way, just let us know, we’d love to hear from you.</p>
-                                            </div>
+                           <div class="column_inner">
+                                    
+                                    <div class="job-card ">
+                                        <div class="job-card-image">
+                                            <img src="assets/svg/placeholder_logo.svg" alt="job: Name" class="job-image">
                                         </div>
-                                        <a href="#" class="button primary">Learn More</a>
+                                        <div class="job-card-content">
+                                            <div class="job-card-heading">
+                                                <h4 class="job-card-title">Job Title</h4>
+                                                <div class="job-card-org">Organisation / Employer</div>
+                                            </div>
+                                            <div class="job-card-text">
+                                                <div class="job-text">
+                                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita delectus amet minus dolorem labore fugit veritatis quia modi, impedit itaque in repellendus eveniet praesentium corrupti similique cupiditate adipisci nisi temporibus.</p>
+                                            </div>
+                                            <a class="social_link" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">                                                
+                                                <svg class="linkedin_icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill="#202020" fill-rule="evenodd" d="M.063 2.014a1.12 1.12 0 0 1 1.12-1.12h11.164a1.12 1.12 0 0 1 1.12 1.12v11.165a1.12 1.12 0 0 1-1.12 1.122H1.184a1.12 1.12 0 0 1-1.12-1.121V2.014Zm5.305 3.992h1.816v.912c.261-.525.933-.996 1.94-.996 1.93 0 2.388 1.044 2.388 2.959v3.548H9.557V9.317c0-1.09-.261-1.706-.927-1.706-.923 0-1.307.664-1.307 1.706v3.112H5.369V6.006Zm-3.352 6.34h1.955V5.92H2.018v6.425Zm2.236-8.52a1.257 1.257 0 1 1-2.514.054 1.257 1.257 0 0 1 2.514-.053v-.001Z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span class="visually-hidden">LinkedIn</span>
+                                            </a>
+                                            <a class="button mono" href="#job-enquiry">Apply Now</a>
+                                            </div>
+                                        </div>                                    
                                     </div>
+
+                                    <div class="job-card ">
+                                        <div class="job-card-image">
+                                            <img src="assets/svg/placeholder_logo.svg" alt="job: Name" class="job-image">
+                                        </div>
+                                        <div class="job-card-content">
+                                            <div class="job-card-heading">
+                                                <h4 class="job-card-title">Skill / Area of Expertise</h4>
+                                                <div class="job-card-org">Name LastName / Employee</div>
+                                            </div>
+                                            <div class="job-card-text">
+                                                <div class="job-text">
+                                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita delectus amet minus dolorem labore fugit veritatis quia modi, impedit itaque in repellendus eveniet praesentium corrupti similique cupiditate adipisci nisi temporibus.</p>
+                                            </div>
+                                            <a class="social_link" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">                                                
+                                                <svg class="linkedin_icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill="#202020" fill-rule="evenodd" d="M.063 2.014a1.12 1.12 0 0 1 1.12-1.12h11.164a1.12 1.12 0 0 1 1.12 1.12v11.165a1.12 1.12 0 0 1-1.12 1.122H1.184a1.12 1.12 0 0 1-1.12-1.121V2.014Zm5.305 3.992h1.816v.912c.261-.525.933-.996 1.94-.996 1.93 0 2.388 1.044 2.388 2.959v3.548H9.557V9.317c0-1.09-.261-1.706-.927-1.706-.923 0-1.307.664-1.307 1.706v3.112H5.369V6.006Zm-3.352 6.34h1.955V5.92H2.018v6.425Zm2.236-8.52a1.257 1.257 0 1 1-2.514.054 1.257 1.257 0 0 1 2.514-.053v-.001Z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span class="visually-hidden">LinkedIn</span>
+                                            </a>
+                                            <a class="button mono" href="#job-search">Contact Now</a>
+                                            </div>
+                                        </div>                                    
+                                    </div>
+
+
+                                    <div class="job-card ">
+                                        <!-- <div class="job-card-image">
+                                            <img src="assets/svg/placeholder_logo.svg" alt="job: Name" class="job-image">
+                                        </div> -->
+                                        <div class="job-card-content">
+                                            <div class="job-card-heading">
+                                                <h4 class="job-card-title">Job Title</h4>
+                                                <div class="job-card-org">Organisation / Employer</div>
+                                            </div>
+                                            <div class="job-card-text">
+                                                <div class="job-text">
+                                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita delectus amet minus dolorem labore fugit veritatis quia modi, impedit itaque in repellendus eveniet praesentium corrupti similique cupiditate adipisci nisi temporibus.</p>
+                                            </div>
+                                            <a class="social_link" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">                                                
+                                                <svg class="linkedin_icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill="#202020" fill-rule="evenodd" d="M.063 2.014a1.12 1.12 0 0 1 1.12-1.12h11.164a1.12 1.12 0 0 1 1.12 1.12v11.165a1.12 1.12 0 0 1-1.12 1.122H1.184a1.12 1.12 0 0 1-1.12-1.121V2.014Zm5.305 3.992h1.816v.912c.261-.525.933-.996 1.94-.996 1.93 0 2.388 1.044 2.388 2.959v3.548H9.557V9.317c0-1.09-.261-1.706-.927-1.706-.923 0-1.307.664-1.307 1.706v3.112H5.369V6.006Zm-3.352 6.34h1.955V5.92H2.018v6.425Zm2.236-8.52a1.257 1.257 0 1 1-2.514.054 1.257 1.257 0 0 1 2.514-.053v-.001Z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span class="visually-hidden">LinkedIn</span>
+                                            </a>
+                                            <a class="button mono" href="#job-enquiry">Apply Now</a>
+                                            </div>
+                                        </div>                                    
+                                    </div>
+
+                                    <div class="job-card ">
+                                        <!-- <div class="job-card-image">
+                                            <img src="assets/svg/placeholder_logo.svg" alt="job: Name" class="job-image">
+                                        </div> -->
+                                        <div class="job-card-content">
+                                            <div class="job-card-heading">
+                                                <h4 class="job-card-title">Skill / Area of Expertise</h4>
+                                                <div class="job-card-org">Name LastName / Employee</div>
+                                            </div>
+                                            <div class="job-card-text">
+                                                <div class="job-text">
+                                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita delectus amet minus dolorem labore fugit veritatis quia modi, impedit itaque in repellendus eveniet praesentium corrupti similique cupiditate adipisci nisi temporibus.</p>
+                                            </div>
+                                            <a class="social_link" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">                                                
+                                                <svg class="linkedin_icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill="#202020" fill-rule="evenodd" d="M.063 2.014a1.12 1.12 0 0 1 1.12-1.12h11.164a1.12 1.12 0 0 1 1.12 1.12v11.165a1.12 1.12 0 0 1-1.12 1.122H1.184a1.12 1.12 0 0 1-1.12-1.121V2.014Zm5.305 3.992h1.816v.912c.261-.525.933-.996 1.94-.996 1.93 0 2.388 1.044 2.388 2.959v3.548H9.557V9.317c0-1.09-.261-1.706-.927-1.706-.923 0-1.307.664-1.307 1.706v3.112H5.369V6.006Zm-3.352 6.34h1.955V5.92H2.018v6.425Zm2.236-8.52a1.257 1.257 0 1 1-2.514.054 1.257 1.257 0 0 1 2.514-.053v-.001Z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span class="visually-hidden">LinkedIn</span>
+                                            </a>
+                                            <a class="button mono" href="#job-search">Contact Now</a>
+                                            </div>
+                                        </div>                                    
+                                    </div>
+                                    
+
+
+                                    
                                 </div>
                             </div>
 
@@ -389,7 +429,8 @@
                 </div>
             </section>
 
-            
+
+
             <!-- upcoming -->
              <section class="section standard-section upcoming-program-section  white-bg">
                 <div class="container">
@@ -397,10 +438,10 @@
                         <div class="column">
                             
                             <div class="section-heading-wrap">
-                                <div class="standard-heading">
-                                    <h4 class="primary-text">Upcoming Programs</h4>
-                                </div>
-                                <p>Upcoming programs listed below, and a calendar of all upcoming programs <a href="">here</a></p>
+                                <h4 class="primary-text">Upcoming Programs</h4>
+                            </div>
+                            <div class="standard-text">
+                                <p>Other programs listed below, and a calendar of all upcoming programs <a href="">here</a></p>
                             </div>
                                 
                         </div>
