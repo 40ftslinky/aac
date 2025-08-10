@@ -394,3 +394,7 @@ input[type="checkbox"]:focus {
 .search-field button.search-button:hover svg path {
     fill: var(--notblack);
 }
+
+.contact-section .column:nth-of-type(2) {
+    align-content: center;
+}
