@@ -84,6 +84,27 @@ button.popup-close:hover,
   border-radius: 6px; */
   /* font: inherit; */
 }
+
+.popup-form input[type="file"] {
+    padding: 0 1rem 0 0 ;
+    margin-bottom: 2rem;
+
+}
+::file-selector-button {
+    border: 1px solid var(--grey);
+    padding: 5px 10px;
+    border-radius: 5px 0 0 5px;
+    margin-right: 1rem;
+    font-family: var(--font-family-body);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-button-sm);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-button);
+    line-height: var(--line-height-button);
+
+  /* background-color: lightgreen; */
+}
+
 .popup-form input:focus,
 .popup-form textarea:focus {
   /* outline: 2px solid #1a73e8;

@@ -313,8 +313,8 @@ nav {
         background-color: rgba(var(--black_rgb), 0);
         border-radius: 50px;
         position: absolute;
-        right: 0;
-        top: 4px
+        right: 1vw;
+        top: 1rem;
         cursor: pointer;
         z-index: 1001;
         transition: var(--transition);
