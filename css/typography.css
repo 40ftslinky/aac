@@ -57,6 +57,7 @@
     --font-size-submenu-mobile: 20px;
     --font-size-submenu-title-mobile: 20px;
     --font-size-button: 1.4rem; /* 14px */
+    --font-size-button-lrg: 2.4rem; /* 24px */
     --font-size-hero-title: var(--font-size-heading-1);
     /* --font-size-hero-subtitle: 48px; */
     --font-size-hero-subtitle: clamp(3.6rem, 1.3929rem + 1.7857vw, 4.8rem);

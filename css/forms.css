@@ -106,7 +106,7 @@ select {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;  
-  /* padding: 12px 40px 12px 16px; */
+  padding: 0px 40px 0px 16px;
   color: #222;
   cursor: pointer;
   width: 220px;

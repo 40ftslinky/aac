@@ -248,7 +248,7 @@
                                                 <h2 class="split-hero-subtitle">No Image</h2>
 
                                             </div>
-                                            <a href="#" class="button mono">Learn More</a>
+                                            <button  class="button mono pop-up-trigger">Learn More</button>
                                         </div>
                                     </div>
                                 </div>
@@ -269,10 +269,11 @@
             </section>
 
 
+
             <!-- legacy / standard section (img left )-->
             <section class="section contact-section standard-section ">
                 <div class="container">
-                    <div class="row __justify-around">
+                    <div class="row">
                         
 
                         <div class="column">
@@ -565,6 +566,38 @@
         </main>
 
 
+        <!-- Pop-up modal -->
+        <div id="contactPopup" class="popup" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="popupTitle">
+            <div class="popup-overlay" data-popup-close></div>
+            <div class="popup-dialog" role="document">
+
+                <button type="button" class="popup-close" aria-label="Close" data-popup-close>&times;</button>
+                <h2 id="popupTitle">We’d love to hear from you</h2>
+                <p>Please fill out the form and we’ll get back to you shortly.</p>
+
+                <form class="popup-form" action="#" method="post" novalidate>
+                    <div class="form-row">
+                        <label for="popupName">Name</label>
+                        <input id="popupName" name="name" type="text" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="popupEmail">Email</label>
+                        <input id="popupEmail" name="email" type="email" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="popupMessage">Message</label>
+                        <textarea id="popupMessage" name="message" rows="4" required></textarea>
+                    </div>
+                    <div class="form-row">
+                        <label for="popupMessage">Upload</label>
+                        <textarea id="popupMessage" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="button">Send</button>
+                </form>
+            </div>
+        </div>
+
+
         <!-- Footer -->
         <footer class="footer">
             <div class="container">
@@ -731,12 +764,12 @@
         <!-- JS -->
         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
-
         <script src="js/custom.js"></script>
         <script src="js/scrolled.js"></script>
         <script src="js/menu-active.js"></script>
 
         <script src="js/flickity_custom.js"></script>
+        <script src="js/pop-up.js"></script>
 
 
     </body>
