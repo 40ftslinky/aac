@@ -625,7 +625,7 @@ svg.linkedin_icon {
 }
 
 .standard-text {
-    font-size: var(--font-size-regular);
+    /* font-size: var(--font-size-regular); */
     line-height: var(--line-height-regular);
     font-weight: var(--font-weight-regular);
     letter-spacing: var(--letter-spacing-regular);
@@ -634,6 +634,9 @@ svg.linkedin_icon {
 }
 .standard-text {
     color: var(--notblack);
+}
+.standard-copy {
+    font-size: var(--font-size-regular);
 }
 
 .standard-text img {
