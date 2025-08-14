@@ -49,6 +49,15 @@ hr.redbar {
     margin: 1.5rem auto 1.5rem 0;
 }
 
+/* links */
+
+a:focus, button:focus, .button.alt:focus, input:focus, textarea:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus {
+    outline-color: unset;
+}
+a:focus, input:focus, textarea:focus, button:focus {
+    outline: unset;
+}
+
 /* ----------------------- */
 /* media */
 
