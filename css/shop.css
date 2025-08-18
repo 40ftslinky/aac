@@ -2,6 +2,11 @@
 
 /*  */
 
+
+.woocommerce-cart article {
+    width: var(--max-col-width);
+}
+
 header.woocommerce-products-header {
     display:none;
 }
