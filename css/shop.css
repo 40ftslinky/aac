@@ -7,6 +7,7 @@
     width: var(--max-col-width);
 }
 
+header.entry-header,
 header.woocommerce-products-header {
     display:none;
 }
@@ -20,6 +21,7 @@ body[class*="woocommerce"] {
 .storefront-breadcrumb {
     /* margin: var(--header-height) auto 0; */
     padding: 0;
+    display: none !important;
 }
 
 #content.site-content {
