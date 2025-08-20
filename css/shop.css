@@ -167,6 +167,7 @@ ul.products li.product .woocommerce-LoopProduct-link {
 
 .wc-block-grid__product {
     max-width: var(--max-col-width);
+    gap: var(--gap-large)
 }
 
 @media screen and (min-width: 1440px) {

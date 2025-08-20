@@ -13,6 +13,8 @@
     --padding-small: 1.6rem;
     --padding-regular: 2.4rem;
     --padding-medium: 3.2rem;
+    --padding-scale-large: 2.5vw;
+    /* --padding-large: var(--padding-scale-large); */
     --padding-large: 4.8rem;
     --padding-xlarge: 6.4rem;
     --padding-xxlarge: 9.6rem;
@@ -25,6 +27,8 @@
     --gap-small: 1.5rem;
     --gap-medium: 2rem;
     --gap: 3.2rem;
+    --gap-scale-large: 2.5vw;
+    /* --gap-large: var(--gap-scale-large); */
     --gap-large: 4.8rem;
     /* --gap-large: calc(70/1920 *100vw); */
     --gap-xlarge: 6rem;
