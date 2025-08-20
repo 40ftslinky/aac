@@ -316,7 +316,9 @@ woocommerce-active
 
 #wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker td {
     width: 48px;
+    border-radius: 50%;
 }
+
 
 .wc-bookings-date-picker .ui-datepicker td.bookable a,
 .wc-bookings-date-picker .ui-datepicker td.bookable a.ui-state-default {
