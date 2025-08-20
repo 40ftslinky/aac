@@ -326,6 +326,7 @@ woocommerce-active
     border-radius: 50%;
 }
 
+button.alt, input[type="button"].alt,
 .wc-bookings-booking-form-button {
     background-color: var(--primary);
     border: none;
@@ -338,6 +339,7 @@ woocommerce-active
     transition: background-color var(--transition);
 }
 
+button.alt:hover, input[type="button"].alt:hover,
 .wc-bookings-booking-form-button:hover {
     background-color: darken(var(--primary), 5%);
 }
