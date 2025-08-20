@@ -296,4 +296,30 @@ woocommerce-active
 
 /*  */
 
-.wc-block-grid__product
+.wc-block-grid__product {}
+
+.wc_bookings_field_persons {
+    margin-bottom: 0.5rem;
+    font-size: var(--font-size-label);
+}
+
+/* calendar */
+
+.wc-bookings-date-picker {
+    padding: 0;
+}
+
+#wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker td.ui-datepicker-today a, #wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker td.ui-datepicker-today span {
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 3px rgba(var(--primary_rgb), 0.2);
+}
+
+#wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker td {
+    width: 48px;
+}
+
+.wc-bookings-date-picker .ui-datepicker td.bookable a,
+.wc-bookings-date-picker .ui-datepicker td.bookable a.ui-state-default {
+    background-color: var(--primary) !important;
+    border-radius: 50%;
+}
