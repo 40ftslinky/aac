@@ -311,7 +311,7 @@ woocommerce-active
 
 #wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker td.ui-datepicker-today a, #wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker td.ui-datepicker-today span {
     border-radius: 50%;
-    box-shadow: inset 0 0 0 3px rgba(var(--primary_rgb), 0.2);
+    box-shadow: inset 0 0 0 3px rgba(var(--primary_rgb), 0.7);
 }
 
 #wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker td {
