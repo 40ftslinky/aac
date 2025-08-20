@@ -325,3 +325,19 @@ woocommerce-active
     background-color: var(--primary) !important;
     border-radius: 50%;
 }
+
+.wc-bookings-booking-form-button {
+    background-color: var(--primary);
+    border: none;
+    border-radius: var(--radius-medium);
+    color: #fff;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color var(--transition);
+}
+
+.wc-bookings-booking-form-button:hover {
+    background-color: darken(var(--primary), 5%);
+}
