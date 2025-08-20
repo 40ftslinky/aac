@@ -165,15 +165,62 @@ ul.products li.product .woocommerce-LoopProduct-link {
 
 /* product */
 
-.wc-block-grid__product-title,
-.wc-block-grid__products .wc-block-grid__product .wc-block-grid__product-title {
-    font-size: var(--font-size-heading-3);
-    line-height: 1.2;
-    font-weight: 600;
-    margin-bottom: var(--padding);
+.wc-block-grid__product {
+    max-width: var(--max-col-width);
 }
 
-/* home 
+@media screen and (min-width: 1440px) {
+    .wc-block-grid__product {
+        max-width: var(--one-qtr-max-width);
+    }
+}
+
+.wc-block-grid__product-image,
+.wc-block-grid__product .wc-block-grid__product-image:not(.wc-block-components-product-image) {
+    overflow: hidden;
+    border-radius: var(--radius-medium);
+    transition: var(--transition);
+    aspect-ratio: var(--aspect-ratio-1_1);
+    box-sizing: border-box;
+    object-fit: cover;
+    object-position: center;
+}
+
+.wc-block-grid__products .wc-block-grid__product-image img {
+    transition: var(--transition);
+    transform: scale(1);
+    min-height: 100%;
+}
+a:hover .wc-block-grid__products .wc-block-grid__product-image img {
+    transform: scale(1.05);
+}
+
+.wc-block-grid__product-title,
+.wc-block-grid__products .wc-block-grid__product .wc-block-grid__product-title {
+    text-wrap: balance;
+    font-size: var(--font-size-heading-5);
+    font-weight: var(--font-weight-heading);
+    line-height: var(--line-height-title);
+    color: var(--notblack);
+    max-width: 45ch;
+}
+
+.wc-block-grid__product {
+
+}
+
+/* Provides fallback intrinsic dimensions */
+/* caveat: Very large numbers (3000x1500) might allocate more space than needed if the actual image is smaller; */
+
+img:is([sizes="auto" i], [sizes^="auto," i]) {
+    contain-intrinsic-size: 3000px 1500px;
+}
+img[loading="lazy"] { aspect-ratio: 2 / 1; } 
+
+
+/*
+
+home 
 wp-singular 
 page-template 
 page-template-template-homepage 
@@ -203,4 +250,16 @@ woocommerce-js
 storefront-full-width-content 
 storefront-align-wide 
 right-sidebar 
-woocommerce-active */
+woocommerce-active 
+
+*/
+
+/*  */
+
+.column-content {
+    justify-content: flex-start;
+}
+
+/*  */
+
+.wc-block-grid__product
