@@ -2,7 +2,9 @@
 
 /*  */
 
-
+.woo-commerce {
+    margin-top: var(--header-height);
+}
 
 .woocommerce-cart article {
     width: var(--max-col-width);
