@@ -165,6 +165,18 @@ ul.products li.product .woocommerce-LoopProduct-link {
 
 /* product */
 
+@media (min-width: 66.4989em) {
+    .storefront-align-wide.page-template-template-fullwidth-php .hentry .entry-content .alignwide, 
+    .storefront-align-wide.storefront-full-width-content .hentry .entry-content .alignwide {
+        margin: 0 auto;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
 .wc-block-grid__products {
     gap: var(--gap-large);
 }
@@ -179,6 +191,18 @@ ul.products li.product .woocommerce-LoopProduct-link {
         max-width: var(--one-qtr-max-width);
     }
 }
+
+.wc-block-grid__products .wc-block-grid__product {
+    gap: 1.2rem
+}
+
+.wc-block-grid__products .wc-block-grid__product > * {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+}
+
 
 .wc-block-grid__product-image,
 .wc-block-grid__product .wc-block-grid__product-image:not(.wc-block-components-product-image) {
@@ -210,9 +234,6 @@ a:hover .wc-block-grid__products .wc-block-grid__product-image img {
     max-width: 45ch;
 }
 
-.wc-block-grid__product {
-
-}
 
 /* Provides fallback intrinsic dimensions */
 /* caveat: Very large numbers (3000x1500) might allocate more space than needed if the actual image is smaller; */
