@@ -286,7 +286,7 @@ woocommerce-active
 
 /*  */
 
-.column-content {
+[class*="woocommerce-page"] .column-content {
     justify-content: flex-start;
 }
 
