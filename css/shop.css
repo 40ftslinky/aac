@@ -290,6 +290,10 @@ woocommerce-active
     justify-content: flex-start;
 }
 
+[class*="woocommerce-page"] .column-content .column-content-item {
+    padding-top: 0;
+}
+
 /*  */
 
 .wc-block-grid__product

@@ -465,6 +465,14 @@
     color: var(--text-color-muted);
     margin-bottom: 0.5rem;
 }
+
+.product-description-card-text [class*="product-description"] {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
 .product-description-cost {
     font-size: var(--font-size-heading-5);
     font-weight: var(--font-weight-medium);
