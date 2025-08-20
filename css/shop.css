@@ -170,7 +170,8 @@ ul.products li.product .woocommerce-LoopProduct-link {
 }
 
 @media screen and (min-width: 1440px) {
-    .wc-block-grid__product {
+    .wc-block-grid__product,
+    .wc-block-grid.has-4-columns .wc-block-grid__product {
         max-width: var(--one-qtr-max-width);
     }
 }
