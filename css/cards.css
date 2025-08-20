@@ -466,6 +466,12 @@
     margin-bottom: 0.5rem;
 }
 
+.pd-title, .pd-content {
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-regular);
+    color: var(--notblack);
+}
+
 .product-description-card-text [class*="product-description"] {
     display: flex;
     flex-direction: row;
@@ -484,6 +490,12 @@
     line-height: var(--line-height-regular);
     color: var(--notblack);
     margin-bottom: 1rem;
+}
+
+.product-description-card-title {
+    font-size: var(--font-size-heading-4);
+    line-height: var(--line-height-regular);
+    color: var(--notblack);
 }
 
 /* ------------------------------------------ */
