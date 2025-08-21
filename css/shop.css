@@ -5,7 +5,7 @@
 .woocommerce {
     margin-top: var(--header-height);
 }
-.woo-commerce .woocommerce-message {
+.woocommerce .woocommerce-message {
     margin: 0;
     margin-top: 0;
     margin-bottom: 0;
