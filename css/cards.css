@@ -307,8 +307,15 @@
 }
 
 .section-filter form {
-    flex-direction: row;
+    flex-direction: column;
+    max-width: unset;
 }
+@media screen and (min-width: 576px) {
+    .section-filter form {
+        flex-direction: row;
+    }
+}
+
 
 .grid-program-section .column_inner {
     justify-content: flex-start;
