@@ -2,7 +2,7 @@
 
 /*  */
 
-.woo-commerce {
+.woocommerce {
     margin-top: var(--header-height);
 }
 .woo-commerce .woocommerce-message {
@@ -38,7 +38,7 @@ body[class*="woocommerce"] {
 
 /* [class*="woocommerce"] main.site-main, */
 [class*="woocommerce-page"] main.site-main {
-    margin: calc(var(--header-height)*2) auto 0; 
+    margin: calc(var(--header-height)/2) auto 0; 
 }
 
 @media (min-width: 1440px) {
