@@ -306,6 +306,10 @@
     }
 }
 
+.section-filter form {
+    flex-direction: row;
+}
+
 .grid-program-section .column_inner {
     justify-content: flex-start;
 }

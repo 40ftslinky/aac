@@ -640,10 +640,11 @@ svg.linkedin_icon {
     font-size: var(--font-size-heading-4);
     line-height: var(--line-height-small);
     font-weight: var(--font-weight-regular);
-    letter-spacing: var(--letter-spacing-regular);
+    letter-spacing: var(--letter-spacing-tight-25);
 }
 .standard-subtitle {
     color: var(--default);
+    
 }
 .primary_gradient-bg h4,
 .primary_gradient-bg .standard-subtitle,
