@@ -116,6 +116,19 @@ input[type="submit"] {
     }
 }
 
+.primary_gradient-bg .primary {
+    /* should be default mono */
+    background: var(--mono_gradient);
+    border: 1px solid rgba(var(--default_rgb),0);
+    color: var(--white);
+    &:hover {
+        background: var(--mono_dark);
+        border: 1px solid rgba(var(--default_rgb), 1) !important;
+        color: var(--white) !important;
+        box-shadow: var(--shadow-regular);
+    }
+}
+
 .link-only {
     padding: 0.5rem 0.5rem;
     margin-left: -0.5rem;
