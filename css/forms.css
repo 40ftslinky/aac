@@ -189,6 +189,11 @@ label {
     color: var(--text-color-secondary);
     line-height: 1.2;
 }
+label a {
+    font-size: var(--font-size-label);
+    color: var(--primary);
+    text-decoration: none;
+}
 
 /* overpower woocomm class */
 

@@ -313,6 +313,11 @@ section.hero .container {
     margin: 0 auto;
 }
 
+.blockquote-section .section-heading-wrap {
+    display: flex;
+    gap: var(--gap-large);
+}
+
 /* ----------------------- */
 /* structure */
 

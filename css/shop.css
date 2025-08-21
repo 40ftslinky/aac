@@ -330,12 +330,18 @@ woocommerce-active
     border-radius: 50%;
 }
 
-.ui-state-disabled, .ui-widget-content .ui-state-disabled, 
-.ui-widget-header .ui-state-disabled {
+.bookable {
+    background-color: yellow !important;
+}
+
+.ui-state-disabled.fully_booked, 
+.ui-widget-content .ui-state-disabled.fully_booked, 
+.ui-widget-header .ui-state-disabled.fully_booked {
     background-color: var(--tertiary) !important;
 }
 
-/* button.alt, input[type="button"].alt,
+/* 
+button.alt, input[type="button"].alt,
 .wc-bookings-booking-form-button {
     background-color: var(--primary);
     border: none;
@@ -351,4 +357,5 @@ woocommerce-active
 button.alt:hover, input[type="button"].alt:hover,
 .wc-bookings-booking-form-button:hover {
     background-color: darken(var(--primary), 5%);
-} */
+} 
+*/
