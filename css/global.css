@@ -34,6 +34,9 @@ main {
     justify-content: flex-start;
     position: relative;
 }
+body:not([class*="woocommerce"]) main {
+    margin: var(--header-height) auto 0;
+}
 
 hr {
     margin-top: var(--gap-large);
@@ -60,9 +63,8 @@ a:focus, input:focus, textarea:focus, button:focus {
 
 /* preload nav */
 
-nav
-.fullscreen-menu {
-    display: none;
+nav .fullscreen-menu {
+    /* display: none; */
 }
 
 
