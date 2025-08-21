@@ -3,7 +3,7 @@
 /*  */
 
 .woocommerce {
-    margin-top: var(--header-height);
+    /* margin-top: var(--header-height); */
 }
 .woocommerce .woocommerce-message {
     margin: 0;
