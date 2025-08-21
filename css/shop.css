@@ -255,41 +255,7 @@ img:is([sizes="auto" i], [sizes^="auto," i]) {
 img[loading="lazy"] { aspect-ratio: 2 / 1; } 
 
 
-/*
 
-home 
-wp-singular 
-page-template 
-page-template-template-homepage 
-page-template-template-homepage-php 
-page page-id-91 
-wp-embed-responsive 
-wp-theme-storefront 
-wp-child-theme-screen_child 
-theme-storefront 
-woocommerce-js 
-storefront-full-width-content 
-storefront-align-wide 
-right-sidebar 
-woocommerce-active
-
-wp-singular 
-page-template-default 
-page 
-page-id-8 
-wp-embed-responsive 
-wp-theme-storefront 
-wp-child-theme-screen_child 
-theme-storefront 
-woocommerce-cart 
-woocommerce-page 
-woocommerce-js 
-storefront-full-width-content 
-storefront-align-wide 
-right-sidebar 
-woocommerce-active 
-
-*/
 
 /*  */
 
@@ -312,6 +278,10 @@ woocommerce-active
 
 /* calendar */
 
+[class*="ui-datepicker"] a {
+    font-size: 18px;
+}
+
 .wc-bookings-date-picker {
     padding: 0;
 }
@@ -323,8 +293,10 @@ woocommerce-active
 
 #wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker td,
 .wc-bookings-date-picker .ui-datepicker td .ui-state-default {
-    width: 48px;
+    width: 46px;
     border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    align-content: space-around;
 }
 
 
@@ -336,8 +308,14 @@ woocommerce-active
 }
 
 .bookable {
-    background-color: yellow !important;
+    /* background-color: yellow !important; */
 }
+
+.partial_booked {}
+
+.not_bookable {}
+[class*="unselectable"].not_bookable {}
+
 
 .ui-state-disabled.fully_booked, 
 .ui-widget-content .ui-state-disabled.fully_booked, 
