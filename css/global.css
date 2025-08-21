@@ -645,6 +645,11 @@ svg.linkedin_icon {
 .standard-subtitle {
     color: var(--default);
 }
+.primary_gradient h4,
+.primary_gradient .standard-subtitle,
+.primary_gradient .standard-subtitle.primary {
+    color: rgba(var(--notblack_rgb), 0.5);
+}
 
 .standard-text {
     /* font-size: var(--font-size-regular); */

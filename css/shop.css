@@ -5,9 +5,10 @@
 .woocommerce {
     /* margin-top: var(--header-height); */
 }
+/* .site-content>.col-full>.woocommerce>.woocommerce-message:first-child, */
 .woocommerce .woocommerce-message {
     margin: 0;
-    margin-top: 0;
+    margin-top: 0 !important;
     margin-bottom: 0;
 }
 
@@ -342,3 +343,9 @@ button.alt:hover, input[type="button"].alt:hover,
     background-color: darken(var(--primary), 5%);
 } 
 */
+
+/* screenreader */
+
+.quantity label.screen-reader-text {
+    /* position: relative !important; */
+}
