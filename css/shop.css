@@ -6,7 +6,8 @@
     /* margin-top: var(--header-height); */
 }
 /* .site-content>.col-full>.woocommerce>.woocommerce-message:first-child, */
-.woocommerce .woocommerce-message {
+.woocommerce .woocommerce-message,
+.woocommerce .woocommerce-info {
     margin: 0;
     margin-top: 0 !important;
     margin-bottom: 0;
