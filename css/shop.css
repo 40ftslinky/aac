@@ -5,6 +5,11 @@
 .woo-commerce {
     margin-top: var(--header-height);
 }
+.woo-commerce .woocommerce-message {
+    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
 .woocommerce-cart article {
     width: var(--max-col-width);
