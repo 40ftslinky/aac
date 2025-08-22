@@ -282,3 +282,89 @@ input[type="submit"] {
         box-shadow: var(--shadow-regular);
     }
 }
+
+
+/* ------------------------------------- */
+/* CTA arrow */
+
+
+:root {
+    --shift-distance: calc(4 * .0625rem);
+    --link-color: #231e15;
+    --link-color-hovered: #231e15;
+    --copy-regular-size: 1rem;
+    --copy-info-size: .8125rem;
+}
+
+@keyframes fakebounce {
+    0% {
+        left: calc(100% - 2rem);
+    }
+    50% {
+        left: -1.5rem;
+    }
+    75% {
+        left: -.5rem;
+    }
+    88% {
+        left: -1.125rem;
+    }
+    100% {
+        left: -1rem;
+    }
+}
+
+.cta--small.ctaArrow {
+    font-weight: 500;
+    font-size: var(--copy-info-size);
+}
+.ctaArrow:hover, .supportLink:hover {
+    color: var(--link-color-hovered);
+    -webkit-transform: translateX(var(--shift-distance));
+    -ms-transform: translateX(var(--shift-distance));
+    transform: translateX(var(--shift-distance));
+}
+a:hover {
+    text-decoration: none;
+}
+.ctaArrow, .supportLink {
+    --shift-distance: calc(4 * .0625rem);
+    font-weight: 400;
+    font-size: var(--copy-regular-size);
+    color: var(--link-color);
+    z-index: 1;
+    border-radius: 2em;
+    padding-right: 2.5rem;
+    line-height: 2rem;
+    text-decoration: none;
+    transition: color .15s ease-in-out, transform .3s;
+    display: inline-block;
+    position: relative;
+    transform: translate(0);
+}
+.ctaArrow:before, .supportLink:before {
+    content: "";
+    z-index: -1;
+    background-color: #ffe01b;
+    background-image: url(/assets/svg/ctaArrow.svg);
+    background-position: calc(100% - .4375rem) calc(100% - .4375rem);
+    background-repeat: no-repeat;
+    background-size: 1.125rem;
+    border-radius: 1rem;
+    height: 2rem;
+    transition: left .3s cubic-bezier(.34,1.2,.64,1), right .3s, background-position .3s;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: calc(100% - 2rem);
+    right: 0;
+}
+.ctaArrow:hover:before, .supportLink:hover:before {
+    background-position-x: calc(100% - (var(--shift-distance) * 3.5));
+    height: 100%;
+    transition: right .3s, background-position .3s;
+    animation: .3s ease-in-out fakebounce;
+    left: -1rem;
+}
+
+/* ------------------------------------- */

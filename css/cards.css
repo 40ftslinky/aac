@@ -477,7 +477,8 @@
     margin-bottom: 0.5rem;
 }
 
-.pd-title, .pd-content {
+.pd-title, .pd-title p, 
+.pd-content, .pd-content p  {
     font-size: var(--font-size-regular    );
     line-height: var(--line-height-regular);
     color: var(--notblack);
