@@ -81,7 +81,7 @@ footer a:focus {
     text-decoration: var(--text-decoration-underline);
 }
 footer small, 
-[class*="footer"], 
+[class*="footer"]:not([class*="wc-block-components"]), 
 [class*="footer"] a {
     font-size: var(--font-size-footer);
     color: var(--text-color-muted);
