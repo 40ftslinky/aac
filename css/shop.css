@@ -13,7 +13,8 @@
     margin-bottom: 0;
 }
 
-.woocommerce-cart article {
+.woocommerce-cart article, 
+.woocommerce-checkout article {
     width: var(--max-col-width);
 }
 
@@ -288,7 +289,13 @@ img[loading="lazy"] { aspect-ratio: 2 / 1; }
     padding: 0;
 }
 
-#wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker td.ui-datepicker-today a, #wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker td.ui-datepicker-today span {
+.wc-bookings-date-picker .ui-datepicker td a.ui-state-active, 
+.wc-bookings-date-picker .ui-datepicker td a.ui-state-active.ui-state-hover {
+    color: var(--notblack);
+}
+
+#wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker td.ui-datepicker-today a, 
+#wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker td.ui-datepicker-today span {
     border-radius: 50%;
     box-shadow: inset 0 0 0 3px rgba(var(--primary_rgb), 0.7);
 }
@@ -325,25 +332,7 @@ img[loading="lazy"] { aspect-ratio: 2 / 1; }
     background-color: var(--tertiary) !important;
 }
 
-/* 
-button.alt, input[type="button"].alt,
-.wc-bookings-booking-form-button {
-    background-color: var(--primary);
-    border: none;
-    border-radius: var(--radius-medium);
-    color: #fff;
-    cursor: pointer;
-    padding: 0.5rem 1rem;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color var(--transition);
-}
 
-button.alt:hover, input[type="button"].alt:hover,
-.wc-bookings-booking-form-button:hover {
-    background-color: darken(var(--primary), 5%);
-} 
-*/
 
 /* screenreader */
 
