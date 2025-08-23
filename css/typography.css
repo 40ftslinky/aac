@@ -83,13 +83,14 @@
     --letter-spacing-regular: 0.025em; /* 0.025em */
     --letter-spacing-large: 0.01em; /* 0.01em */
     --letter-spacing-tighter: -0.05em; /* -0.05em */
+    --letter-spacing-tight: -0.04em; /* -0.04em */
     --letter-spacing-tight-25: -0.025em; /* -0.025em */
-    --letter-spacing-tight: -0.01em; /* -0.01em */
+    --letter-spacing-tight-10: -0.01em; /* -0.04em */
     --letter-spacing-regular: -0.0125em;
     --letter-spacing-loose: 0.01em; /* 0.01em */
     --letter-spacing-looser: 0.02em; /* 0.02em */
     --letter-spacing-loosest: 0.03em; /* 0.03em */
-    --letter-spacing-blockquote: var(--letter-spacing-tight);
+    --letter-spacing-blockquote: var(--letter-spacing-tight-10);
     --letter-spacing-menu: var(--letter-spacing-loose);
     --letter-spacing-submenu: var(--letter-spacing-regular);
     --letter-spacing-submenu-title: var(--letter-spacing-loose);
@@ -172,14 +173,14 @@ h1, h2, h3 {
     font-weight: var(--font-weight-heading);
 }
 h1, h2 {
-    letter-spacing: var(--letter-spacing-tight-25);
+    letter-spacing: var(--letter-spacing-tighter);
 }
 h3 {
     letter-spacing: var(--letter-spacing-tight);
 }
 h4, h5, h6 {
     font-weight: var(--font-weight-medium);
-    letter-spacing: var(--letter-spacing-regular);
+    letter-spacing: var(--letter-spacing-tight);
 }
 
 h1, .display-1 {
@@ -208,22 +209,22 @@ h6 {
 /*  */
 p {
     font-family: var(--font-body);
-    font-size: var(--font-size-body);
+    /* font-size: var(--font-size-body); */
     line-height: var(--line-height-body);
     margin: 0 0 1rem;
     letter-spacing: var(--letter-spacing-regular);
 }
 a {
     font-family: var(--font-body);
-    font-size: var(--font-size-body);
+    /* font-size: var(--font-size-body); */
     color: var(--text-color-accent);
     text-decoration: var(--text-decoration-none);
     transition: color 0.3s ease;
 }
 
 p a {
-        font-weight: var(--font-weight-medium);
-        letter-spacing: var(--letter-spacing-regular);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: var(--letter-spacing-regular);
 }
 
 a:hover, a:focus {
@@ -367,7 +368,7 @@ h6, .h6 {
 }
 
 p {
-    max-width: 65ch;
+    max-width: 55ch;
 }
 
 p:first-of-type {

@@ -628,7 +628,7 @@ svg.linkedin_icon {
     font-size: var(--font-size-heading-2);
     line-height: var(--line-height-small);
     font-weight: var(--font-weight-regular);
-    letter-spacing: var(--letter-spacing-tight);
+    letter-spacing: var(--letter-spacing-tighter);
     /* text-transform: var(--text-transform-uppercase); */
     text-wrap: balance ;
     text-decoration: var(--text-decoration-none);
@@ -642,7 +642,7 @@ svg.linkedin_icon {
     font-size: var(--font-size-heading-4);
     line-height: var(--line-height-small);
     font-weight: var(--font-weight-regular);
-    letter-spacing: var(--letter-spacing-tight-25);
+    letter-spacing: var(--letter-spacing-tight);
 }
 .standard-subtitle {
     color: var(--default);
