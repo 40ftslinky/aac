@@ -1055,9 +1055,8 @@
 .card-4-col-image img {
     width: 100%;
     height: 100%;
-    /* max-width: 400px;
-    object-fit: contain; */
-        /* padding: 1rem; */
+    object-fit: cover;
+    
 }
 .partner-section .card-4-col-image  {
     width: 100%;
