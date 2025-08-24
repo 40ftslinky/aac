@@ -325,7 +325,8 @@
 
 @media screen and (min-width: 576px) {
     .grid-product-card {     
-        max-width: var(--one-third-max-width);
+        /* max-width: var(--one-third-max-width); */
+        max-width: var(--one-half-max-width);
         height: 100%;
     }
 }
