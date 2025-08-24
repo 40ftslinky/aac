@@ -289,6 +289,9 @@ img[loading="lazy"] { aspect-ratio: 2 / 1; }
     padding: 0;
 }
 
+.ui-state-active, 
+.ui-widget-content .ui-state-active, 
+.ui-widget-header .ui-state-active,
 .wc-bookings-date-picker .ui-datepicker td a.ui-state-active, 
 .wc-bookings-date-picker .ui-datepicker td a.ui-state-active.ui-state-hover {
     color: var(--notblack);
