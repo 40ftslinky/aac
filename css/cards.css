@@ -381,6 +381,9 @@
 .calendar-card [class*="card-image"] img {
     transition: var(--transition);
     transform: scale(1);
+    aspect-ratio: var(--ratio-ratio-3_2);
+    border-radius: 0;
+    object-fit: cover;
 }
 .grid-product-card:hover [class*="card-image"] img,
 .calendar-card:hover [class*="card-image"] img {
@@ -402,6 +405,12 @@
 @media screen and (min-width: 1080px) {
     .grid-product-card [class*="card-image"],
     .calendar-card [class*="card-image"] {     
+        aspect-ratio: var(--aspect-ratio-1_1);
+    }
+}
+@media screen and (min-width: 1080px) {
+    .grid-product-card [class*="card-image"] img,
+    .calendar-card [class*="card-image"] img {     
         aspect-ratio: var(--aspect-ratio-1_1);
     }
 }
