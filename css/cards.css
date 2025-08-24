@@ -489,9 +489,16 @@
 
 .product-description-card-text [class*="product-description"] {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 0.5rem;
+}
+.product-description-date .pd-comment,
+.product-description-category .pd-comment {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.125rem 0.5rem;
 }
 
 .product-description-cost {
