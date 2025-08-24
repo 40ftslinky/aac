@@ -493,8 +493,8 @@
     flex-wrap: wrap;
     gap: 0.5rem;
 }
-.product-description-date .pd-comment,
-.product-description-category .pd-comment {
+.product-description-date .pd-content,
+.product-description-category .pd-content {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
