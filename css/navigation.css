@@ -622,6 +622,12 @@ nav.desktop ul li a{
     transform: translateY(-50%) rotate(180deg);
 }
 
+/* icons */
+
+.menu-link:hover svg path {
+    fill: var(--primary);
+}
+
 /* ------------------------------------ */
 
 @media screen and (max-width: 1080px) {

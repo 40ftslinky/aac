@@ -722,6 +722,12 @@
     -webkit-line-clamp: 3;
 } 
 
+.product-category {
+    /* display: flex; */
+    display: inline-flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
 
 .product-category,
 .product-category > * {
@@ -729,10 +735,14 @@
     line-height: var(--line-height-regular);
     color: var(--text-color-muted);
 }
+.pd-category:not(:last-of-type):after {
+    content: "; ";
+    margin-right: 0.5rem;
+}
 
 .product-overview,
 .product-overview > * {
-    font-size: var(--font-size-small);
+    font-size: var(--font-size-regular);
     line-height: var(--line-height-regular);
     color: var(--notblack);
 }
