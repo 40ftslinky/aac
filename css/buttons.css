@@ -38,6 +38,7 @@ input[type="submit"] {
     color: var(--notwhite);
     /*  */
     max-width: fit-content;
+    min-width: unset;
     /*  */
     font-family: var(--font-family-body);
     font-weight: var(--font-weight-regular);
@@ -125,6 +126,21 @@ input[type="submit"] {
     &:hover {
         background: var(--mono_dark);
         border: 1px solid rgba(var(--default_rgb), 1) !important;
+        color: var(--white) !important;
+        box-shadow: var(--shadow-regular);
+    }
+}
+
+/* button.primary,
+.button.primary, */
+input[type="submit"] {
+    /* should be default mono */
+    background: var(--primary_gradient);
+    border: 1px solid rgba(var(--primary_rgb),0);
+    color: var(--white);
+    &:hover {
+        background: var(--primary_dark);
+        border: 1px solid rgba(var(--primary_rgb), 1) !important;
         color: var(--white) !important;
         box-shadow: var(--shadow-regular);
     }
