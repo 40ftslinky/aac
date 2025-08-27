@@ -731,10 +731,14 @@
 
 .product-category,
 .product-category > * {
-    font-size: var(--font-size-regular);
+    font-size: var(--font-size-small);
     line-height: var(--line-height-regular);
     color: var(--text-color-muted);
 }
+.product-category .pd-category:hover {
+    text-decoration: underline;
+}
+
 .pd-category:not(:last-of-type):after {
     content: "; ";
     margin-right: 0.5rem;
@@ -744,6 +748,14 @@
 .product-overview > * {
     font-size: var(--font-size-regular);
     line-height: var(--line-height-regular);
+    color: var(--notblack);
+}
+
+.product-cost,
+.product-cost > * {
+    font-size: var(--font-size-regular);
+    line-height: var(--line-height-regular);
+    font-weight: var(--font-weight-medium);
     color: var(--notblack);
 }
 
