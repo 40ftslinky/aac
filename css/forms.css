@@ -10,6 +10,12 @@
     align-items: center;
 }
 
+.wpcf7-spinner {
+    position: absolute;
+    bottom: 1rem;
+    right: 0;
+}
+
 /*  */
 
 .form_wrap {
