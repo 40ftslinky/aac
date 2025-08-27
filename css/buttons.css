@@ -18,7 +18,8 @@ a>*, button>*, .button>* {
 /* Button */
 button,
 .button,
-input[type="submit"] {
+input[type="submit"],
+.wc-block-cart__submit-button {
     box-sizing: content-box;
     display: flex;
     flex-direction: row;
@@ -133,6 +134,7 @@ input[type="submit"] {
 
 /* button.primary,
 .button.primary, */
+.wc-block-cart__submit-button,
 input[type="submit"] {
     /* should be default mono */
     background: var(--primary_gradient);
