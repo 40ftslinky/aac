@@ -7,9 +7,12 @@
   inset: 0;
   display: none;
   z-index: 9000;
+  align-items: center;
+  justify-content: center;
 }
 .popup.is-open {
-  display: block;
+  /* display: block; */
+  display: flex;
 }
 .popup-overlay {
   position: absolute;
@@ -75,19 +78,25 @@ h2#popupTitle, .popup-dialog h2  {
     font-size: var(--font-size-heading-4);
 }
 
-.popup-form .form-row {
+.popup-form .form-row,
+.popup-dialog .wpcf7-form  .form-row,
+.popup-dialog .form-row {
   /* display: grid;
   gap: 6px;
   margin-bottom: 14px; */
 }
 .popup-form .form-row,
-.popup-form .form-row label {
+.popup-form .form-row label,
+.popup-dialog .form-row,
+.popup-dialog .form-row label  {
     display: block;
     margin-bottom: 0.5rem;
 }
 
 .popup-form input,
-.popup-form textarea {
+.popup-form textarea,
+.popup-dialog input,
+.popup-dialog textarea {
   width: 100%;
   /* padding: 10px 12px;
   border: 1px solid #cfd6df;
@@ -95,7 +104,8 @@ h2#popupTitle, .popup-dialog h2  {
   /* font: inherit; */
 }
 
-.popup-form input[type="file"] {
+.popup-form input[type="file"],
+.popup-dialog input[type="file"]  {
     padding: 0 1rem 0 0 ;
     margin-bottom: 2rem;
 
