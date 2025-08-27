@@ -71,6 +71,10 @@ button.popup-close:hover,
     transform: rotate(90deg);
 }
 
+h2#popupTitle, .popup-dialog h2  {
+    font-size: var(--font-size-heading-4);
+}
+
 .popup-form .form-row {
   /* display: grid;
   gap: 6px;
