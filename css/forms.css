@@ -415,11 +415,17 @@ input[type="checkbox"]:focus {
     width:100%;
     min-width: unset;
     max-width: unset;
+    padding: 0 1rem;
 }
 
 .search-field input[type="text"]:focus {
     border: none;
+    box-shadow: unset;
     /* box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); */
+}
+.search-field:has(input[type="text"]:focus) {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
 }
 .search-field button.search-button {
     position: relative;
