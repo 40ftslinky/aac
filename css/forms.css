@@ -211,13 +211,15 @@ select:disabled {
 .wpcf7-not-valid-tip,
 .error-message {
     color: var(--error);
-    font-size: 0.875rem;
+    font-size: var(--font-size-msg);
+    font-weight: var(--font-weight-semibold);
     margin-top: 0.25rem;
 }
 /* success message */
 .success-message {
     color: var(--success);
-    font-size: 0.875rem;
+    font-size: var(--font-size-msg);
+    font-weight: var(--font-weight-semibold);
     margin-top: 0.25rem;
 }
 /* form group */

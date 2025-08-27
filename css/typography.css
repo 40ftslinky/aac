@@ -31,6 +31,7 @@
     --font-size-body-6: 1.2rem; /* 12px */
     /*  */
     --font-size-label: 1.2rem; /* 12px */
+    --font-size-msg: 1.2rem; /* 12px */
     --font-size-footer: 1.2rem; /* 12px */
     /* --font-size-heading-1: 9rem;  */
     --font-size-scale: clamp(1.25rem, 1.162rem + .3756vw, 1.5rem);
