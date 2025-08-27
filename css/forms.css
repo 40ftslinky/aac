@@ -1,5 +1,17 @@
 /* forms */
 
+/* wpcf7 */
+
+.wpcf7-checkbox span.wpcf7-list-item-label {
+    display: none;
+}
+
+.wpcf7-form .checkbox-group {
+    align-items: center;
+}
+
+/*  */
+
 .form_wrap {
     /* max-width: 600px; */
     /* margin: 0 auto; */
@@ -330,14 +342,15 @@ input[type="checkbox"]:focus {
 
 .contact-section  .column:nth-of-type(2) .column-content-item:has(form) {
     align-items: center;
-    padding: 64px 0;
+    padding: 0;
+    /* margin-top: 0; */
 }
 @media screen and (min-width: 880px) {
     .contact-section  .column:nth-of-type(2) .column-content-item:has(form) {
-    align-items: center;
-    padding: 64px;
-    padding-right: 64px;
-}
+        align-items: center;
+        padding: 64px;
+        padding-right: 64px;
+    }
 }
 
 .contact-section .column:nth-of-type(2) {
