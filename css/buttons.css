@@ -47,6 +47,8 @@ input[type="submit"],
     letter-spacing: var(--letter-spacing-button);
     line-height: var(--line-height-button);
     text-transform: var(--text-transform-uppercase);
+    text-decoration: none;
+    /*  */
     background: var(--default_gradient); 
     background-size: 120% auto;
     background-position: 10% center;
