@@ -357,17 +357,21 @@
 
 .product-card:hover .product-card-image, 
 .product-card:hover .product-card-content {
-    transform: translateY(-8px);
+    /* transform: translateY(-8px); */
 }
 
 .upcoming-product-card .product-card-image {     
     aspect-ratio: var(--aspect-ratio-3_2);
+}
+.product-card:hover .product-card-image {
+    box-shadow: var(--shadow-regular);
 }
 
 @media screen and (min-width: 1080px) {
     .upcoming-product-card .product-card-image {     
         aspect-ratio: var(--aspect-ratio-1_1);
     }
+    
 }
 
 /* grid-product */
