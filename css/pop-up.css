@@ -77,6 +77,12 @@ button.popup-close:hover,
 h2#popupTitle, .popup-dialog h2  {
     font-size: var(--font-size-heading-4);
 }
+.popup-dialog p {
+  line-height: 1.35;
+}
+.popup-dialog form {
+  margin-top: 1.5rem;
+}
 
 .popup-form .form-row,
 .popup-dialog .wpcf7-form  .form-row,
