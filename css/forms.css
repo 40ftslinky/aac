@@ -2,6 +2,10 @@
 
 /* wpcf7 */
 
+.wpcf7-list-item {
+    margin-left: 0;
+}
+
 .wpcf7-checkbox span.wpcf7-list-item-label {
     display: none;
 }
@@ -197,6 +201,7 @@ select:disabled {
     opacity: 0.6;
 }
 /* error message */
+.wpcf7-not-valid-tip,
 .error-message {
     color: var(--error);
     font-size: 0.875rem;
