@@ -20,6 +20,13 @@
     right: 0;
 }
 
+span.wpcf7-form-control-wrap[data-name="Enquiry_Type"] {
+    width: 100%;
+}
+.wpcf7-form-control-wrap .custom-select {
+    width: 100%;
+}
+
 /*  */
 
 .form_wrap {
