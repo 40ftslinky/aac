@@ -80,6 +80,12 @@ h2#popupTitle, .popup-dialog h2  {
   gap: 6px;
   margin-bottom: 14px; */
 }
+.popup-form .form-row,
+.popup-form .form-row label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
 .popup-form input,
 .popup-form textarea {
   width: 100%;
