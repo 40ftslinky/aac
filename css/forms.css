@@ -430,16 +430,20 @@ input[type="checkbox"]:focus {
 .search-field button.search-button {
     position: relative;
     top: unset;
+    top: -1px;
+    right: -1px;
     transform: unset;
     padding: 0 1.25rem;
     background: var(--primary);
     color: var(--white);
     border: none;
+    border: 1px solid var(--primary);
     border-radius: 0 4px 4px 0;
     font-size: 1rem;
     cursor: pointer;
     transition: var(--transition);
     height: auto;
+    height: 105%;
 }
 .search-field button.search-button:hover {
     background-color: var(--primary-dark);
