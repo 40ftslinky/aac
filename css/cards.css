@@ -1913,10 +1913,10 @@
 }
 
 .programs-card .programs-card-image img {
-    filter: saturate(0%);
+    filter: saturate(100%);
 }
 .programs-card:hover .programs-card-image img {
-    filter: saturate(100%);
+    filter: saturate(50%);
 }
 
 
