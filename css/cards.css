@@ -421,6 +421,14 @@
 }
 
 
+/* product template */
+
+.product-template-default .split-hero-subtitle,
+.product-template-default a.button,
+.product-template-default h2.standard-title {
+    display: none;
+}
+
 /* --------------------------------------------------- */
 /* product-description card */
 
@@ -477,6 +485,10 @@
     line-height: var(--line-height-regular);
     color: var(--notblack);
     max-width: 65ch;
+    /*  */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .product-description-duration,
