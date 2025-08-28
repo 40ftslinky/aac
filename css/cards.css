@@ -755,7 +755,7 @@
     color: var(--notblack);
 }
 
-/* .product-cost, */
+.product-cost,
 .product-cost > *,
 .product-cost p {
     font-size: var(--font-size-body);
