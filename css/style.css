@@ -18,3 +18,9 @@ html:has(.logged-in.admin-bar) {
 .logged-in.admin-bar header { 
     top: var(--wp-admin--admin-bar--height);
 }
+
+/* hack  */
+
+.page-template-template-contact .split-hero button {
+    display: none;
+}
