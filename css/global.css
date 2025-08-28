@@ -135,6 +135,7 @@ img, svg, video, canvas, audio, iframe, embed, object {
     object-fit: cover;
     height: 100%;
     min-height: 100%;
+    max-height: 66vh;
 }
 .product-card-image  {
     overflow: hidden;
