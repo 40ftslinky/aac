@@ -517,7 +517,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 0.25rem;
 }
 .product-description-date .pd-content,
 .product-description-category .pd-content {
@@ -541,7 +541,8 @@
 }
 
 .product-description-card-title {
-    font-size: var(--font-size-heading-4);
+    /* font-size: var(--font-size-heading-4); */
+    font-size: var(--font-size-heading-6);
     line-height: var(--line-height-regular);
     color: var(--notblack);
 }

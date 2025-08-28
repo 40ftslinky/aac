@@ -265,6 +265,7 @@ section {
     padding: var(--gutter) 0;
 }
 
+
 .section__inner {
     padding-block: 48px;
     background-color: #f4f6f7;
@@ -655,7 +656,10 @@ svg.linkedin_icon {
     color: rgba(var(--notblack_rgb), 0.5);
 }
 
-.standard-text, .standard-text p, .standard-copy {
+.standard-text, 
+.standard-text p,
+.standard-text ul,
+.standard-copy {
     /* font-size: var(--font-size-regular); */
     font-size: var(--font-size-body-3);
     line-height: var(--line-height-regular);
@@ -667,6 +671,10 @@ svg.linkedin_icon {
 }
 .standard-copy {
     font-size: var(--font-size-regular);
+}
+
+.standard-text ul {
+    margin: 2rem 0 1rem 0;
 }
 
 .standard-text img {
