@@ -266,7 +266,7 @@ section {
 }
 
 
-.page-template-template-calendar section.section.standard-section:not([class*="grid"]) { {
+.page-template-template-calendar section.section.standard-section:not([class*="grid"]) {
     display: none;
 }
 
