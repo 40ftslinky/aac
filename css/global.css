@@ -600,25 +600,23 @@ svg.linkedin_icon {
         /* padding: 64px; */
     }
 }
-.column:nth-of-type(2) .standard-content-item,
-.column:nth-of-type(2) .column-content-item {
-    /* padding-left: 0;
-    padding-right: 0; */
-}
-@media (min-width: 880px) {
-    .column:nth-of-type(2n) .standard-content-item,
-    .column:nth-of-type(2) .column-content-item {
-        /* padding-left: 32px;
-        padding-right: 0; */
-    }
-}    
+
+/* for blog */
 @media (min-width: 1080px) {
-    .column:nth-of-type(2n) .standard-content-item,
-    .column:nth-of-type(2) .column-content-item {
-        /* padding-left: 64px;
-        padding-right: 0; */
+    .single-format-standard .column-content-item {
+        max-width: 880px;
     }
 }
+
+.single-format-standard  .standard-heading h4 {
+    font-size: var(--font-size-heading-6);
+}
+
+.single-format-standard  h3.wp-block-heading {
+    margin-top: 2rem;
+}
+
+
 
 [class*="content-inner"] {
     display: flex;
@@ -676,6 +674,12 @@ svg.linkedin_icon {
 .standard-copy {
     font-size: var(--font-size-regular);
 }
+
+/* for blog */
+.single-format-standard .standard-text p {
+    max-width: 65ch;
+}
+
 
 .standard-text ul {
     margin: 2rem 0 2rem 0;
