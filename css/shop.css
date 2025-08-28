@@ -379,3 +379,31 @@ body:not(.woocommerce-block-theme-has-button-styles) .wc-block-components-button
 .white-bg {
     background-color: var(--white);
 }
+
+/* item_count */
+
+.menu-link[aria-label="Cart"] {
+    position: relative;
+    height: 28px;
+    width: 28px;
+    display: block;
+}
+
+.item_count {
+    font-size: var(--font-size-xsmall);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-title);
+    color: var(--white);
+    background-color: var(--primary);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 111;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(50%);
+}
