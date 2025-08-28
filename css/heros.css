@@ -316,3 +316,8 @@
 .has-image :has(img[src=""]) + .has-gradient .generic-hero-subtitle {
     color: var(--notblack);
 }
+.has-image :has(img[src=""]) > *,
+.has-image :has(img[src=""]) .generic-hero-image,
+.has-image :has(img[src=""]) + .generic-hero-content {
+    min-height: unset;
+}
