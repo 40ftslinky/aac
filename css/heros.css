@@ -312,3 +312,7 @@
 .has-image :has(img[src=""]) + .has-gradient > * {
     color: var(--notblack);
 }
+.has-image :has(img[src=""]) + .has-gradient .generic-hero-title,
+.has-image :has(img[src=""]) + .has-gradient .generic-hero-subtitle {
+    color: var(--notblack);
+}
