@@ -758,7 +758,7 @@
 /* .product-cost, */
 .product-cost > *,
 .product-cost p {
-    font-size: var(--font-size-regular);
+    font-size: var(--font-size-body);
     line-height: var(--line-height-regular);
     font-weight: var(--font-weight-medium);
     color: var(--notblack);
