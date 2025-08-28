@@ -300,3 +300,15 @@
 .split-hero-text {
     color: var(--notblack);
 }
+
+/* no image hack */
+
+.has-image :has(img[src=""]) {
+    display: none;
+}
+.has-image :has(img[src=""]) + .has-gradient {
+    background: unset;
+}
+.has-image :has(img[src=""]) + .has-gradient > * {
+    color: var(--notblack);
+}
