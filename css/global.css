@@ -266,6 +266,10 @@ section {
 }
 
 
+.page-template-template-calendar section.standard-section {
+    display: none;
+}
+
 .section__inner {
     padding-block: 48px;
     background-color: #f4f6f7;
