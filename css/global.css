@@ -266,7 +266,7 @@ section {
 }
 
 
-.page-template-template-calendar section.standard-section {
+.page-template-template-calendar section.standard-section:first-of-type {
     display: none;
 }
 
