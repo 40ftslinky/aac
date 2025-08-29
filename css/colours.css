@@ -79,7 +79,7 @@
 
     --text-color-muted: #888;
 
-    --overlay-left: linear-gradient(270deg, rgba(var(--notblack_rgb),0.0) 0%,rgba(var(--notblack_rgb),0.4) 100%);
+    --overlay-left: linear-gradient(270deg, rgba(var(--notblack_rgb),0.2) 0%,rgba(var(--notblack_rgb),0.45) 100%);
 
 
     --error: #FF0000; /* Red */

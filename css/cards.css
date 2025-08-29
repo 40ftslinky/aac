@@ -350,7 +350,17 @@
     transition: var(--transition);
     transform: scale(1);
     min-height: 100%;
+    object-fit: cover;
 }
+.product-card [class*="card-image"] img {
+    aspect-ratio: var(--aspect-ratio-3_2);
+}
+@media screen and (min-width: 1080px) {
+    .product-card [class*="card-image"] img {
+        aspect-ratio: var(--aspect-ratio-1_1);
+    }
+}
+
 .product-card:hover .product-card-image img {
     transform: scale(1.02);
 }
