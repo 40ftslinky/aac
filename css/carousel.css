@@ -87,6 +87,11 @@
 /* ----------------------- */
 /* BUTTONS */
 
+@media screen and (max-width: 600px) {
+    [class*="section"] button.flickity-button  {
+        display: none;
+    }
+}
 
 [class*="program-section"] button.flickity-button  {
     box-sizing: content-box;
@@ -132,6 +137,8 @@
         text-decoration: none;
     }
 }
+
+
 @media screen and (max-width: 880px) {
     [class*="program-section"] button.flickity-button  {
         /* width: 2.5rem; */
