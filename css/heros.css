@@ -114,6 +114,7 @@
 }
 [class*="generic-hero"] .image-wrap {
     max-width: unset;
+    max-height: unset;
 }
 
 .generic-hero-image img,
