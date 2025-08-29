@@ -113,25 +113,27 @@
                             </ul>                            
                             
                             <ul class="footer_menu">
-                                <li class="footer_menu-item"><a class="footer_menu-link" href="/training/"><h3 class="footer_menu-title">Training</h3></a></li>
-                                <h3 class="footer_menu-title">Excursions</h3>
-                                <li class="footer_menu-item"><a class="footer_menu-link" href="/excursions/primary-schools">For Primary Schools</a></li>
-                                <li class="footer_menu-item"><a class="footer_menu-link" href="/excursions/high-schools">For High Schools</a></li>
-                                <li class="footer_menu-item"><a class="footer_menu-link" href="/excursions/practical-details">Practical Details</a></li>
-                                <li class="footer_menu-item"><a class="footer_menu-link" href="/excursions/booking-forms">Booking Forms</a></li>
+                                <!-- <li class="footer_menu-item"><a class="footer_menu-link" href="/training/"><h3 class="footer_menu-title">Training</h3></a></li> -->
+                                <h3 class="footer_menu-title">Programs</h3>
+                                <li class="footer_menu-item"><a class="footer_menu-link" href="/training">For Adults</a></li>
+                                <li class="footer_menu-item"><a class="footer_menu-link" href="/primary-schools">For Primary Schools</a></li>
+                                <li class="footer_menu-item"><a class="footer_menu-link" href="/high-schools">For High Schools</a></li>
+                                <!-- <li class="footer_menu-item"><a class="footer_menu-link" href="/excursions/practical-details">Practical Details</a></li>
+                                <li class="footer_menu-item"><a class="footer_menu-link" href="/excursions/booking-forms">Booking Forms</a></li> -->
                             </ul>
 
                             <div class="footer_group">
                         
                                 <ul class="footer_menu">
-                                    <h3 class="footer_menu-title">Calendar</h3>
-                                    <li class="footer_menu-item"><a class="footer_menu-link" href="/calendar">Calendar</a></li>
-                                    <li class="footer_menu-item"><a class="footer_menu-link" href="/glamping">Glamping</a></li>
+                                    <li class="footer_menu-item"><a class="footer_menu-link" href="/calendar/"><h3 class="footer_menu-title">Calendar</h3></a></li>
+                                    <li class="footer_menu-item"><a class="footer_menu-link" href="/glamping/"><h3 class="footer_menu-title">glamping</h3></a></li>
+                                    <!-- <li class="footer_menu-item"><a class="footer_menu-link" href="/calendar">Calendar</a></li>
+                                    <li class="footer_menu-item"><a class="footer_menu-link" href="/glamping">Glamping</a></li> -->
                                 </ul>
 
                                 <ul class="footer_menu">
                                     <h3 class="footer_menu-title">Resources</h3>
-                                    <li class="footer_menu-item"><a class="footer_menu-link" href="/resources/media">Media</a></li>
+                                    <!-- <li class="footer_menu-item"><a class="footer_menu-link" href="/resources/media">Media</a></li> -->
                                     <li class="footer_menu-item"><a class="footer_menu-link" href="/resources/blog">Blog</a></li>
                                     <li class="footer_menu-item"><a class="footer_menu-link" href="/resources/virtual-campus">Virtual Campus</a></li>
 

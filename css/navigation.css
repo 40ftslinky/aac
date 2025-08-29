@@ -73,7 +73,7 @@ header .top_nav-container {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: var(--gap);
+    /* gap: var(--gap); */
     width: 100%;
     /* margin-bottom: 20px; */
     /* padding: 0 calc(var(--gap)/2); */
@@ -94,7 +94,7 @@ header .top_nav-container {
 }
 @media screen and (min-width: 1180px) {
     .nav-group {
-            gap: var(--gap-large);
+            /* gap: var(--gap-large); */
     }
     
 }
@@ -155,6 +155,10 @@ header .nav-container {
     /* padding: 0 var(--gutter);     */
     position: relative;
 }
+.nav-container .nav-wrapper{
+        width: calc(100% - var(--gap-sm));
+}
+
 @media screen and (max-width: 1080px) {
     .nav-wrapper {
         max-width: unset;
