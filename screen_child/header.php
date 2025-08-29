@@ -108,7 +108,7 @@ if($Title1=='Home'){
                                         
                                         <li class="menu-item"><span class="menu-link has-submenu " data-submenu="About" >About</span></li>
                                         <!-- <li class="menu-item"><a class="menu-link " href="/training">Training</a></li> -->
-                                        <li class="menu-item"><span class="menu-link has-submenu" data-submenu="Excursions" >Programs</span></li>
+                                        <li class="menu-item"><span class="menu-link has-submenu" data-submenu="Programs" >Programs</span></li>
                                         <!-- <li class="menu-item"><span class="menu-link has-submenu" data-submenu="Calendar" >Calendar</span></li>                                 -->
                                         <li class="menu-item"><a class="menu-link" href="/calendar">Calendar</a></li>
                                         <li class="menu-item"><a class="menu-link" href="/glamping">Glamping</a></li>
@@ -235,12 +235,12 @@ if($Title1=='Home'){
                                 <li class="submenu-item"><a class="submenu-link" href="/agritourism">Agritourism</a></li>
                             </ul>
                         </div>
-                        <div class="mega-menu-column" data-submenu="Excursions">
+                        <div class="mega-menu-column" data-submenu="Programs">
                             <h3 class="submenu-title">Programs</h3>
                             <ul class="mega-menu-submenu">
-                                <li class="submenu-item"><a class="submenu-link" href="/excursions/primary-schools">For Adults</a></li>
-                                <li class="submenu-item"><a class="submenu-link" href="/excursions/primary-schools">For Primary Schools</a></li>
-                                <li class="submenu-item"><a class="submenu-link" href="/excursions/high-schools">For High Schools</a></li>
+                                <li class="submenu-item"><a class="submenu-link" href="/training">For Adults</a></li>
+                                <li class="submenu-item"><a class="submenu-link" href="/primary-schools">For Primary Schools</a></li>
+                                <li class="submenu-item"><a class="submenu-link" href="/high-schools">For High Schools</a></li>
                                 <!-- <li class="submenu-item"><a class="submenu-link" href="/excursions/practical-details">Practical Details</a></li>
                                 <li class="submenu-item"><a class="submenu-link" href="/excursions/booking-forms">Booking Forms</a></li> -->
                             </ul>
