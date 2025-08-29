@@ -386,7 +386,7 @@
 .calendar-card [class*="card-image"] img {
     transition: var(--transition);
     transform: scale(1);
-    aspect-ratio: var(--ratio-ratio-3_2);
+    aspect-ratio: var(--aspect-ratio-3_2);
     border-radius: 0;
     object-fit: cover;
 }
