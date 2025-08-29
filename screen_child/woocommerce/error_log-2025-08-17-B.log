@@ -1,0 +1,10 @@
+[17-Aug-2025 01:45:59 UTC] PHP Warning:  Undefined variable $booking_form in /home/xtcpxj7emkxx/public_html/aac.screenrage.com.au/wp-content/themes/screen_child/woocommerce/single-product/add-to-cart/booking.php on line 41
+[17-Aug-2025 01:45:59 UTC] PHP Fatal error:  Uncaught Error: Call to a member function output() on null in /home/xtcpxj7emkxx/public_html/aac.screenrage.com.au/wp-content/themes/screen_child/woocommerce/single-product/add-to-cart/booking.php:41
+Stack trace:
+#0 /home/xtcpxj7emkxx/public_html/aac.screenrage.com.au/wp-content/plugins/woocommerce/includes/wc-core-functions.php(346): include()
+#1 /home/xtcpxj7emkxx/public_html/aac.screenrage.com.au/wp-content/themes/screen_child/woocommerce/single-product.php(303): wc_get_template()
+#2 /home/xtcpxj7emkxx/public_html/aac.screenrage.com.au/wp-includes/template-loader.php(106): include('/home/xtcpxj7em...')
+#3 /home/xtcpxj7emkxx/public_html/aac.screenrage.com.au/wp-blog-header.php(19): require_once('/home/xtcpxj7em...')
+#4 /home/xtcpxj7emkxx/public_html/aac.screenrage.com.au/index.php(17): require('/home/xtcpxj7em...')
+#5 {main}
+  thrown in /home/xtcpxj7emkxx/public_html/aac.screenrage.com.au/wp-content/themes/screen_child/woocommerce/single-product/add-to-cart/booking.php on line 41

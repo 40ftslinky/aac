@@ -280,7 +280,7 @@ legend {
         padding: 0.5rem;
     }
     input, textarea, select {
-        font-size: 0.875rem;
+        /* font-size: 0.875rem; */
     }
     input[type="submit"],
     button {
@@ -442,8 +442,8 @@ input[type="checkbox"]:focus {
     font-size: 1rem;
     cursor: pointer;
     transition: var(--transition);
-    height: auto;
-    height: 105%;
+    height: 36px;
+    /* height: calc(100% + 2px); */
 }
 .search-field button.search-button:hover {
     background-color: var(--primary-dark);
