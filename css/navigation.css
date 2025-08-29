@@ -672,8 +672,15 @@ nav.desktop ul li a{
         display: flex;
         flex-direction: row;
     }
-    .secondary-menu .menu-item:last-of-type {
+    .secondary-menu .menu-item {
         display: none;
+    }
+    .secondary-menu .menu-item:last-of-type,
+    .secondary-menu .menu-link[aria-label="Cart"] {
+        position: relative;
+        height: 28px;
+        width: 28px;
+        display: block;
     }
 
     nav .fullscreen ul li,
