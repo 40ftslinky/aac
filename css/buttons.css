@@ -3,17 +3,22 @@
 .button-group {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     gap: var(--gap);
     width: 100%;
+    max-width: var(--max-col-width);
+    box-sizing: border-box;
 }
 @media screen and (min-width: 480px) {
     .button-group {
         flex-direction: row;
     }
 }
+
 .button-group .button {
     width: 100%;
-    max-width: unset;
+    max-width: -webkit-fill-available;
+    /* max-width: unset; */
 }
 @media screen and (min-width: 480px) {
     .button-group .button {
