@@ -116,10 +116,12 @@
     max-width: unset;
 }
 
-.generic-hero-image img {
+.generic-hero-image img,
+.generic-hero-image.image-wrap img {
     min-height: 55vh;
     object-fit: cover;
     object-position: center right;
+    max-height: unset;
 }
 @media (min-width: 1080px) {
     .generic-hero-image img {
