@@ -664,7 +664,7 @@ svg.linkedin_icon {
 .standard-copy {
     /* font-size: var(--font-size-regular); */
     font-size: var(--font-size-body-3);
-    line-height: var(--line-height-regular);
+    line-height: var(--line-height-body);
     font-weight: var(--font-weight-regular);
     letter-spacing: var(--letter-spacing-regular);
     /*  text-wrap: balance ; */
