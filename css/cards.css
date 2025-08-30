@@ -170,7 +170,9 @@
   text-transform: uppercase;
   font-weight: var(--font-weight-medium);
 }
-
+.product-description-card .text-status-alert {
+    position: relative;
+}
 
 /* ----------------------- */
 /* cards  */
