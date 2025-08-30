@@ -28,6 +28,7 @@ const submenuItems = document.querySelectorAll('.submenu-item');
 const hasSubmenu = document.querySelectorAll('.menu-item .has-submenu');
 const hasSubmenuLink = document.querySelectorAll('.menu-link.has-submenu')
 const megaMenu = document.querySelector('header .mega-menu');
+const plainMenuLinks = document.querySelectorAll('.menu-link:not(.has-submenu)');
 
 // Add hover event listener to each menu item
 menuItems.forEach(item => {
@@ -83,6 +84,13 @@ megaMenu.addEventListener('mouseleave', function() {
     document.body.classList.remove('no_scroll'); // remove 'no_scroll' class to body
 
 });
+// Remove scroll lock when hovering a non‑submenu link
+plainMenuLinks.forEach(link => {
+    link.addEventListener('mouseenter', function() {
+        document.body.classList.remove('no_scroll');
+        megaMenu.classList.remove('is-active');
+    });
+}); 
 // remove 'is-active' class from mega-menu when the mouse enters logo-wrapper
 const logoWrapper = document.querySelector('.logo-wrapper');
 logoWrapper.addEventListener('mouseenter', function() {
