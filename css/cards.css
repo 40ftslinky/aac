@@ -156,6 +156,21 @@
     }
 }
 
+/* pill */
+
+.text-status-alert {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.25rem 1rem;
+  background: var(--error);
+  border-radius: var(--radius-pill);
+  font-size: var(--font-size-button-sm);
+  color: white;
+  text-transform: uppercase;
+  font-weight: var(--font-weight-medium);
+}
+
 
 /* ----------------------- */
 /* cards  */
