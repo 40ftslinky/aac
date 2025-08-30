@@ -172,6 +172,8 @@
 }
 .product-description-card .text-status-alert {
     position: relative;
+    top: unset;
+    right: unset;
 }
 
 /* ----------------------- */
