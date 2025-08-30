@@ -176,6 +176,23 @@
     right: unset;
 }
 
+.product-date span {
+    /* add css to display a calendar icon as a pseudo-element */
+    position: relative;
+}
+
+.product-date span::before {
+    content: '';
+    position: absolute;
+    left: -1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1rem;
+    height: 1rem;
+    background: url('path/to/calendar-icon.svg') no-repeat center center;
+    background-size: contain;   
+}
+
 /* ----------------------- */
 /* cards  */
 
@@ -2194,7 +2211,14 @@
 .blog-card-image img {
     width: 100%;
     height: auto;
+    /* aspect-ratio: var(--aspect-ratio-3_2); */
+    object-fit: cover;
         /* padding: 1rem; */
+}
+@media screen and (min-width: 880px) {  
+    .blog-card-image img {     
+        aspect-ratio: var(--aspect-ratio-1_1);
+    }
 }
 
 .blog-card .blog-card-image img {
