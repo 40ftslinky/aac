@@ -59,6 +59,7 @@ input[type="submit"],
     padding: 11px 24px;
     outline: none;
     /* border: none; */
+    border-color:unset;
     border: 2px solid rgba(var(--default_rgb),0);
     /* border: 2px solid transparent; */
     /* outline-offset: 2px; */
@@ -90,6 +91,7 @@ input[type="submit"],
     border:     2px solid transparent;
     
     &:hover {
+        border-color:unset;
         color: var(--white);
         text-decoration: none;
         /* border: 2px solid var(--default); */
