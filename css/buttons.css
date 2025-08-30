@@ -83,15 +83,22 @@ input[type="submit"],
     transition: var(--transition);
     cursor: pointer;
     white-space: nowrap;
+
+    /* test */
+    background: var(--default_gradient) padding-box,
+                rgba(var(--default_rgb), 1) border-box;
+    border:     2px solid transparent;
     
     &:hover {
         color: var(--white);
         text-decoration: none;
-        border: 2px solid var(--default);
+        /* border: 2px solid var(--default); */
         /* animation: gradient 0.5s ease; */
         box-shadow: var(--shadow-regular);
         background-size: 200% auto;
         background-position: right center;
+        background: var(--default_gradient_alt) padding-box,
+                    rgba(var(--default_rgb), 0.6) border-box;
     }
     &:focus {
         /* outline: 4px solid var(--default);
@@ -136,14 +143,24 @@ input[type="submit"],
 }
 
 .ghost {
-    background: transparent;
+    background: rgba(var(--default_rgb), 0.0);
     border: 1px solid var(--notblack);
     color: var(--default);
     &:hover {
-        background: var(--white);
+        background: transparent;
         border: 1px solid var(--default) !important;
-        color: var(--notblack) !important;
+        color: var(--default) ;
         box-shadow: var(--shadow-regular);
+    }
+}
+
+.button.white {
+        background: rgba(var(--default_rgb), 1);
+        color: var(--notblack);
+    
+    &:hover {
+        background: var(--transparent-white);
+        color: var(--black);
     }
 }
 

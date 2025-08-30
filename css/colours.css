@@ -9,9 +9,11 @@
     --notwhite: #F2F2F2;
     --notwhite_rgb: 242, 242, 242;
     --white_gradient: linear-gradient(45deg, rgba(var(--white_rgb),0.2) 0%, rgba(var(--white_rgb),0.5) 133%);
+    --white_gradient_alt: linear-gradient(135deg, rgba(var(--white_rgb),0.2) 0%, rgba(var(--white_rgb),0.5) 133%);
     --notwhite_gradient: linear-gradient(45deg, rgba(var(--notwhite_rgb),0.2) 0%, rgba(var(--notwhite_rgb),0.5) 133%);
     --transparent-white: rgba(var(--white_rgb), 0.6);
-    
+    --transparent-notwhite: rgba(var(--notwhite_rgb), 0.6);
+
     --black: #000;
     --notblack: #121212;
     --black_rgb: 0, 0, 0;
@@ -19,6 +21,7 @@
 
     /* AAC/Primary/Gradient */
     --primary_gradient: linear-gradient(45deg, #09AD35 0, #00C857 20%, #68D425 75%, #CDFF45 133%);
+    --primary_gradient_alt: linear-gradient(135deg, #09AD35 0, #00C857 20%, #68D425 75%, #CDFF45 133%);
     --primary_dark: #09AD35;
     --primary: #00C857;
     --primary_light: #68D425;
@@ -27,6 +30,7 @@
 
     /* AAC/Secondary/Gradient */
     --secondary_gradient:  linear-gradient(45deg, #FF3511 0%, #FF7230 20%, #FFA200 75%, #FFCC00 133%);
+    --secondary_gradient_alt:  linear-gradient(135deg, #FF3511 0%, #FF7230 20%, #FFA200 75%, #FFCC00 133%);
     --secondary_dark: #FF3511;
     --secondary: #FF7230;
     --secondary_light: #FFA200;
@@ -35,6 +39,7 @@
 
     /* AAC/Tertiary/Gradient */
     --tertiary_gradient: linear-gradient(45deg, #5F0066 0%, #7700C7 20%, #577EFF 75%, #57D2FF 133%);
+    --tertiary_gradient_alt: linear-gradient(135deg, #5F0066 0%, #7700C7 20%, #577EFF 75%, #57D2FF 133%);
     --tertiary_dark: #5F0066;
     --tertiary: #7700C7;
     --tertiary_light: #577EFF;
@@ -43,6 +48,7 @@
 
     /* mono */
     --mono_gradient: linear-gradient(45deg, #000 0%, #2C2C2C 20%, #616161 75%, #A8A8A8 133%);
+    --mono_gradient_alt: linear-gradient(135deg, #000 0%, #2C2C2C 20%, #616161 75%, #A8A8A8 133%);
     --mono_dark: #121212;
     --mono: #2C2C2C;
     --mono_light: #2C2C2C;
@@ -102,6 +108,7 @@
     --default_lighter: #f0f0f0;
     --default_rgb: 33, 33, 33 ;
     --default_gradient: var(--mono_gradient);
+    --default_gradient_alt: var(--mono_gradient_alt);
 }
 
 .primary {
@@ -111,6 +118,7 @@
     --default_lighter: var(--primary_lighter);
     --default_rgb: var(--primary_rgb);
     --default_gradient: var(--primary_gradient);
+    --default_gradient_alt: var(--primary_gradient_alt);
 }
 .primary-text {
     color: var(--primary);
@@ -138,6 +146,7 @@
     --default_lighter: var(--secondary_lighter);
     --default_rgb: var(--secondary_rgb);
     --default_gradient: var(--secondary_gradient);
+    --default_gradient_alt: var(--secondary_gradient_alt);
 }
 .secondary-bg {
     background-color: var(--secondary);
@@ -162,6 +171,7 @@
     --default_lighter: var(--tertiary_lighter);
     --default_rgb: var(--tertiary_rgb);
     --default_gradient: var(--tertiary_gradient);
+    --default_gradient_alt: var(--tertiary_gradient_alt);
 }
 .tertiary-bg {
     background-color: var(--tertiary);
@@ -191,6 +201,15 @@
 .white {
     color: var(--white);
 }
+.white {
+    --default: var(--white);
+    --default_light: #e0e0e0;
+    --default_dark: #101010;
+    --default_lighter: #f0f0f0;
+    --default_rgb: var(--white_rgb);
+    --default_gradient: var(--white_gradient);
+    --default_gradient_alt: var(--white_gradient_alt);
+}
 .black {
     color: var(--black);
 }
@@ -218,6 +237,7 @@
     --default_lighter: var(--mono_lighter);
     --default_rgb: var(--mono_rgb);
     --default_gradient: var(--mono_gradient);
+    --default_gradient_alt: var(--mono_gradient_alt);
 }
 .mono-bg {
     background-color: var(--mono);
