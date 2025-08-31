@@ -189,7 +189,9 @@ input[type="submit"],
 .button.primary, */
 .wc-block-cart__submit-button,
 input[type="submit"],
-.wp-block-button__link.wp-element-button {
+.wp-block-button__link.wp-element-button,
+.hentry .entry-content .wp-block-button .wp-block-button__link, 
+.editor-styles-wrapper .wp-block-button .wp-block-button__link {
     /* should be default mono */
     background: var(--primary_gradient);
     border: 1px solid rgba(var(--primary_rgb),0);
