@@ -729,7 +729,7 @@ figcaption {
 }
 
 .page figure.wp-block-video {
-    margin: var(--padding-xxlarge) auto;
+    margin: var(--padding-xxlarge) auto !important;
 }
 
 iframe.iframe {
