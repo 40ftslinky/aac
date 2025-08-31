@@ -49,7 +49,9 @@ button,
 .button,
 input[type="submit"],
 .wc-block-cart__submit-button,
-.wp-block-button__link.wp-element-button {
+.wp-block-button__link.wp-element-button,
+.hentry .entry-content .wp-block-button .wp-block-button__link, 
+.editor-styles-wrapper .wp-block-button .wp-block-button__link {
     box-sizing: content-box;
     display: flex;
     flex-direction: row;
