@@ -758,12 +758,41 @@ iframe.iframe {
     }
 }   
 
-.is-content-justification-center {
-    justify-content: center;
+
+.is-layout-flow .is-layout-flex {
+    flex-wrap: wrap;
 }
+
+.is-nowrap {
+    flex-wrap: nowrap !important;
+}
+
+.is-content-justification-left {
+    justify-content: flex-start !important;
+}
+.is-content-justification-center {
+    justify-content: center !important;
+}
+.is-content-justification-right {
+    justify-content: flex-end !important;
+}
+.is-content-justification-space-between {
+    justify-content: space-between !important;
+}
+
 .is-layout-flex {
-    display: flex;
+    display: flex !important;
+}
+.is-vertical {
+    flex-direction: column !important;
 }
 .is-horizontal {
-    flex-direction: row;
+    flex-direction: row !important;
+}
+
+.is-layout-constrained {
+    max-width: var(--max-col-width) !important;
+}
+.is-layout-flex {
+    display: flex !important;
 }
