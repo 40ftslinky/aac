@@ -728,6 +728,10 @@ figcaption {
     padding-top: var(--header-height);
 }
 
+.page figure.wp-block-video {
+    margin: var(--padding-xxlarge) auto;
+}
+
 iframe.iframe {
     width: 100%;
     height: 100%;
