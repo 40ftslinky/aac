@@ -720,3 +720,8 @@ figcaption {
 }
 
 /*  */
+
+.page article {
+    width: var(--max-col-width);
+    padding-top: var(--header-height);
+}
