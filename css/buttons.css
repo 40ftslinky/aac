@@ -46,7 +46,8 @@ a>*, button>*, .button>* {
 button,
 .button,
 input[type="submit"],
-.wc-block-cart__submit-button {
+.wc-block-cart__submit-button,
+.wp-block-button__link.wp-element-button {
     box-sizing: content-box;
     display: flex;
     flex-direction: row;
@@ -183,7 +184,8 @@ input[type="submit"],
 /* button.primary,
 .button.primary, */
 .wc-block-cart__submit-button,
-input[type="submit"] {
+input[type="submit"],
+.wp-block-button__link.wp-element-button {
     /* should be default mono */
     background: var(--primary_gradient);
     border: 1px solid rgba(var(--primary_rgb),0);
