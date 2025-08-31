@@ -1,6 +1,7 @@
 /* buttons */
 
-.button-group {
+.button-group,
+.wp-block-buttons {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -10,7 +11,8 @@
     box-sizing: border-box;
 }
 @media screen and (min-width: 480px) {
-    .button-group {
+    .button-group,
+    .wp-block-buttons {
         flex-direction: row;
     }
 }
