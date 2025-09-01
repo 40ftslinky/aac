@@ -459,3 +459,10 @@ input[type="checkbox"]:focus {
 .contact-section .column:nth-of-type(2) {
     align-content: center;
 }
+
+/* turnstile */
+
+.wpcf7-turnstile.cf-turnstile {
+    transform: scale(0.85);
+    transform-origin: left;
+}
