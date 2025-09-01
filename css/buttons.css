@@ -51,7 +51,8 @@ input[type="submit"],
 .wc-block-cart__submit-button,
 .wp-block-button__link.wp-element-button,
 .hentry .entry-content .wp-block-button .wp-block-button__link, 
-.editor-styles-wrapper .wp-block-button .wp-block-button__link {
+.editor-styles-wrapper .wp-block-button .wp-block-button__link,
+button.cta, button.alt {
     box-sizing: content-box;
     display: flex;
     flex-direction: row;
@@ -173,13 +174,16 @@ input[type="submit"],
 }
 
 .primary_gradient-bg button.primary,
-.primary_gradient-bg a.primary {
+.primary_gradient-bg a.primary,
+button.cta, button.alt {
     /* should be default mono */
     background: var(--mono_gradient);
     border: 1px solid rgba(var(--default_rgb),0);
     color: var(--white);
     &:hover {
         background: var(--mono_dark);
+        background: var(--default_gradient_alt) padding-box,
+                    rgba(var(--default_rgb), 0.6) border-box;
         border: 1px solid rgba(var(--default_rgb), 1) !important;
         color: var(--white) !important;
         box-shadow: var(--shadow-regular);
@@ -199,6 +203,8 @@ input[type="submit"],
     color: var(--white);
     &:hover {
         background: var(--primary_dark);
+        background: var(--default_gradient_alt) padding-box,
+                    rgba(var(--default_rgb), 0.6) border-box;
         border: 1px solid rgba(var(--primary_rgb), 1) !important;
         color: var(--white) !important;
         box-shadow: var(--shadow-regular);
