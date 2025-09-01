@@ -466,3 +466,28 @@ input[type="checkbox"]:focus {
     transform: scale(0.85);
     transform-origin: left;
 }
+
+
+@media (prefers-color-scheme: dark) {
+    .theme-auto #content {
+        /* border-color: #797979; */
+        /* background-color: #232323; */
+        background-color: #fefefe;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .theme-auto .logo-text {
+        /* fill: #fff; */
+        fill: #232323;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body.theme-auto, .main-wrapper.theme-auto {
+        /* background-color: #232323; */
+        /* color: #fff; */
+        color: #232323;
+        background-color: unset !important;
+    }
+}

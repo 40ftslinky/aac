@@ -1634,6 +1634,7 @@
 .partner-logo-grid {
     flex-wrap: wrap;
     gap: var(--gap);
+    justify-content: center;
 }
 
 .partner-logo-card {
@@ -1709,6 +1710,13 @@
     max-height: 48px;
     height: 100%;
         /* padding: 1rem; */
+}
+
+.partner-logo-card-image img[alt*="Australia Wool Innovations"] {
+    max-height: 55px;
+}
+.partner-logo-card-image img[alt*="TAFE"] {
+    max-height: 35px;
 }
 
 .partner-logo-card-content {
