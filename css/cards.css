@@ -170,10 +170,21 @@
   text-transform: uppercase;
   font-weight: var(--font-weight-medium);
 }
+
 .product-description-card .text-status-alert {
     position: relative;
     top: unset;
     right: unset;
+    width: fit-content;
+}
+
+.product-description-card .text-after-price {
+    background: var(--primary_dark);
+    border-radius: var(--radius-pill);
+    font-size: var(--font-size-button-sm);
+    color: white;
+    text-transform: uppercase;
+    font-weight: var(--font-weight-medium);
 }
 
 .product-date span {
