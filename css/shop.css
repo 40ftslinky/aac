@@ -13,6 +13,18 @@
     margin-bottom: 0;
 }
 
+/* hide too many messages */
+
+
+.woocommerce-info:not(:first-of-type) {
+    display: none;
+} 
+
+
+.woocommerce-cart .split-hero-section {
+    display: none;
+}
+
 .woocommerce-cart article, 
 .woocommerce-checkout article {
     width: var(--max-col-width);
