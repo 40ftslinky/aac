@@ -96,7 +96,7 @@ input[type="submit"],
     border:     2px solid transparent;
     
     &:hover {
-        border-color:unset;
+        /* border-color:unset; */
         color: var(--white);
         text-decoration: none;
         /* border: 2px solid var(--default); */
@@ -110,6 +110,7 @@ input[type="submit"],
     &:focus {
         /* outline: 4px solid var(--default);
         outline-offset: 0; */
+        color: var(--notwhite);
         text-decoration: none;
     }
     &:active {
