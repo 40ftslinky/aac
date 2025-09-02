@@ -424,6 +424,24 @@ body:not(.woocommerce-block-theme-has-button-styles) .wc-block-components-button
 /* account page */
 /* https://australianagriculturalcentre.org/my-account/ */
 
+.woocommerce-account .storefront-breadcrumb, 
+.woocommerce-account .is-scrolled .storefront-breadcrumb {
+    margin: var(--header-height) auto 0;
+    padding: 0;
+    display: block;
+    transition: var(--transition);
+}
+
+nav.woocommerce-breadcrumb {
+    position: fixed;
+    font-size: .875em;
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem 2rem;
+    height: unset;
+    background: #F7f7f7;
+}
+
 .woocommerce nav {
     height: 100%;
     max-height: unset;
