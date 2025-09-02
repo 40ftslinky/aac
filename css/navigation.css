@@ -2,7 +2,8 @@
 
 header,
 header.startHeader,
-header:not(.woocommerce-products-header) {
+header:not(.woocommerce-products-header),
+header:not([class*="woocommerce"]) {
     /* height: var(--header-height); */
     /* margin-bottom: 20px; */
     /* padding: 1rem 2rem; */
