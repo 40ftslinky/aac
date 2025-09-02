@@ -323,7 +323,8 @@ section.hero .container {
 
 .blockquote-section .section-heading-wrap {
     display: flex;
-    gap: var(--gap-large);
+    /* gap: var(--gap-large); */
+    flex-direction: column;
 }
 
 /* ----------------------- */

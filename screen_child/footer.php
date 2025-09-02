@@ -165,7 +165,7 @@
                                 <p class="footer_links">
                                     <a class="footer_link" href="/privacy-policy">Privacy Policy</a> | 
                                     <a class="footer_link" href="/terms-of-service">Terms of Service</a> | 
-                                    <a class="footer_link" href="/sitemap">Sitemap</a>
+                                    <a class="footer_link" href="/sitemap.xml">Sitemap</a>
                                 </p>
                                
                             </div>
