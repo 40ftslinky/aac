@@ -434,6 +434,7 @@ body:not(.woocommerce-block-theme-has-button-styles) .wc-block-components-button
 
 nav.woocommerce-breadcrumb {
     position: fixed;
+    z-index: 11111;
     font-size: .875em;
     display: flex;
     justify-content: flex-start;
