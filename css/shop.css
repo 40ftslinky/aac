@@ -428,7 +428,7 @@ body:not(.woocommerce-block-theme-has-button-styles) .wc-block-components-button
 .woocommerce-account .is-scrolled .storefront-breadcrumb {
     margin: var(--header-height) auto 0;
     padding: 0;
-    display: block;
+    display: block !important;
     transition: var(--transition);
 }
 
