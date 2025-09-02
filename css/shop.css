@@ -422,6 +422,7 @@ body:not(.woocommerce-block-theme-has-button-styles) .wc-block-components-button
 }
 
 /* account page */
+/* https://australianagriculturalcentre.org/my-account/ */
 
 .woocommerce nav {
     height: 100%;
@@ -446,3 +447,10 @@ header[class*="woocommerce"] h2 {
     margin-left: auto;
     float: unset;
 }   
+
+.woocommerce-form-row {
+    line-height: normal;
+}
+.account_display_name_description {
+    font-size: var(--font-size-label);
+}
