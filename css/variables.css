@@ -164,6 +164,9 @@
     --logo-height: 40px;
     --nav-width: 100%;
 }
+header.is-scrolled {
+    height: var(--header-height);
+}   
 
 .home {
     --default: var(--color-primary);
