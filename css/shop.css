@@ -427,3 +427,22 @@ body:not(.woocommerce-block-theme-has-button-styles) .wc-block-components-button
     height: 100%;
     max-height: unset;
 }
+
+header[class*="woocommerce"] {
+    position: unset;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: stretch;
+    width: 100%;
+}
+
+header[class*="woocommerce"] h2 {
+    font-size: var(--font-size-heading-5);
+    margin-bottom: 0;
+}
+.addresses header.title a {
+    margin-top: 0;
+    margin-left: auto;
+    float: unset;
+}   
