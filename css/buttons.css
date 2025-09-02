@@ -44,6 +44,11 @@ a>*, button>*, .button>* {
     color: inherit;
 }
 
+*:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
 /* Button */
 button,
 .button,
