@@ -314,6 +314,7 @@ img[loading="lazy"] { aspect-ratio: 2 / 1; }
 .wc-bookings-date-picker .ui-datepicker td.partial_booked a {
     color: var(--notblack);
     border: 1px solid var(--notblack);
+    border-color: var(--notblack) !important;
 }
 
 #wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker td.ui-datepicker-today a, 
