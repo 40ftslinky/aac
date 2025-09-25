@@ -319,15 +319,16 @@ img[loading="lazy"] { aspect-ratio: 2 / 1; }
 }
 .partial_booked.bookable.ui-datepicker-current-day { }
 
-.partial_booked.bookable-range.selection-start-date.ui-datepicker-current-day {
+.partial_booked.bookable-range.selection-start-date.ui-datepicker-current-day .ui-state-active {
     border-color: var(--notblack) !important;
+    border: 1px solid var(--notblack) !important;
 }
 
 .ui-datepicker-unselectable.ui-state-disabled.not_bookable_by_rules.partial_booked.bookable-range.not_bookable {
-    border-color: var(--notblack) !important;
+    /* border-color: var(--notblack) !important; */
 }
 .ui-datepicker-unselectable.ui-state-disabled.not_bookable_by_rules.partial_booked.not_bookable .ui-state-default{
-    border-color: var(--primary) !important;
+    /* border-color: var(--primary) !important; */
 }
 
 
