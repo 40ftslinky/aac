@@ -38,6 +38,7 @@ if($Title1=='Home'){
         <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
         <link rel="manifest" href="favicon/site.webmanifest">
         <meta name="theme-color" content="#fafafa">
+        
 		<?php wp_head(); ?>		
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">

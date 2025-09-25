@@ -310,7 +310,8 @@ img[loading="lazy"] { aspect-ratio: 2 / 1; }
 .ui-widget-content .ui-state-active, 
 .ui-widget-header .ui-state-active,
 .wc-bookings-date-picker .ui-datepicker td a.ui-state-active, 
-.wc-bookings-date-picker .ui-datepicker td a.ui-state-active.ui-state-hover {
+.wc-bookings-date-picker .ui-datepicker td a.ui-state-active.ui-state-hover,
+.wc-bookings-date-picker .ui-datepicker td.partial_booked a {
     color: var(--notblack);
     border: 1px solid var(--notblack);
 }
