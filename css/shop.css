@@ -317,6 +317,20 @@ img[loading="lazy"] { aspect-ratio: 2 / 1; }
 .wc-bookings-date-picker .ui-datepicker td.partial_booked a {
     /* border-color: var(--notblack) !important; */
 }
+.partial_booked.bookable.ui-datepicker-current-day { }
+
+.partial_booked.bookable-range.selection-start-date.ui-datepicker-current-day {
+    border-color: var(--notblack) !important;
+}
+
+.ui-datepicker-unselectable.ui-state-disabled.not_bookable_by_rules.partial_booked.bookable-range.not_bookable {
+    border-color: var(--notblack) !important;
+}
+.ui-datepicker-unselectable.ui-state-disabled.not_bookable_by_rules.partial_booked.not_bookable .ui-state-default{
+    border-color: var(--primary) !important;
+}
+
+
 
 #wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker td.ui-datepicker-today a, 
 #wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker td.ui-datepicker-today span {
