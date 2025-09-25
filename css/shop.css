@@ -310,11 +310,12 @@ img[loading="lazy"] { aspect-ratio: 2 / 1; }
 .ui-widget-content .ui-state-active, 
 .ui-widget-header .ui-state-active,
 .wc-bookings-date-picker .ui-datepicker td a.ui-state-active, 
-.wc-bookings-date-picker .ui-datepicker td a.ui-state-active.ui-state-hover,
-.wc-bookings-date-picker .ui-datepicker td.partial_booked a {
+.wc-bookings-date-picker .ui-datepicker td a.ui-state-active.ui-state-hover {
     color: var(--notblack);
     border: 1px solid var(--notblack);
-    border-color: var(--notblack) !important;
+}
+.wc-bookings-date-picker .ui-datepicker td.partial_booked a {
+    /* border-color: var(--notblack) !important; */
 }
 
 #wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker td.ui-datepicker-today a, 
