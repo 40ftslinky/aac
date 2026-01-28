@@ -493,3 +493,29 @@ header[class*="woocommerce"] h2 {
 .account_display_name_description {
     font-size: var(--font-size-label);
 }
+
+/* cart radio button */
+
+/* input#radio-control-wc-payment-method-options-cod,
+.wc-block-components-radio-control .wc-block-components-radio-control__input,
+.wc-block-components-radio-control .wc-block-components-radio-control__input:checked,
+.wc-block-components-radio-control .wc-block-components-radio-control__input:checked:before {
+	position: relative;
+}
+
+label.wc-block-components-radio-control__option.wc-block-components-radio-control__option-checked {
+	display:flex;
+	position: relative;
+}
+
+.wc-block-components-radio-control__option-layout {
+	
+} */
+input#radio-control-wc-payment-method-options-cod {
+	min-width: unset;
+}
+@media (min-width: 500px) {
+    input#radio-control-wc-payment-method-options-cod {
+		min-width: unset;
+	}
+}
