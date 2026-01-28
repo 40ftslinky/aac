@@ -511,7 +511,9 @@ label.wc-block-components-radio-control__option.wc-block-components-radio-contro
 .wc-block-components-radio-control__option-layout {
 	
 } */
-input#radio-control-wc-payment-method-options-cod {
+input#radio-control-wc-payment-method-options-cod,
+input#radio-control-wc-payment-method-options-stripe,
+input.wc-block-components-radio-control__input {
 	min-width: unset;
 }
 @media (min-width: 500px) {
