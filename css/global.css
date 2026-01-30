@@ -379,7 +379,7 @@ section.hero .container {
 /* ----------------------- */
 /* columns */
 
-.col_group, .group, [class*="group"]:not(.group-blog) {
+.col_group, .group, [class*="_group"], [class*="-group"] {
     display: flex;
     justify-content: center;
     align-items: flex-start;
