@@ -2323,7 +2323,7 @@
     border: 1px solid var(--mono_100);
     overflow: hidden;
     padding: 2rem;
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 /* section > *, */
 .how-to-card > *{
