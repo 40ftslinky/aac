@@ -2347,7 +2347,7 @@
     gap: 1rem;
 }
 .how-to-card-title {
-    font-size: var(--font-size-heading-4-bold);
+    font-size: var(--font-size-heading-4);
     line-height: var(--line-height-regular);
     color: var(--notblack);
 }
