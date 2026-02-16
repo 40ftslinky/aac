@@ -289,10 +289,11 @@ legend {
     }
 }
 
-.error-message, 
-.error-msg,
+/* 
 :not(body)[class*="error"],
-:not(body)[class*="error-"]{
+:not(body)[class*="error-"], */
+.error-message, 
+.error-msg {
     transform: translateY(0);
     position: absolute;
     bottom: -2rem;
@@ -301,18 +302,14 @@ legend {
     transition: var(--transition);
 }
 .error-message, 
-.error-msg,
-:not(body)[class*="error"],
-:not(body)[class*="error-"] {
+.error-msg {
     color: var(--error);
     font-size: 1.2rem;
     margin-top: 0.25rem;
 }
 
 .error-message.visible, 
-.error-msg.visible,
-:not(body)[class*="error"].visible,
-:not(body)[class*="error-"].visible {
+.error-msg.visible {
     transform: translateY(0);
     /* position: relative; */
     opacity: 1;
@@ -330,8 +327,8 @@ legend {
 
 .error404, .error-404 {
     opacity: 1;
-    transform: translateY(0);
-    position: relative;
+    /* transform: translateY(0);
+    position: relative; */
 }
 
 /* form validation styles */
