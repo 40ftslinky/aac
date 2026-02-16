@@ -291,8 +291,8 @@ legend {
 
 .error-message, 
 .error-msg,
-[class*="error"],
-[class*="error-"] {
+:not(body)[class*="error"],
+:not(body)[class*="error-"]{
     transform: translateY(0);
     position: absolute;
     bottom: -2rem;
@@ -302,8 +302,8 @@ legend {
 }
 .error-message, 
 .error-msg,
-[class*="error"],
-[class*="error-"] {
+:not(body)[class*="error"],
+:not(body)[class*="error-"] {
     color: var(--error);
     font-size: 1.2rem;
     margin-top: 0.25rem;
@@ -311,8 +311,8 @@ legend {
 
 .error-message.visible, 
 .error-msg.visible,
-[class*="error"].visible,
-[class*="error-"].visible {
+:not(body)[class*="error"].visible,
+:not(body)[class*="error-"].visible {
     transform: translateY(0);
     /* position: relative; */
     opacity: 1;
@@ -325,6 +325,13 @@ legend {
     color: var(--white);
     background-color: var(--error);
     padding: 0.25rem;
+}
+/*  */
+
+.error404, .error-404 {
+    opacity: 1;
+    transform: translateY(0);
+    position: relative;
 }
 
 /* form validation styles */
