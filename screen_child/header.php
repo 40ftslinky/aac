@@ -171,7 +171,7 @@ if($Title1=='Home'){
                                         <li class="menu-item"><a class="menu-link" href="/glamping">Glamping</a></li>
                                         <!-- <li class="menu-item"><span class="menu-link has-submenu" href="#calendar">Calendar</span></li>                                 -->
                                         <li class="menu-item"><span class="menu-link has-submenu" >Resources</span></li>
-                                        <li class="menu-item"><a class="menu-link " href="#contact">Contact</a></li>
+                                        <li class="menu-item"><a class="menu-link " href="/contact">Contact</a></li>
                                                                         
                                     </ul>
 
