@@ -78,6 +78,10 @@
 										
 										$link_standard_button_to_enquiry_form_2= get_field( "link_standard_button_to_enquiry_form_2", $post_id );
 										
+										$link_button_to_next_section = get_field( "link_standard_button_to_next_section_2", $post_id );
+										
+										$link_button_to_next_section_2 = get_field( "link_standard_button_to_next_section_3", $post_id );
+										
 										if(empty($standard_subtitle_first)){
 											$standard_subtitle_first = "no";
 										}
@@ -169,7 +173,13 @@
 													 $css_1="pop-up-trigger";
 												}
 											}
-											//link_standard_button_to_enquiry_form_2
+
+											if(!empty($link_button_to_next_section)){
+												if(($link_button_to_next_section[0]=="yes")){
+														 $standard_button_link_1="#";
+														 $css_1="scroll-to-next-section";
+													}
+											}
 											
 											if(!empty($link_standard_button_to_enquiry_form_2)){
 												if($link_standard_button_to_enquiry_form_2[0]=='yes'){
@@ -177,7 +187,13 @@
 													$css_2="pop-up-trigger";
 												}
 											}
-										
+
+										if(!empty($link_button_to_next_section_2)){
+											if(($link_button_to_next_section_2[0]=="yes")){
+													 $standard_button_link_2="#";
+													 $css_2="scroll-to-next-section";
+												}
+										}
 										
 										?>
 										

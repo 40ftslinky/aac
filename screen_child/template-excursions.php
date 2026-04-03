@@ -29,21 +29,40 @@
 				
 				include "section/standard-section.php";
 				
-				
 				include "section/blockquote.php";
 				
 				$Standard = 2;
 				
 				include "section/standard-section.php";
 
-				include "section/upcoming-program.php";
 
-				include "section/contact.php";
+				$checkbox_to_hide_the_product_carousel  = get_field('checkbox_to_hide_the_product_carousel', $page_id);
+				
+				$checkbox_to_hide_the_contact_form  = get_field('checkbox_to_hide_the_contact_form', $page_id);				
+			 
+				if($checkbox_to_hide_the_product_carousel[0]!="yes"){
+					
+					$carousel_product_category = get_field('carousel_product_category', $page_id);	
+					
+					$term = get_term($carousel_product_category[0], 'product_cat');
+					
+
+
+					if ($term && !is_wp_error($term)) {
+						$category = $term->slug;
+						
+					}
+
+					
+					include "section/upcoming-program.php";
+				}
+				if($checkbox_to_hide_the_contact_form[0]!="yes"){
+					include "section/contact.php";
+				}
+				
 				
 			?>
         </main>
-		
-
 
 <?php
 get_footer();

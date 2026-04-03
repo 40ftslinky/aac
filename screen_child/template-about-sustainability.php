@@ -37,13 +37,15 @@
                             <div class="section-heading-wrap">
 							<?php
 							$sustainability_vision_title = get_field('sustainability_vision_title', $page_id);
-							$inspire_the_farmers_of_tomorrow = get_field('sustainability_vision_title', $page_id);
+							$inspire_the_farmers_of_tomorrow = get_field('inspire_the_farmers_of_tomorrow', $page_id);
 							
 							$vision_main_body_text = get_field('vision_main_body_text', $page_id);
 
 							
 							?>
-                                <h4 class="primary-text"><?php echo $sustainability_vision_title ?></h4>                            
+								<!-- sustainability_vision_title = $sustainability_vision_title --> 
+                                <h4 class="primary-text"><?php echo $sustainability_vision_title ?></h4>    
+								<!-- inspire_the_farmers_of_tomorrow = $inspire_the_farmers_of_tomorrow --> 
                                 <h2><?php echo $inspire_the_farmers_of_tomorrow ?></h2>
 							</div> 
 							<div class="standard-text">
@@ -121,18 +123,19 @@
             </section>
 
 
-            <!-- sustainability --><!-- TODO ACF -->
+
             <section class="section sustainability-section">
                 <div class="container">
                     <div class="row">
                         <div class="column">
 								<?php
-								$exchange_card_title_1 = get_field('exchange_card_title', $page_id);
+								$exchange_card_titles_1 = get_field('exchange_card_titles_1', $page_id);
 								$exchange_card_title_2 = get_field('exchange_card_title_2', $page_id);
 								$exchange_main_text = get_field('exchange_main_text', $page_id);
 								?>
+
 								<div class="section-heading-wrap">
-                                <h4 class="primary-text"><?php echo $exchange_card_title_1 ?></h4>                            
+                                <h4 class="primary-text"><?php echo $exchange_card_titles_1 ?></h4>                            
                                 <h2><?php echo $exchange_card_title_2 ?></h2>
 								</div>   
 								<div class="standard-heading">
@@ -220,13 +223,17 @@
                         <div class="column">
 
                             <div class="column_inner">
-
+								<?php
+								$production_section_title_1  = get_field('production_section_title_1', $page_id);
+								$production_section_subtitle_2  = get_field('production_section_subtitle_2', $page_id);
+								$production_section_paragraph3  = get_field('production_section_paragraph3', $page_id);
+								?>
                                 <div class="section-heading-wrap">
-                                    <h4 class="primary-text">Lasting Production</h4>                            
-                                    <h2>Producers at the heart of a healthy Australia</h2>
+                                    <h4 class="primary-text"><?php echo $production_section_title_1 ?></h4>                            
+                                    <h2><?php echo $production_section_subtitle_2 ?></h2>
 								</div>   
 								<div class="standard-text">		
-                                    <p class="body-2">Help Australian farmers produce more food and fibre, leaving the land in a healthier state, delivering a healthier product, putting producers at the heart of a healthy Australia.</p>
+                                    <p class="body-2"><?php echo $production_section_paragraph3 ?></p>
                                 </div>   
                             
                             </div>
@@ -236,24 +243,36 @@
                         <div class="column">
 
                            <div class="column_inner icon-card-grid">
-                                    
+                                    <?php
+									$production_card_title_1  = get_field('production_card_title_1', $page_id);
+									$production_card_text_1  = get_field('production_card_text_1', $page_id);
+									$production_card_icon_1  = get_field('production_card_icon_1', $page_id);
+									?>
                                     <div class="card icon-card">
                                         <div class="icon-card-image">
-                                            <img src="/wp-content/themes/<?php echo $child_theme_dir; ?>/assets/svg/default.svg" alt="icon: default" class="vision-image">
+                                            <img src="<?php echo $production_card_icon_1; ?>" alt="icon: default" class="vision-image">
                                         </div>
                                         <div class="icon-card-content">
-                                            <h3 class="icon-card-title">Good Health and Well Being</h3>
-                                            <p class="icon-card-text">Ensure healthy lives and promote well-being for all at all ages.</p>
+                                            <h3 class="icon-card-title"><?php echo $production_card_title_1 ?></h3>
+                                            <p class="icon-card-text"><?php echo $production_card_text_1 ?></p>
                                         </div>                                    
                                     </div>
 
                                     <div class="card icon-card">
                                         <div class="icon-card-image">
-                                            <img src="/wp-content/themes/<?php echo $child_theme_dir; ?>/assets/svg/default.svg" alt="icon: default" class="vision-image">
+										<?php
+										$production_card_icon_2  = get_field('production_card_icon_2', $page_id);
+										?>
+                                            <img src="<?php echo $production_card_icon_2; ?>" alt="icon: default" class="vision-image">
                                         </div>
+										<?php
+										$production_card_title_2  = get_field('production_card_title_2', $page_id);
+										$production_card_text_2  = get_field('production_card_text_2', $page_id);
+										
+										?>
                                         <div class="icon-card-content">
-                                            <h3 class="icon-card-title">Climate Action</h3>
-                                            <p class="icon-card-text">Take urgent action to combat climate change and its impacts.</p>
+                                            <h3 class="icon-card-title"><?php echo $production_card_title_2 ?></h3>
+                                            <p class="icon-card-text"><?php echo $production_card_text_2 ?></p>
                                         </div>                                    
                                     </div>
 
@@ -264,17 +283,22 @@
                     </div>                                    
                 </div>
             </section>
-
              <?php
 			 
-				$category = 'upcoming';
+				$checkbox_to_hide_the_product_carousel  = get_field('checkbox_to_hide_the_product_carousel', $page_id);
+				
+				$checkbox_to_hide_the_contact_form  = get_field('checkbox_to_hide_the_contact_form', $page_id);				
 			 
-				include "section/upcoming-program.php";
-
-				include "section/contact.php";
+				if($checkbox_to_hide_the_product_carousel[0]!="yes"){
+					include "section/upcoming-program.php";
+				}
+				if($checkbox_to_hide_the_contact_form[0]!="yes"){
+					include "section/contact.php";
+				}
 				
 			?>
         </main>
+
 
 
 <?php

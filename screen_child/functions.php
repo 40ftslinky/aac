@@ -412,13 +412,66 @@ add_action( 'init', 'create_jobs_taxonomy' );
 
 
 
+// CUSTOM POST TYPE: Resources
+function create_resources_post_type() {
+    register_post_type(
+        'resources',
+        array(
+            'labels' => array(
+                'name'          => __('Resources'),
+                'singular_name' => __('Resource')
+            ),
+            'public'              => true,
+            'publicly_queryable'  => true,
+            'exclude_from_search' => false,
+            'show_ui'             => true,
+            'query_var'           => true,
+            'menu_position'       => 10, // different from Jobs
+            'menu_icon'           => 'dashicons-portfolio', // pick an icon you like
+            'rewrite'             => array('slug' => 'resources', 'with_front' => false),
+            'has_archive'         => true,
+            'capability_type'     => 'post',
+            'hierarchical'        => false,
+            'supports'            => array(
+                'title',
+                'editor',
+                'author',
+                'thumbnail',
+                'excerpt',
+                'custom-fields',
+                'comments',
+                'revisions'
+            ),
+            'taxonomies'          => array('resources_category', 'post_tag'),
+            'show_in_rest'        => true // Gutenberg + REST API
+        )
+    );
+}
+add_action('init', 'create_resources_post_type');
+// CUSTOM TAXONOMY: Resources Categories
+function create_resources_taxonomy() {
+    register_taxonomy(
+        'resources_category',   // Unique taxonomy slug
+        'resources',            // Attach to 'resources' CPT
+        array(
+            'label'        => __('Resources Categories'),
+            'rewrite'      => array('slug' => 'resources-category'),
+            'hierarchical' => true, // behaves like categories
+            'show_ui'      => true,
+            'show_in_rest' => true
+        )
+    );
+}
+add_action('init', 'create_resources_taxonomy');
+
+
 
 
 
 
 // Add meta box for Order value
 function tm_add_order_meta_box() {
-    $post_types = array('team-members', 'jobs'); // Add more post types here if needed
+    $post_types = array('team-members', 'jobs', 'resources'); // Add more post types here if needed
     foreach ($post_types as $post_type) {
         add_meta_box(
             'tm_order_meta_box',
@@ -573,6 +626,114 @@ function ross_custom_cart_empty_content() {
     return ''; // Return nothing if cart has items
 }
 add_shortcode('ross_cart_empty_hook', 'ross_custom_cart_empty_content');
+
+
+
+
+
+
+
+
+
+
+
+add_filter( 'woocommerce_add_notice', function() {
+    $args = func_get_args();
+    $message = $args[0] ?? '';
+    $notice_type = $args[1] ?? 'notice';
+
+    if ( $notice_type === 'notice' && strpos( $message, 'has been removed from your cart' ) !== false ) {
+        return ''; // Suppress the message
+    }
+
+    return $message;
+}, 10, 99 );
+
+add_action( 'wp', function() {
+    ob_start( function( $buffer ) {
+        // Remove all WooCommerce notices containing 'removed from your cart'
+        return preg_replace( '/<div class="woocommerce-info">.*?removed from your cart.*?<\/div>/is', '', $buffer );
+    });
+});
+add_action( 'woocommerce_before_single_product', 'wc_clear_notices' );
+add_action( 'woocommerce_before_cart', 'wc_clear_notices' );
+add_action( 'woocommerce_before_checkout_form', 'wc_clear_notices' );
+add_action( 'template_redirect', function() {
+    wc_clear_notices();
+});
+
+
+
+add_action( 'woocommerce_init', function() {
+    if ( ! function_exists( 'woocommerce_register_additional_checkout_field' ) ) {
+        return;
+    }
+
+    woocommerce_register_additional_checkout_field( array(
+        'id'       => 'custom-fields/school-name',
+        'label'    => __( 'School Name', 'your-text-domain' ),
+        'location' => 'contact', // Options: 'contact', 'address', 'order'
+        'type'     => 'text',
+        'required' => false,
+    ) );
+});
+
+
+
+
+
+add_action('woocommerce_admin_order_data_after_billing_address', 'display_school_name_in_admin', 10, 1);
+function display_school_name_in_admin($order){
+    echo '<p><strong>' . __('School Name') . ':</strong> ' . get_post_meta($order->get_id(), '_billing_school_name', true) . '</p>';
+}
+
+add_filter('woocommerce_email_order_meta_fields', 'add_school_name_to_emails');
+function add_school_name_to_emails($fields) {
+    $fields['school_name'] = array(
+        'label' => __('School Name'),
+        'value' => isset($_POST['billing_school_name']) ? sanitize_text_field($_POST['billing_school_name']) : ''
+    );
+    return $fields;
+}
+
+
+add_filter( 'woocommerce_available_payment_gateways', function( $gateways ) {
+    // Only run if COD is enabled
+    if ( isset( $gateways['cod'] ) ) {
+
+        // Make sure the cart object exists and has items
+        if ( function_exists( 'WC' ) && WC()->cart && ! WC()->cart->is_empty() ) {
+
+            foreach ( WC()->cart->get_cart() as $item ) {
+                $product_id = $item['product_id'];
+                $val        = get_post_meta( $product_id, '_allow_offline_booking', true );
+
+                // Fallback: check parent product if variation has no meta
+                if ( empty( $val ) && ! empty( $item['variation_id'] ) ) {
+                    $parent_id = wp_get_post_parent_id( $item['variation_id'] );
+                    if ( $parent_id ) {
+                        $val = get_post_meta( $parent_id, '_allow_offline_booking', true );
+                    }
+                }
+
+                // Normalize value
+                $val = strtolower( trim( (string) $val ) );
+                $allowed = [ 'true', '1', 'yes' ];
+
+                if ( ! in_array( $val, $allowed, true ) ) {
+                    unset( $gateways['cod'] );
+                    break;
+                }
+            }
+        }
+    }
+
+    return $gateways;
+});
+
+
+
+
 
 
 ?>

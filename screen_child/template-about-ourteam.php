@@ -17,7 +17,6 @@
 	global $post;
 
 	$page_id = $post->ID;	
-
 	
 	get_header(); ?>
 
@@ -42,12 +41,21 @@
 			include "section/biog-partners.php";
 
 			include "section/blockquote.php";
-			$category = 'upcoming';
-			include "section/upcoming-program.php";
 
-			include "section/contact.php";
+			 
+				$checkbox_to_hide_the_product_carousel  = get_field('checkbox_to_hide_the_product_carousel', $page_id);
 				
-	
+				$checkbox_to_hide_the_contact_form  = get_field('checkbox_to_hide_the_contact_form', $page_id);				
+			 
+				if($checkbox_to_hide_the_product_carousel[0]!="yes"){
+					include "section/upcoming-program.php";
+				}
+				if($checkbox_to_hide_the_contact_form[0]!="yes"){
+					include "section/contact.php";
+				}
+				
+				
+
 			?>
 
         </main>

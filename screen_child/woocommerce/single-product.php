@@ -21,6 +21,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 //get_header( 'shop' ); 
 
+function Enquire_Button()
+{
+	print "<div class='add_enquiry_button'><a href='#' class='button pop-up-trigger enquire-now' style='display: block;'>Enquire Now</a></div>";
+	///print "<div class='add_enquiry_button'><a href='#' class='button pop-up-trigger enquire-now'>Enquire Now</a></div>";
+	
+}
+
 get_header(); 
 
 ?>
@@ -57,10 +64,31 @@ get_header();
                                         <div class="split-hero-content-item">
                                             <div class="split-hero-content-inner">
                                                 <h1 class="split-hero-title"><?php echo $Page_Title ?></h1>
-                                                <h2 class="split-hero-subtitle">Product Description</h2>
-
+												<?php
+												$product_page_subtitle_1 = get_field('product_page_subtitle_1', $page_id);
+												$product_page_learn_more_button = get_field('product_page_learn_more_button', $page_id);
+												$product_page_button_link_url = get_field('product_page_button_link_url', $page_id);
+												$link_product_page_to_enquiry_form = get_field('link_product_page_to_enquiry_form', $page_id);
+												$css_1 = "";
+												if(!empty($link_product_page_to_enquiry_form)){
+													if($link_product_page_to_enquiry_form[0]=='yes'){
+														 $product_page_button_link_url="#";
+														 $css_1="pop-up-trigger";
+													} 
+												}
+									
+												?>
+												<?php
+												
+												if(!empty($product_page_subtitle_1)){
+												?>
+                                                <h2 class="split-hero-subtitle"><?php echo $product_page_subtitle_1 ?></h2>
+												<?php
+												}
+												
+												?>
                                             </div>
-                                            <a href="#" class="button mono">Learn More</a>
+                                            <a href="<?php echo $product_page_button_link_url ?>" class="button mono <?php echo $css_1 ?>"><?php echo $product_page_learn_more_button ?></a>
                                         </div>
                                     </div>
                                 </div>
@@ -94,8 +122,23 @@ get_header();
                                     <div class="column-content-item">
                                         <div class="column-content-inner">
                                             <div class="standard-heading"> 
-                                                <h4 class="standard-subtitle primary">Description</h4>
-                                                <h2 class="standard-title ">Lorem ipsum dolor sit amet</h2>
+												<?php
+													$product_page_standard_subtitle_primary = get_field('product_page_standard_subtitle_primary', $page_id);
+													$product_page_title_standard_2 = get_field('product_page_title_standard_2', $page_id);
+												?>
+												<?php
+												if(!empty($product_page_standard_subtitle_primary)){
+												?>												
+                                                <h4 class="standard-subtitle primary"><?php echo $product_page_standard_subtitle_primary ?></h4>
+												<?php
+												}
+												
+												if(!empty($product_page_title_standard_2)){
+												?>
+                                                <h2 class="standard-title "><?php echo $product_page_title_standard_2 ?></h2>
+												<?php
+												}
+												?>
                                             </div>
 											
                                             <div class="standard-text">
@@ -187,7 +230,23 @@ $BA = get_booking_availability($product_id);
 									
 									?>
                                         <h3 class="product-description-card-title">Details</h3>
-                                        <div class="product-description-cost"><?php echo '$' . number_format( $price, 2 ); ?></div>
+                                        <div class="product-description-cost">
+										<?php echo '$' . number_format( $price, 2 ); ?>
+										</div>
+										<?php
+
+										$text_after_price_01 = get_field('text_after_price_01', $product_id);
+
+										$text_status_alert_1 = get_field('text_status_alert_1', $product_id);
+										
+										if(!empty($text_after_price_01)){
+											print "<div class='text-after-price'>$text_after_price_01</div>";
+										}
+										
+										if(!empty($text_status_alert_1)){
+											print "<div class='text-status-alert'>$text_status_alert_1</div>";
+										}										
+										?>
                                     </div>
 									<?php
 									//product_overview
@@ -324,16 +383,16 @@ $BA = get_booking_availability($product_id);
 				
 		$is_secure_bookable = get_post_meta( $product->get_id(), '_secure_booking_enabled', true );
 		$is_wc_bookable     = $product->is_type( 'booking' );
-
-
+		print "<!-- is_secure_bookable=$is_secure_bookable    -->";
+		print "<!-- is_wc_bookable=$is_wc_bookable    -->";
+		
 		if ( $is_secure_bookable || $is_wc_bookable ) {
 			$is_booking_product = 1;
-			
 		} else {
 			$is_booking_product = 0;
 		}
 
-
+		
 
 		
 		if(!empty($available_variations)){
@@ -394,11 +453,49 @@ $BA = get_booking_availability($product_id);
 		<?php
 		} elseif($is_booking_product==1) {
 			
-					print "<div>";
+					// check if product date is TBC 
+					$date_to_be_confirmed = get_field("date_to_be_confirmed", $page_id);
+					
+					$add_enquiry_button = get_field("add_enquiry_button", $page_id);
+					
+					if($date_to_be_confirmed[0]=="yes"){
+						
+						// do not show the booking form with calendar 
+						print "<div class='date_to_be_confirmed'>";
+						if($add_enquiry_button[0]=="yes"){
+							Enquire_Button();
+						}
+						print "</div>";
+					} else {
+						
+						// Show booking form with Calendar 
+						
+						print "<div class='is_booking_product'>";
 
-					wc_get_template( 'single-product/add-to-cart/booking.php', array( 'product' => $product ) );
+						wc_get_template( 'single-product/add-to-cart/booking.php', array( 'product' => $product ) );
+						
+						
+						if($add_enquiry_button[0]=="yes"){
+							Enquire_Button();
+							?>
+							<script>
+							document.addEventListener("DOMContentLoaded", function() {
+							  const enquiryButton = document.querySelector('.add_enquiry_button');
+							  const bookNowButton = document.querySelector('.wc-bookings-booking-form-button');
 
-					print "</div>";	
+							  if (enquiryButton && bookNowButton) {
+								bookNowButton.insertAdjacentElement('afterend', enquiryButton);
+							  }
+							});
+							</script>
+							
+							<?php
+							//
+						}
+
+						print "</div>";	
+						
+					}
 		
 		} else {
 			
@@ -421,8 +518,7 @@ $BA = get_booking_availability($product_id);
 
 ?>		
 									
-									<!-- <a href="<?php echo esc_url( add_query_arg( 'add-to-cart', get_the_ID(), wc_get_cart_url() ) ); ?>" class="button button-medium primary">Book Now</a> -->
-                                    <!-- <a href="#" class="button button-medium primary">Book Now</a> -->
+
                                 </div>  
                                 
                             </div>
@@ -447,12 +543,48 @@ $nextDate = get_next_available_date($BA);
 
 echo '<input type="hidden" id="next-booking-date" value="' . esc_attr($nextDate) . '">';
 
-//			print "<p>nextDate = $nextDate</p>";
-
 
 
 ?>
 <script>
+
+jQuery(function () {
+  const nextDate = jQuery('#next-booking-date').val();
+  console.log("*nextDate = " + nextDate);
+
+  let retryCount = 0;
+  const maxRetries = 50; // ~5 seconds at 100ms intervals
+
+  const trySetDate = function () {
+    const $calendar = jQuery('.wc-bookings-date-picker .picker.hasDatepicker');
+
+    if (
+      nextDate &&
+      $calendar.length &&
+      typeof $calendar.datepicker === 'function' &&
+      typeof jQuery.datepicker.parseDate === 'function'
+    ) {
+      try {
+        const parsedDate = jQuery.datepicker.parseDate('yy-mm-dd', nextDate);
+        $calendar.datepicker('setDate', parsedDate);
+        console.log("Date set to: " + nextDate);
+      } catch (e) {
+        console.error("Failed to parse or set date:", e);
+      }
+    } else if (retryCount < maxRetries) {
+      retryCount++;
+     // console.warn(`Calendar not ready, retrying... (${retryCount})`);
+      setTimeout(trySetDate, 100);
+    } else {
+      console.log("Calendar failed to initialize after max retries.");
+    }
+  };
+
+  trySetDate();
+});
+/*
+
+
 
 jQuery(function () {
   const nextDate = jQuery('#next-booking-date').val();
@@ -480,7 +612,7 @@ jQuery(function () {
 
   trySetDate();
 });
-
+*/
 
 //Convert .date_from into clickable links:
 jQuery(function () {
@@ -489,41 +621,6 @@ jQuery(function () {
     jQuery(this).wrapInner(`<a href="#" class="date-link" data-date="${dateText}"></a>`);
   });
 });
-
-
-//Handle click and set the calendar date:
-
-/*
-// When the Calendar link is clicked it needs to add the class ="bookable-range selection-start-date ui-datepicker-current-day" to the parent <td> and remove from other <td>s
-jQuery(document).on('click', '.date-link', function (e) {
-  e.preventDefault();
-
-  const rawDate = jQuery(this).data('date'); // e.g., "October 5, 2025"
-  const parsedDate = jQuery.datepicker.parseDate('MM d, yy', rawDate);
-
-  const $calendar = jQuery('.wc-bookings-date-picker .picker.hasDatepicker');
-  if ($calendar.length && typeof $calendar.datepicker === 'function') {
-    $calendar.datepicker('setDate', parsedDate);
-    console.log("Calendar set to: " + rawDate);
-
-    // Extract day/month/year from parsedDate
-    const day = parsedDate.getDate();
-    const month = parsedDate.getMonth() + 1; // Months are 0-indexed
-    const year = parsedDate.getFullYear();
-
-    // Populate visible fields
-    jQuery('.booking_date_day').val(day).trigger('change');
-    jQuery('.booking_date_month').val(month).trigger('change');
-    jQuery('.booking_date_year').val(year).trigger('change');
-
-    // Optional: trigger WooBookings availability check
-    jQuery(document.body).trigger('wc_bookings_date_picker_change');
-  } else {
-    console.warn('Calendar not ready');
-  }
-});
-*/
-
 
 
 
@@ -619,16 +716,35 @@ jQuery(document).on('click', '.date-link', function (e) {
 			
 			$child_theme_dir = basename(get_stylesheet_directory());
 			
+			$checkbox_to_hide_the_product_carousel  = get_field('checkbox_to_hide_the_product_carousel', $page_id);
+			
+			$checkbox_to_hide_the_contact_form  = get_field('checkbox_to_hide_the_contact_form', $page_id);		
+		
 			$FileRoot = $_SERVER['DOCUMENT_ROOT']; 	// root path 
 			
-			$filePath = $FileRoot."/wp-content/themes/".$child_theme_dir."/section/upcoming-program.php";
 			
-			if(is_file($filePath)){
-				include $filePath;
-			} else {
-				//	print "file not exist : $filePath ";
+			if($checkbox_to_hide_the_product_carousel[0]!="yes"){
+
+
+				$terms = get_the_terms($page_id, 'product_cat');
+
+				if ($terms && !is_wp_error($terms)) {
+					//foreach ($terms as $term) {
+						
+						$category= $terms[0]->slug;
+						
+					//	}
+				}
+
+
+				$filePath = $FileRoot."/wp-content/themes/".$child_theme_dir."/section/upcoming-program.php";
+				
+				if(is_file($filePath)){
+					include $filePath;
+				} else {
+					//	print "file not exist : $filePath ";
+				}
 			}
-			
 
 
 
@@ -636,12 +752,13 @@ jQuery(document).on('click', '.date-link', function (e) {
 			
 			$filePath2 = $FileRoot."/wp-content/themes/".$child_theme_dir."/section/contact.php";
 			
-			if(is_file($filePath2)){
-				include $filePath2;
-			} else {
-				//	print "file not exist : $filePath2 ";
+			if($checkbox_to_hide_the_contact_form[0]!="yes"){
+				if(is_file($filePath2)){
+					include $filePath2;
+				} else {
+					//	print "file not exist : $filePath2 ";
+				}
 			}
-			
 			
 			
 			?>

@@ -1,0 +1,71 @@
+
+:root {
+    --spring-easing: cubic-bezier(.59, 1.45, .24, 1.55);
+    --spring-duration: .35s
+}
+
+@supports (transition-timing-function: linear(0,.1,1)) {
+    :root {
+        --spring-easing: linear( 0, .0027 .34%, .0118 .72%, .0251 1.06%, .0455 1.44%, .1021 2.21%, .1858 3.06%, .3708 4.54%, .9153 8.4%, 1.0497 9.51%, 1.1595 10.57%, 1.2443, 1.3075 12.61%, 1.3309, 1.349, 1.3617, 1.3694 14.64%, 1.3719, 1.3722 15.32%, 1.3665, 1.3528 16.76%, 1.3307 17.53%, 1.3004 18.33%, 1.2603 19.23%, 1.047 23.3%, .9988 24.32%, .9583 25.3%, .9192 26.44%, .891, .8723 28.65%, .8665 29.2%, .8627 29.79%, .8614, .8634 31.24%, .8689, .8772 32.76%, .9035 34.46%, .9822 38.49%, 1.0147 40.45%, 1.0289, 1.0398, 1.047, 1.0509 44.86%, 1.051 46.35%, 1.0458 47.96%, 1.036 49.66%, 1.007 53.65%, .9949 55.6%, .9855 57.76%, .9812 59.88%, .9809 61.46%, .9829 63.15%, 1.0017 70.71%, 1.0069 74.78%, 1.0064 78.35%, .9976 89.25%, .9999 99.99% );
+        --spring-duration: 1.206s;
+    }
+}
+
+.animate-text {
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    flex-grow: 1;
+    justify-content: center
+}
+
+.animate-text span {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 4px;
+    transition: transform var(--spring-duration) var(--spring-easing);
+}
+.animate-text span:before {
+    content: attr(data-hover);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: translateZ(0);
+    width: 100%;
+    margin-top: 8px;
+    color: inherit;
+    opacity: 0;
+    transition: opacity .35s
+}
+
+button:hover > .animate-text > span, 
+a:hover > .animate-text > span {
+    transform: translateY(calc(-100% - 4px));
+}
+
+button:hover>.animate-text>span:before,
+a:hover>.animate-text>span:before {
+    opacity: 1
+}
+
+
+/* ---------------------------- */
+/* animate */
+
+.animated-gradient {
+    animation: gradient 0.5s ease ;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

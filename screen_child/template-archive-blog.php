@@ -164,7 +164,7 @@
 													<?php
 													$excerpt = wp_strip_all_tags(get_the_excerpt());
 													$postId = get_the_ID();
-													$featured_image = get_the_post_thumbnail_url($postId, 'thumbnail');
+													$featured_image = get_the_post_thumbnail_url($postId, 'large');
 													$hero_subheading = get_field( "split_hero_subheading", $postId );
 													?>
 													
@@ -182,14 +182,19 @@
 														<div class="blog-card-content">
 															<div class="blog-card-heading">
 																<h4 class="blog-card-title"><?php the_title(); ?></h4>
-																<?php
-																if(!empty($hero_subheading)){
-																?>
-																<div class="blog-card-org"><?php echo $hero_subheading ?></div>
-																<?php
-																}
-																
-																?>
+
+																<div class="blog-card-org">
+																  <?php
+																	$categories = get_the_category();
+																	if ( ! empty( $categories ) ) {
+																		$cat_names = array_map(function($cat) {
+																			return $cat->name;
+																		}, $categories);
+																		echo implode('; ', $cat_names);
+																	}
+																  ?>
+																</div>
+		
 															</div>
 															<div class="blog-card-text">
 																<div class="blog-text">
@@ -229,9 +234,7 @@
 								$MaxPages = $query->max_num_pages;
 								$Current = $paged;
 								
-								
 								$pagePrev = $paged -1;
-								
 								if($paged==1){
 									$pagePrev = 1;
 								} else {
@@ -278,13 +281,20 @@
                     </div>                                    
             </section>
 
-
 		<?php
-		$category = 'upcoming';
-		
-		include "section/upcoming-program.php";
 
-		include "section/contact.php";
+			 
+				$checkbox_to_hide_the_product_carousel  = get_field('checkbox_to_hide_the_product_carousel', $page_id);
+				
+				$checkbox_to_hide_the_contact_form  = get_field('checkbox_to_hide_the_contact_form', $page_id);				
+			 
+				if($checkbox_to_hide_the_product_carousel[0]!="yes"){
+					include "section/upcoming-program.php";
+				}
+				if($checkbox_to_hide_the_contact_form[0]!="yes"){
+					include "section/contact.php";
+				}
+				
 		
 		
 		?>

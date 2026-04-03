@@ -20,7 +20,6 @@
 	get_header(); ?>
 
 		<main>
-
 			<?php
 			
 				include "section/split-hero.php";
@@ -35,14 +34,24 @@
 				
 				include "section/standard-section.php";
 				
-				$category = 'upcoming';
-				include "section/upcoming-program.php";
-			 
 
-				include "section/contact.php";
+
+			 
+				$checkbox_to_hide_the_product_carousel  = get_field('checkbox_to_hide_the_product_carousel', $page_id);
+				
+				$checkbox_to_hide_the_contact_form  = get_field('checkbox_to_hide_the_contact_form', $page_id);				
+			 
+				if($checkbox_to_hide_the_product_carousel[0]!="yes"){
+					include "section/upcoming-program.php";
+				}
+				if($checkbox_to_hide_the_contact_form[0]!="yes"){
+					include "section/contact.php";
+				}
+				
+				
+				
 				
 			?>
-
         </main>
 
 <?php

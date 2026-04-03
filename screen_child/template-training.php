@@ -148,12 +148,25 @@
 									$basic_skills_description =get_field('basic_skills_description', $page_id);
 									$basic_skills_button_text = get_field('basic_skills_button_text', $page_id);
 									$basic_skills_image= get_field('basic_skills_image', $page_id);
-									
 									if(!empty($basic_skills_image['sizes']['large'])){
 										$basic_skills_image_url = $basic_skills_image['sizes']['large'];
 									} else {
 										$basic_skills_image_url = $basic_skills_image['url'];	
+									}									
+									
+									$training_cards_button_link_1 =get_field('training_cards_button_link_1',  $page_id);
+									$link_training_card_button_to_enquiry_form_1=get_field('link_training_card_button_to_enquiry_form_1',  $page_id);
+									$css_1 = "";
+									if(!empty($link_training_card_button_to_enquiry_form_1)){
+										if($link_training_card_button_to_enquiry_form_1[0]=='yes'){
+											 $training_cards_button_link_1="#";
+											 $css_1="pop-up-trigger";
+										} 
 									}
+									
+									
+									
+
 									?>
                                     <div class="programs-card ">
                                         <div class="programs-card-image">
@@ -166,7 +179,7 @@
                                                     <p><?php echo $basic_skills_description ?></p>
                                                 </div>
                                             </div>
-                                            <a href="#" class="button primary"><?php echo $basic_skills_button_text ?></a>
+                                            <a href="<?php echo $training_cards_button_link_1 ?>" class="button primary <?php echo $css_1 ?>"><?php echo $basic_skills_button_text ?></a>
                                         </div>                                    
                                     </div>
 
@@ -177,14 +190,22 @@
 									$basic_skills_button_text_copy = get_field('basic_skills_button_text_copy', $page_id);
 									$women_agriculture_image= get_field('women_agriculture_image', $page_id);
 									
-									//	print_r($women_agriculture_image);
+
 									
 									if(!empty($women_agriculture_image['sizes']['large'])){
 										$women_agriculture_image_url = $women_agriculture_image['sizes']['large'];
 									} else {
 										$women_agriculture_image_url = $women_agriculture_image['url'];	
 									}
-									
+									$training_cards_button_link_2 =get_field('training_cards_button_link_2',  $page_id);
+									$link_training_card_button_to_enquiry_form_2=get_field('link_training_card_button_to_enquiry_form_2',  $page_id);
+									$css_1 = "";
+									if(!empty($link_training_card_button_to_enquiry_form_2)){
+										if($link_training_card_button_to_enquiry_form_2[0]=='yes'){
+											 $training_cards_button_link_2="#";
+											 $css_1="pop-up-trigger";
+										} 
+									}
 									?>
                                     <div class="programs-card ">
                                         <div class="programs-card-image">
@@ -197,7 +218,7 @@
                                                     <p><?php echo $womens_description ?></p>
                                                 </div>
                                             </div>
-                                            <a href="#" class="button primary ghost"><?php echo $basic_skills_button_text_copy ?></a>
+                                            <a href="<?php echo $training_cards_button_link_2; ?>" class="button primary ghost <?php echo $css_1 ?>"><?php echo $basic_skills_button_text_copy ?></a>
                                         </div>                                    
                                     </div>
                                     
@@ -212,124 +233,26 @@
                 </div>
             </section>
 
-            <!-- current  --><!-- TODO ACF -->
-            <!-- <section class="section standard-section current-program-section white_gradient-bg">
-                <div class="container">
-                    <div class="row">
-                        <div class="column">
-                            
-                            <div class="section-heading-wrap">
-                                <h4 class="primary-text">Current Programs</h4>
-							</div>
-							<div class="standard-text">
-                                <p>Current programs listed below, and a calendar of all programs <a href="">here</a></p>
-                            </div>
-                                
-                        </div>
-                    </div>
-                    <div class="row">
-
-                        <div class="column">
-
-                           <div class="column_inner">
-
-                            <div class="carousel program_carousel">
-                                                                        
-
-                                    <div class="carousel-cell product-card current-product-card">
-                                        <div class="product-card-image">
-                                            <img src="/wp-content/themes/<?php echo $child_theme_dir; ?>/assets/images/placeholder.png" alt="Card Image" class="sample-image">
-                                        </div>
-                                        <div class="product-card-content">
-                                            <h3 class="product-card-title">Program Title</h3>
-                                            <div class="product-card-text">
-                                                <div class="product-duration">Duration: </div>
-                                                <div class="product-date">Date of program: </div>
-                                                <div class="product-who">Who it's for: </div>
-                                                <div class="product-category">Category: </div>
-                                                <div class="product-overview">Overview: Lorem ipsum dolor sit amet, consectetur </div>
-                                                <div class="product-cost">$Cost</div>
-                                            </div>
-                                            <a href="#" class="link-only">Book Now</a>
-                                        </div>                                    
-                                    </div>
-                                                                       
-
-                                    <div class="carousel-cell product-card current-product-card">
-                                        <div class="product-card-image">
-                                            <img src="/wp-content/themes/<?php echo $child_theme_dir; ?>/assets/images/placeholder.png" alt="Card Image" class="sample-image">
-                                        </div>
-                                        <div class="product-card-content">
-                                            <h3 class="product-card-title">Program Title</h3>
-                                            <div class="product-card-text">
-                                                <div class="product-duration">Duration: </div>
-                                                <div class="product-date">Date of program: </div>
-                                                <div class="product-who">Who it's for: </div>
-                                                <div class="product-category">Category: </div>
-                                                <div class="product-overview">Overview: Lorem ipsum dolor sit amet, consectetur </div>
-                                                <div class="product-cost">$Cost</div>
-                                            </div>
-                                            <a href="#" class="link-only">Book Now</a>
-                                        </div>                                    
-                                    </div>
-
-
-                                    <div class="carousel-cell product-card current-product-card">
-                                        <div class="product-card-image">
-                                            <img src="/wp-content/themes/<?php echo $child_theme_dir; ?>/assets/images/placeholder.png" alt="Card Image" class="sample-image">
-                                        </div>
-                                        <div class="product-card-content">
-                                            <h3 class="product-card-title">Program Title</h3>
-                                            <div class="product-card-text">
-                                                <div class="product-duration">Duration: </div>
-                                                <div class="product-date">Date of program: </div>
-                                                <div class="product-who">Who it's for: </div>
-                                                <div class="product-category">Category: </div>
-                                                <div class="product-overview">Overview: Lorem ipsum dolor sit amet, consectetur </div>
-                                                <div class="product-cost">$Cost</div>
-                                            </div>
-                                            <a href="#" class="link-only">Book Now</a>
-                                        </div>                                    
-                                    </div>
-
-
-                                    <div class="carousel-cell product-card current-product-card">
-                                        <div class="product-card-image">
-                                            <img src="/wp-content/themes/<?php echo $child_theme_dir; ?>/assets/images/placeholder.png" alt="Card Image" class="sample-image">
-                                        </div>
-                                        <div class="product-card-content">
-                                            <h3 class="product-card-title">Program Title</h3>
-                                            <div class="product-card-text">
-                                                <div class="product-duration">Duration: </div>
-                                                <div class="product-date">Date of program: </div>
-                                                <div class="product-who">Who it's for: </div>
-                                                <div class="product-category">Category: </div>
-                                                <div class="product-overview">Overview: Lorem ipsum dolor sit amet, consectetur </div>
-                                                <div class="product-cost">$Cost</div>
-                                            </div>
-                                            <a href="#" class="link-only">Book Now</a>
-                                        </div>                                    
-                                    </div>
-
-                                    
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>                                    
-                </div>
-            </section>-->
-			
              <?php
+				$category = "adult-training";
+				$program_type = 'current';
+				include "section/upcoming-program.php";
+				
+				$program_type = 'upcoming';
 			 
-			 $category = 'current';
-				include "section/upcoming-program.php";
+				$checkbox_to_hide_the_product_carousel  = get_field('checkbox_to_hide_the_product_carousel', $page_id);
 				
+				$checkbox_to_hide_the_contact_form  = get_field('checkbox_to_hide_the_contact_form', $page_id);				
+			 
+				if($checkbox_to_hide_the_product_carousel[0]!="yes"){
+					include "section/upcoming-program.php";
+				}
+				if($checkbox_to_hide_the_contact_form[0]!="yes"){
+					include "section/contact.php";
+				}
 				
-			 $category = 'upcoming';
-				include "section/upcoming-program.php";
-				
-				include "section/contact.php";
+
+
 			?>
         </main>
 <?php

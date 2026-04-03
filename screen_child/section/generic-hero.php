@@ -28,6 +28,7 @@
 					$hero_button = get_field( "hero_button_2", $post_id );
 					$hero_link = get_field( "hero_link_2", $post_id );
 					$link_hero_button_to_enquiry_form = get_field("link_hero_button_to_enquiry_form_2", $post_id );
+					$link_button_to_next_section =  get_field("link_button_to_next_section_2", $post_id );
 					
 				} else {
 					$hero_image = get_field( "hero_image", $post_id );
@@ -37,6 +38,7 @@
 					$hero_button = get_field( "hero_button", $post_id );
 					$hero_link = get_field( "hero_link", $post_id );
 					$link_hero_button_to_enquiry_form = get_field("link_hero_button_to_enquiry_form", $post_id );
+					$link_button_to_next_section =  get_field("link_button_to_next_section", $post_id );
 				}
 				
 				
@@ -102,7 +104,13 @@
 												if($link_hero_button_to_enquiry_form[0]=='yes'){
 													 $hero_link="#";
 													 $css_1="pop-up-trigger";
-												}
+												} 
+											}
+											if(!empty($link_button_to_next_section)){
+												if(($link_button_to_next_section[0]=="yes")){
+														 $hero_link="#";
+														 $css_1="scroll-to-next-section";
+													}
 											}
 										
 										if(!empty($hero_button)){

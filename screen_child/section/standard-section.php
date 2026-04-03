@@ -82,7 +82,7 @@
 						}						
 						
 						
-						if($image_alignment=="left"){
+						if($image_alignment=="left" && !empty($hero_image_url)){
 						?>
                              <div class="column">
 								<div class="section-image-wrap image-wrap standard-image-wrap">
@@ -186,6 +186,10 @@
 										$link_button_to_enquiry_form_1 = get_field('link_button_to_enquiry_form_1', $post_id);
 										$link_button_to_enquiry_form_2 = get_field('link_button_to_enquiry_form_2', $post_id);
 										
+										$link_button_to_next_section =get_field('link_button_to_nextsection_2', $post_id);
+										
+										$link_button_to_next_section_2 =get_field('link_button_to_nextsection_3', $post_id);
+										
 										$css_1="";
 										$css_2="";
 										
@@ -201,6 +205,22 @@
 												$css_2="pop-up-trigger";
 											}
 										}
+										
+										if(!empty($link_button_to_next_section)){
+												if(($link_button_to_next_section[0]=="yes")){
+														 $standard_button_link_1="#";
+														 $css_1="scroll-to-next-section";
+													}
+											}
+											
+
+										if(!empty($link_button_to_next_section_2)){
+											if(($link_button_to_next_section_2[0]=="yes")){
+													 $standard_button_link_2="#";
+													 $css_2="scroll-to-next-section";
+												}
+										}
+										
 										
 										
 										print "<!-- :::   \n \n  ";
@@ -231,7 +251,7 @@
                         </div>
 						
 						<?php
-						if($image_alignment=="right"){
+						if($image_alignment=="right" && !empty($hero_image_url)){
 						?>
                              <div class="column">
 								<div class="section-image-wrap image-wrap standard-image-wrap">

@@ -69,6 +69,9 @@
 								$mission_partners_title_1=get_field('mission_partners_title_1', $page_id);
 								$supporting_the_mission_and_vision =get_field('supporting_the_mission_and_vision', $page_id);
 								$mission_partners_body_text =get_field('mission_partners_body_text', $page_id);
+
+					
+								
 								?>
                                 <div class="section-heading-wrap">
                                     <h4 class="primary-text"><?php echo $mission_partners_title_1 ?></h4>                            
@@ -77,8 +80,20 @@
                                     <p>&nbsp;</p>
 									<?php
 									$support_our_mission_today =get_field('support_our_mission_today', $page_id);
+									$support_our_mission_link =get_field('support_our_mission_link', $page_id);
+									
+									$link_button_to_enquiry_form_instead_of_url = get_field('link_button_to_enquiry_form_instead_of_url', $page_id);
+									$css_1 = "";
+									if(!empty($link_button_to_enquiry_form_instead_of_url)){
+										if($link_button_to_enquiry_form_instead_of_url[0]=='yes'){
+											 $support_our_mission_link="#";
+											 $css_1="pop-up-trigger";
+										} 
+									}
+									
+									
 									?>
-                                    <a href="#" class="button primary"><?php echo $support_our_mission_today ?></a>
+                                    <a href="<?php echo $support_our_mission_link ?>" class="button primary <?php echo $css_1 ?>"><?php echo $support_our_mission_today ?></a>
                                 </div>   
                             
                             </div>
@@ -153,117 +168,7 @@
 									}
 									
 									?>
-                                    <!-- 2 -->
-                                   <!-- <div class="card partner-logo-card">
-                                        <div class="partner-logo-card-image">
-                                            <img src="/wp-content/themes/<?php echo $child_theme_dir; ?>/assets/images/partners/Regional-Development-Australian-Southern-Inland.png" alt="partner: Regional Development Australian Southern Inland" class="partner-logo-image">
-                                        </div>
-                                        <div class="partner-logo-card-content">
-                                            <h3 class="partner-logo-card-title">Regional Development Australian Southern Inland</h3>
-                                        </div>                                    
-                                    </div>
-
-    
-                                    <div class="card partner-logo-card">
-                                        <div class="partner-logo-card-image">
-                                            <img src="/wp-content/themes/<?php echo $child_theme_dir; ?>/assets/images/partners/Foundation-of-Regional-Rural-Renewal.png" alt="partner: Foundation of Regional Rural Renewal" class="partner-logo-image">
-                                        </div>
-                                        <div class="partner-logo-card-content">
-                                            <h3 class="partner-logo-card-title">Foundation of Regional Rural Renewal</h3>
-                                        </div>                                    
-                                    </div>
-
-
-                                    <div class="card partner-logo-card">
-                                        <div class="partner-logo-card-image">
-                                            <img src="/wp-content/themes/<?php echo $child_theme_dir; ?>/assets/images/partners/Australian-National-University.png" alt="partner: Australian National University" class="partner-logo-image">
-                                        </div>
-                                        <div class="partner-logo-card-content">
-                                            <h3 class="partner-logo-card-title">Australian National University</h3>
-                                        </div>                                    
-                                    </div>
-
-
-                                    <div class="card partner-logo-card">
-                                        <div class="partner-logo-card-image">
-                                            <img src="/wp-content/themes/<?php echo $child_theme_dir; ?>/assets/images/partners/Scout-Communications.png" alt="partner: Scout-Communications" class="partner-logo-image">
-                                        </div>
-                                        <div class="partner-logo-card-content">
-                                            <h3 class="partner-logo-card-title">Scout- Communications</h3>
-                                        </div>                                    
-                                    </div>
-
-                                    <div class="card partner-logo-card">
-                                        <div class="partner-logo-card-image">
-                                            <img src="/wp-content/themes/<?php echo $child_theme_dir; ?>/assets/images/partners/Upper-Lachlan-Shire-Council.png" alt="partner: Upper Lachlan Shire Council" class="partner-logo-image">
-                                        </div>
-                                        <div class="partner-logo-card-content">
-                                            <h3 class="partner-logo-card-title">Upper Lachlan Shire Council</h3>
-                                        </div>                                    
-                                    </div>
-
-                                    <div class="card partner-logo-card">
-                                        <div class="partner-logo-card-image">
-                                            <img src="/wp-content/themes/<?php echo $child_theme_dir; ?>/assets/images/partners/NSW-Government.png" alt="partner: NSW Government" class="partner-logo-image">
-                                        </div>
-                                        <div class="partner-logo-card-content">
-                                            <h3 class="partner-logo-card-title">NSW Government</h3>
-                                        </div>                                    
-                                    </div>
-
-
-                                    <div class="card partner-logo-card">
-                                        <div class="partner-logo-card-image">
-                                            <img src="/wp-content/themes/<?php echo $child_theme_dir; ?>/assets/images/partners/Charles-Sturt-University.png" alt="partner: Charles Sturt University" class="partner-logo-image">
-                                        </div>
-                                        <div class="partner-logo-card-content">
-                                            <h3 class="partner-logo-card-title">Charles Sturt University</h3>
-                                        </div>                                    
-                                    </div>
-
-
-                                    <div class="card partner-logo-card">
-                                        <div class="partner-logo-card-image">
-                                            <img src="/wp-content/themes/<?php echo $child_theme_dir; ?>/assets/images/partners/XAG-Australia.png" alt="partner: XAG Australia" class="partner-logo-image">
-                                        </div>
-                                        <div class="partner-logo-card-content">
-                                            <h3 class="partner-logo-card-title">XAG Australia</h3>
-                                        </div>                                    
-                                    </div>
-
-
-                                    <div class="card partner-logo-card">
-                                        <div class="partner-logo-card-image">
-                                            <img src="/wp-content/themes/<?php echo $child_theme_dir; ?>/assets/images/partners/Australia-Wool-Innovation.png" alt="partner: Australia Wool Innovation" class="partner-logo-image">
-                                        </div>
-                                        <div class="partner-logo-card-content">
-                                            <h3 class="partner-logo-card-title">Australia Wool Innovation</h3>
-                                        </div>                                    
-                                    </div>
-
-
-                                    <div class="card partner-logo-card">
-                                        <div class="partner-logo-card-image">
-                                            <img src="/wp-content/themes/<?php echo $child_theme_dir; ?>/assets/images/partners/FPV-Australia.png" alt="partner: FPV Australia" class="partner-logo-image">
-                                        </div>
-                                        <div class="partner-logo-card-content">
-                                            <h3 class="partner-logo-card-title">FPV Australia</h3>
-                                        </div>                                    
-                                    </div>
-
-                           
-                                    <div class="card partner-logo-card">
-                                        <div class="partner-logo-card-image">
-                                            <img src="/wp-content/themes/<?php echo $child_theme_dir; ?>/assets/images/partners/TAFE_NSW.png" alt="partner: TAFE NSW" class="partner-logo-image">
-                                        </div>
-                                        <div class="partner-logo-card-content">
-                                            <h3 class="partner-logo-card-title">TAFE NSW</h3>
-                                        </div>                                    
-                                    </div>
-						-->
-                                    
-
-                                    
+                                 
 
                                 </div>
                             </div>
@@ -275,13 +180,19 @@
 
 
 
-
              <?php
 			 
-				include "section/upcoming-program.php";
+				$checkbox_to_hide_the_product_carousel  = get_field('checkbox_to_hide_the_product_carousel', $page_id);
+				
+				$checkbox_to_hide_the_contact_form  = get_field('checkbox_to_hide_the_contact_form', $page_id);				
 			 
-
-				include "section/contact.php";
+				if($checkbox_to_hide_the_product_carousel[0]!="yes"){
+					include "section/upcoming-program.php";
+				}
+				if($checkbox_to_hide_the_contact_form[0]!="yes"){
+					include "section/contact.php";
+				}
+				
 			?>
 
 

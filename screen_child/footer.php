@@ -134,8 +134,9 @@
                                 <ul class="footer_menu">
                                     <h3 class="footer_menu-title">Resources</h3>
                                     <!-- <li class="footer_menu-item"><a class="footer_menu-link" href="/resources/media">Media</a></li> -->
-                                    <li class="footer_menu-item"><a class="footer_menu-link" href="/resources/blog">Blog</a></li>
-                                    <li class="footer_menu-item"><a class="footer_menu-link" href="/resources/virtual-campus">Virtual Campus</a></li>
+                                    <li class="footer_menu-item"><a class="footer_menu-link" href="/excursion-course-resources">Resources</a></li>
+                                    <li class="footer_menu-item"><a class="footer_menu-link" href="/blog">Blog</a></li>
+                                    <li class="footer_menu-item"><a class="footer_menu-link" href="/virtual-campus">Virtual Campus</a></li>
 
                                     <li class="footer_menu-item"><a class="footer_menu-link" href="/contact"><h3 class="footer_menu-title">Contact</h3></a></li>
 
@@ -154,7 +155,7 @@
                             <div class="footer_bottom_left">
                         
                                 <p class="footer_credit">&copy; 2025 AAC. All rights reserved.</p>
-                                <p class="footer_disclaimer">* disclaimer.</p>
+<!--                                 <p class="footer_disclaimer">* disclaimer.</p> -->
                                 
                             </div>
                         </div>
@@ -164,8 +165,10 @@
                             <div class="footer_bottom_right">
                                 <p class="footer_links">
                                     <a class="footer_link" href="/privacy-policy">Privacy Policy</a> | 
-                                    <a class="footer_link" href="/terms-of-service">Terms of Service</a> | 
-                                    <a class="footer_link" href="/sitemap.xml">Sitemap</a>
+									<a class="footer_link" href="/terms-of-service">Terms of Service</a> |
+									<a class="footer_link" href="/refund-returns-policy">Refund Policy</a> | 
+
+                                    <a class="footer_link" href="/sitemap">Sitemap</a>
                                 </p>
                                
                             </div>

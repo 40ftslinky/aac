@@ -38,7 +38,6 @@ if($Title1=='Home'){
         <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
         <link rel="manifest" href="favicon/site.webmanifest">
         <meta name="theme-color" content="#fafafa">
-        
 		<?php wp_head(); ?>		
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
@@ -258,8 +257,9 @@ if($Title1=='Home'){
                             <ul class="mega-menu-submenu">
 								<!--  <li class="submenu-item"><a class="submenu-link active" href="/employment-services">Employment Services</a></li> -->
                                 <!-- <li class="submenu-item"><a class="submenu-link" href="/resources/media">Media</a></li> -->
-                                <li class="submenu-item"><a class="submenu-link" href="/resources/blog">Blog</a></li>
-                                <li class="submenu-item"><a class="submenu-link" href="/resources/virtual-campus">Virtual Campus</a></li>
+                                <li class="submenu-item"><a class="submenu-link" href="/excursion-course-resources/">Resources</a></li>
+                                <li class="submenu-item"><a class="submenu-link" href="/blog">Blog</a></li>
+                                <li class="submenu-item"><a class="submenu-link" href="/virtual-campus">Virtual Campus</a></li>
                             </ul>
                         </div>
                     </div>

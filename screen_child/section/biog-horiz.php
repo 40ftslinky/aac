@@ -28,10 +28,20 @@
 	if($BioType=="jobs")
 	{
 		$typeClass ="job";
+		$TAX = 'jobs_category';
+		
+	} elseif($BioType=="resources"){
+		
+		$typeClass ="job";
+		$TAX = 'resources_category';
+		
 	} else {
 		$typeClass ="biog";
+		$TAX ="";
 	}
+	
 
+	
 
 ?>
 
@@ -68,7 +78,7 @@
 							if ($selected_cat) {
 									$args['tax_query'] =[
 										[
-											'taxonomy' => 'jobs_category',
+											'taxonomy' => $TAX,
 											'field'    => 'term_id', // Use the numeric ID
 											'terms'    => $selected_cat,     
 										]
@@ -93,8 +103,6 @@
 								
 							}
 							
-							
-							
 
 						$query = new WP_Query($args);
 
@@ -103,8 +111,14 @@
 								$query->the_post();
 								$post_title =get_the_title();
 								$Pid = get_the_ID();
+								
+								
 								$The_content = get_the_content();
 								$featured_image_url = get_the_post_thumbnail_url($Pid, 'medium'); // 'full', 'medium', 'thumbnail', etc.
+								if($BioType=="resources"){
+									// get the URL for the Resources file_download
+									$file_download= get_field( "file_download", $Pid );
+								}
 						   ?>
                                     
                                     <div class="<?php echo $typeClass ?>-card ">
@@ -112,9 +126,21 @@
 											if (!empty($featured_image_url)){
 											?>
 												<div class="<?php echo $typeClass ?>-card-image">
-													<img src="<?php echo $featured_image_url; ?>" alt="<?php echo $post_title ?>" class="<?php echo $typeClass ?>-image">
+													
+														<img src="<?php echo $featured_image_url; ?>" alt="<?php echo $post_title ?>" class="<?php echo $typeClass ?>-image">
+													
 												</div>
 												<?php
+											} else {
+												// icon for document / resources 
+												if($BioType=="resources"){
+													$icon_image_url = "/wp-content/themes/screen_child/assets/images/document.png";
+													?>
+														<div class="job-card-image <?php echo $typeClass ?>-card-image"><a href="<?php echo $file_download; ?>" target="_blank">
+															<img src="<?php echo $icon_image_url; ?>" alt="<?php echo $post_title ?>" class="job-image <?php echo $typeClass ?>-image"></a>
+														</div>
+													<?php
+												}
 											}
 										?>
                                         <div class="<?php echo $typeClass ?>-card-content">
@@ -191,6 +217,11 @@
 															<?php
 					
 														}
+													} elseif($BioType=='resources'){
+														$file_download= get_field( "file_download", $Pid );
+														?>
+														<a class="button mono job-enquiry" href="<?php echo $file_download; ?>" target="_blank">Download</a>
+														<?php
 													}
 												}
 												?>
@@ -205,6 +236,7 @@
 							wp_reset_postdata();
 						} else {
 							//echo 'No core team members found.';
+							print "<div>Unfortunately your search returned no matching results.</div>";
 						}
 
 ?>

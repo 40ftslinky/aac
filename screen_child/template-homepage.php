@@ -18,7 +18,6 @@
 
 	$page_id = $post->ID;	
 
-	
 	get_header(); ?>
 
 		<main>
@@ -26,21 +25,24 @@
 			
 				include "section/generic-hero.php";	
 				
-				$category = 'current';
+				$program_type = 'current';
 				
 				include "section/current-program.php";
 				
-				$category = 'upcoming';
+				$program_type = 'upcoming';
 
-				include "section/upcoming-program.php";	
+			 
+				$checkbox_to_hide_the_product_carousel  = get_field('checkbox_to_hide_the_product_carousel', $page_id);
 				
-				include "section/standard-section.php";	
+				$checkbox_to_hide_the_contact_form  = get_field('checkbox_to_hide_the_contact_form', $page_id);				
+			 
+				if($checkbox_to_hide_the_product_carousel[0]!="yes"){
+					include "section/upcoming-program.php";
+				}
 
+				
 				
 			?>
-			
-
-            
             <!-- mission -->
 			
             <section class="section standard-section mission-section">
@@ -53,8 +55,6 @@
                            <div class="column_inner">
                                     <?php
 									
-										
-									
 										$homepage_mission_image_1 = get_field( "homepage_mission_image_1", $page_id );
 										if(!empty($homepage_mission_image_1['sizes']['2048x2048'])){
 											$mission_image_url = $homepage_mission_image_1['sizes']['2048x2048'];
@@ -66,13 +66,31 @@
 										$mission_button_text_1= get_field( "mission_button_text_1", $page_id );
 										$mission_button_link_1 = get_field( "mission_button_link_1", $page_id );
 										$mission_button_to_enquiry_form_1 = get_field( "mission_button_to_enquiry_form_1", $page_id );
+										
+										$link_button_to_next_section = get_field( "link_button_to_next_section_03", $page_id );
+										$link_button_to_next_section_2 = get_field( "link_button_to_next_section_04", $page_id );
+										
+										
 										$css_1 = "";
+										
 										if(!empty($mission_button_to_enquiry_form_1)){
 											if($mission_button_to_enquiry_form_1[0]=='yes'){
 												 $mission_button_link_1="#";
 												 $css_1="pop-up-trigger";
 											}
 										}
+								
+								
+								
+										if(!empty($link_button_to_next_section)){
+												if(($link_button_to_next_section[0]=="yes")){
+														 $mission_button_link_1="#";
+														 $css_1="scroll-to-next-section";
+													}
+											}
+											
+
+
 								
 									
 									?>
@@ -106,6 +124,10 @@
 										$mission_button_text_2= get_field( "mission_button_text_2", $page_id );
 										$mission_button_link_2 = get_field( "mission_button_link_2", $page_id );
 										$mission_button_to_enquiry_form_2 = get_field( "mission_button_to_enquiry_form_2", $page_id );
+										
+										
+										
+										
 										$css_1 = "";
 										if(!empty($mission_button_to_enquiry_form_2)){
 											if($mission_button_to_enquiry_form_2[0]=='yes'){
@@ -113,6 +135,14 @@
 												 $css_1="pop-up-trigger";
 											}
 										}
+										
+										if(!empty($link_button_to_next_section_2)){
+											if(($link_button_to_next_section_2[0]=="yes")){
+													 $mission_button_link_2="#";
+													 $css_1="scroll-to-next-section";
+												}
+										}
+										
 									?>
                                     <div class="mission-card primary-bg">
                                         <div class="mission-card-image">
@@ -126,23 +156,17 @@
                                             <a href="<?php echo $mission_button_link_2; ?>" class="button white <?php echo $css_1; ?>"><?php echo $mission_button_text_2; ?></a>                                    
                                         </div>                                    
                                     </div>
-                                    
                                 </div>
                             </div>
-
                         </div>
                     </div>                                    
                 </div>
             </section>  
             
-            
 			 <!-- generic-hero-half section -->
 			<?php	
 				include "section/generic-hero-half.php";	
 			?>
-
-
-
 
             <!-- standard section -->
 			<?php
@@ -159,21 +183,17 @@
 				include "section/blockquote.php";
 			?>
 
-
-
             <!-- contact -->
 			<?php
-				include "section/contact.php";
+			$checkbox_to_hide_the_contact_form  = get_field('checkbox_to_hide_the_contact_form', $page_id);			
+			
+			if($checkbox_to_hide_the_contact_form[0]!="yes"){
+					include "section/contact.php";
+			}
+
 			?>
-
-
-
-
         </main><!-- end of main -->
-		
-		
-		
-		
+
 <!-- include the footer -->
 <?php
 get_footer();

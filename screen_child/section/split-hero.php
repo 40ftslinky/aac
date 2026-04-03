@@ -33,7 +33,9 @@
 				$split_hero_paragraph_copy = get_field( "split_hero_paragraph_copy", $post_id );
 				$hero_button = get_field( "split_hero_button", $post_id );
 				$hero_link = get_field( "split_hero_link", $post_id );				
-				$link_hero_button_to_enquiry_form_3 = get_field( "link_hero_button_to_enquiry_form_3", $post_id );	
+				$link_hero_button_to_enquiry_form_3 = get_field( "link_hero_button_to_enquiry_form_3", $post_id );
+				$link_button_to_next_section = get_field( "link_button_to_next_section_4", $post_id );
+				
 				
 				if(!empty($hero_image['sizes']['2048x2048'])){
 					$hero_image_url = $hero_image['sizes']['2048x2048'];
@@ -51,6 +53,17 @@
                                         <div class="split-hero-content-item">
                                             <div class="split-hero-content-inner">
 												<?php
+
+											if ( get_post_type() === 'post' ) {
+												$categories = get_the_category();
+												if ( ! empty( $categories ) ) {
+													$cat_names = array_map(function($cat) {
+														return esc_html($cat->name);
+													}, $categories);
+													echo '<h5 class="split-hero-cats">' . implode(' | ', $cat_names) . '</h5>';
+												}
+											}
+
 												
 												if(empty($hero_heading) && ($pageType=="posts")){
 													$hero_heading=get_the_title();
@@ -58,7 +71,7 @@
 												
 												if(!empty($hero_heading)){
 														?>											
-														<h2 class="split-hero-title"><?php echo $hero_heading  ?></h2>
+														<h1 class="split-hero-title"><?php echo $hero_heading  ?></h1>
 														<?php
 												}
 												if(!empty($hero_subheading)){
@@ -84,6 +97,14 @@
 															 $css_1="pop-up-trigger";
 														}
 													}
+													
+													if(!empty($link_button_to_next_section)){
+														if(($link_button_to_next_section[0]=="yes")){
+																 $hero_link="#";
+																 $css_1="scroll-to-next-section";
+															}
+													}
+													
 												
 												?>
 												<a href="<?php echo $hero_link ?>" class="button mono <?php echo $css_1; ?>"><?php echo $hero_button ?></a>
